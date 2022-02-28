@@ -1,0 +1,14 @@
+Va rog sa testati si local deoarece nu am reusit sa nu dea segmentation fault pe vmchecker desi cand testez local imi trece toate testele de la taskul2.
+
+
+Task 1
+
+La primul task am implementat functiile scrise in pseudocod din pdf folosindu-ma de functiile deja facute in arboriTest.c
+
+Task 2
+
+la acest task am implementat functia de citire din fisier
+
+la varianta triviala am facut niste functii ajutatoare max,min care determina maximul, respectiv minimul dintre doua numere intregi, si functia "intersectie" care verifica daca doua segmente se intersecteaza, intoarce 1 daca da si 0 daca nu(luand inclusiv cazul in care capatul unui segment orizontal coincide cu capatul altui segment orizontal). Am apelat pt fiecare doua segmente functia "intesectie", folosindu-ma de doua for-uri.
+
+Pentru functia care determina numarul de intesectii cu ajutorul arborilor de intervale m-am folosit de o structura auxiliara care retinea coordonatele punctului, dca acesta este punct stanga sau punct dreapta, indexul segmentului din care face parte si daca segmentul este orizontal sau vertical. Am creeat un vector de puncte sortate crescator dupa x(principala conditie de sortare), punctele care sunt capete stanga fiind puse inaintea capetelor dreapta care fac parte din acelasi segment, si punctele care fac parte dintr-un segment vertical fiind puse inaintea celor orizontale de aceeasi coordonata x. Cu acest vector sortat respect algoritmul descris in cerinta, interogand la fiecare aparitie a unui segment vertical.

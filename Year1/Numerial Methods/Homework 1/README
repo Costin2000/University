@@ -1,0 +1,48 @@
+TASK1
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+generate_probabilities_system
+
+La aceasta functie am creeat pentru inceput o matrice care sa imi arate intr-un fel labirintul(matrAux). Ulterior, am folosit-o pentru a putea genera matricea sistemului. Am verificat pentru fiecare element nenul din matrAux vecinii si cand gaseam unul faceam modificarile necesare. La final, neluand in calcul posibilitatea ca soaracele sa iasa din labirint cand acesta se afla intr-o intersectie din margine, a trebui sa mai modific numarul de posibilitati ale acelor intersectii.
+
+
+Jacobi_factorization
+
+Aici am aplicat teoria de la metoda Jacobi invatata semestrul asta.
+
+
+matrix_to_csr
+
+Am initializat vectorii values si colind. Am construit dupa cum era spus in enunt values, colind si rowptr.
+
+
+Jacobi_sparse
+
+M-am folosit de functia ajutatoare csr_multiplication pentru a face iteratiile de la Jacobi, folosind algoritmul.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+TASK2
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+clustering_pc
+
+Am construid matricea de clustere si prima matrice de centroizi pe care am numit-o centroids0. Am creeat o noua matrice cu clustere folosinduma de distanta minima dintre fiecare punct din points si centroidul sau. Avand noua matrice cu clustere am construit o a doua matrice centroids. Am impus o toleranta de 10^(-5) si am tot construit o alta matrice centroid pana cand diferenta dintre centroids0 si centroids nu mai era usor sesizabila.
+
+
+compute_cost_pc
+
+Am verificat fiecare punct din points cu fiecare centroid pentru a determina distanta minima si am adunat la suma totala distanta minima a fiecaruia.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+TASK3
+--------------------------------------------------------------------------------------------------------------------------------------------------
+rgbHistogram
+
+Am folosit functia imread pt a transforma imaginea intr-o matrice tridimensionala. Reshape este utilizat pt a schimba fiecare matrice in marte(matricea corespunzatoare lui rosu, galbem si albastru) intr-un vector linie. Ulterior am folosit linspace pentru a creea vectorul de frecventa cerut.
+
+
+hsvHistogram
+
+M-am folosit de algoritmul dat in enuntul temei(scris in functia RGBtoHSV) pentru a putea converti din format rgb in format hsv. Am luat punct cu punct si l-am converti construind matricea matrHSV. Ulterior, am folosit aceeasi metoda ca si la prima functie de la acest task.
+
+

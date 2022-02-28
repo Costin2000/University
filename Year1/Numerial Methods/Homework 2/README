@@ -1,0 +1,33 @@
+Brebu Costin Bogdan 311 CD
+
+ITERATIVE
+-------------------------------------------------------------------------------
+Am facut citirea din fisie, obtinand in acelasi timp matricea de adiacenta si
+vectorul care retinea cate linkuri contine fiecare site. Am luat in considerare
+faptul ca matricea de adiacenta nu trebuie sa aiba 1 pe coloana principala si
+in cazul in care site-ul continea un link catre el insusi scadeam si din
+numarul lui de linkuri. In continuare am respectat pasii spusi pe site-ul dat
+suport. La final am observat ca se realiza o iteratie in plus si de aceea m-am
+dus cu una in urma. 
+-------------------------------------------------------------------------------
+
+ALGEBRAIC
+-------------------------------------------------------------------------------
+Citirea a fost realizata ca la functia Iterative.
+Am folosit functiile Gram-Schmidt si SST implementate in labolatorul 3, astfel
+realizand un algoritm de inversare a unei matrice (functia PR_Inv).
+Dupa implementarea acestor functii suplimentare am respectat formulele de pe 
+site-ul specificat in pdf.
+-------------------------------------------------------------------------------
+
+PageRank
+-------------------------------------------------------------------------------
+Deoarece la aceasta functie aveam nevoie doar de numarul de site-uri date ca
+input si de ultimele doua valori (val1,val2), am realizat citirea diferit si am 
+retinut doar ce ma interesa.
+Am afisat rezultatele celor doua functii, Iterative si Algebraic.
+Sortarea outputului functiei Algebraic l-am sortat cu bouble sort, la fel si
+vectorul cu indici. Am comparat numerele cu o eroare de 10^(-6).
+am apelat pentru fiecare site in parte functia Aparenta si am realizat 
+afisarile necesare.
+-------------------------------------------------------------------------------
