@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab4.srcs/sources_1/new/GUAT.v" \
+"../../../../Lab4.srcs/sources_1/new/UAT.v" \
+"../../../../Lab4.srcs/sources_1/new/sumator.v" \
+"../../../../Lab4.srcs/sources_1/new/sumator_complet_1bit.v" \
+"../../../../Lab4.srcs/sim_1/new/sim_sumatorCLA.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

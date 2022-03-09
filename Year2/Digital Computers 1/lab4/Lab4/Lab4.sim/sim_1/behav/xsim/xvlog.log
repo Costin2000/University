@@ -1,0 +1,96 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/sumator_complet_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sumator_complet_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/UAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/modul_concat_sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modul_concat_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/GUAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GUAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/modul_defalcare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modul_defalcare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/modul_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modul_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/splitter_GUAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module splitter_GUAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/modul_concat_uat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modul_concat_uat
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/modul_refacere_suma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modul_refacere_suma
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sources_1/new/defalcare_UAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module defalcare_UAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_0_1/sim/design_1_sumator_complet_1bit_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_1_0/sim/design_1_sumator_complet_1bit_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_2_1/sim/design_1_sumator_complet_1bit_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_3_0/sim/design_1_sumator_complet_1bit_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_UAT_0_0/sim/design_1_UAT_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_UAT_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_concat_sum_0_0/sim/design_1_modul_concat_sum_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_concat_sum_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_GUAT_0_0/sim/design_1_GUAT_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_GUAT_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_4_1/sim/design_1_sumator_complet_1bit_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_5_0/sim/design_1_sumator_complet_1bit_5_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_5_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_6_0/sim/design_1_sumator_complet_1bit_6_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_6_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_7_0/sim/design_1_sumator_complet_1bit_7_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_7_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_concat_sum_1_0/sim/design_1_modul_concat_sum_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_concat_sum_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_defalcare_0_1/sim/design_1_modul_defalcare_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_defalcare_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_defalcare_1_1/sim/design_1_modul_defalcare_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_defalcare_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_UAT_1_0/sim/design_1_UAT_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_UAT_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_8_0/sim/design_1_sumator_complet_1bit_8_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_9_0/sim/design_1_sumator_complet_1bit_9_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_9_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_10_0/sim/design_1_sumator_complet_1bit_10_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_10_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_11_0/sim/design_1_sumator_complet_1bit_11_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_11_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_concat_sum_2_0/sim/design_1_modul_concat_sum_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_concat_sum_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_UAT_2_0/sim/design_1_UAT_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_UAT_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_input_0_1/sim/design_1_modul_input_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_input_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_12_0/sim/design_1_sumator_complet_1bit_12_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_12_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_13_0/sim/design_1_sumator_complet_1bit_13_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_13_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_14_0/sim/design_1_sumator_complet_1bit_14_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_14_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_15_0/sim/design_1_sumator_complet_1bit_15_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sumator_complet_1bit_15_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_concat_sum_3_0/sim/design_1_modul_concat_sum_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_concat_sum_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_UAT_3_0/sim/design_1_UAT_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_UAT_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_splitter_GUAT_0_0/sim/design_1_splitter_GUAT_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_splitter_GUAT_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_concat_uat_0_0/sim/design_1_modul_concat_uat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_concat_uat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_modul_refacere_suma_0_0/sim/design_1_modul_refacere_suma_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_modul_refacere_suma_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_defalcare_UAT_0_0/sim/design_1_defalcare_UAT_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_defalcare_UAT_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_defalcare_UAT_1_0/sim/design_1_defalcare_UAT_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_defalcare_UAT_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_defalcare_UAT_2_0/sim/design_1_defalcare_UAT_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_defalcare_UAT_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/ip/design_1_defalcare_UAT_3_0/sim/design_1_defalcare_UAT_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_defalcare_UAT_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab4/Lab4/Lab4.srcs/sim_1/new/test2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test2

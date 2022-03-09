@@ -1,0 +1,678 @@
+#lang racket
+(require racket/match)
+(require "queue.rkt")
+(require racket/trace)
+
+
+(provide (all-defined-out))
+
+(define ITEMS 5)
+
+
+; TODO
+; Aveți libertatea să vă structurați programul cum doriți (dar cu restricțiile
+; de mai jos), astfel încât funcția serve să funcționeze conform specificației.
+; 
+; Restricții (impuse de checker):
+; - trebuie să existe în continuare funcția (empty-counter index)
+; - cozile de la case trebuie implementate folosind noul TDA queue
+
+; closed = 0 ==> casa deschisa
+; closed = 1 ==> casa inchisa
+(define-struct counter (index tt et closed queue) #:transparent)
+
+(define (empty-counter index)
+  (make-counter index 0 0 0 empty-queue))
+
+(define (check-counter x acc index f)
+  (cond
+    ((equal? (counter-index x) index) (append acc (list (f x))))
+    (else (append acc (list x)))))
+
+(define (update f counters index)
+  (foldl (lambda (x acc) (check-counter x acc index f)) '() counters))
+
+(define (tt+ minutes)
+  (lambda (x)
+      (make-counter (counter-index x) (+ minutes (counter-tt x)) (counter-et x) (counter-closed x) (counter-queue x))))
+
+(define (et+ minutes)
+    (lambda (x)
+      (make-counter (counter-index x) (counter-tt x) (+ minutes (counter-et x)) (counter-closed x) (counter-queue x))))
+
+
+(define (verify-et counter queue name n-items)
+  (cond
+    ((equal? #t (queue-empty? queue)) (+ n-items (counter-et counter)))
+    (else (counter-et counter))
+    ))
+
+(define (add-to-counter name items)    
+  (λ (C)                               
+    (make-counter (counter-index C) (+ (counter-tt C) items)
+                  (verify-et C (counter-queue C) name items) (counter-closed C) (enqueue (cons name items) (counter-queue C)))))
+
+
+(define (time-helper counters f-index f-time x y)
+ (cond
+    ((null? counters) (cons x y))
+    
+    ((< (f-time (car counters)) y)
+     (time-helper (cdr counters) f-index f-time (f-index (car counters)) (f-time (car counters))))
+    
+    ((and (equal? (f-time (car counters)) y) (< (f-index (car counters)) x))
+     (time-helper (cdr counters) f-index f-time (f-index (car counters)) (f-time (car counters))))
+    
+    (else (time-helper (cdr counters) f-index f-time x y))))
+
+(define min-tt
+  (lambda (counters)
+    (time-helper counters counter-index counter-tt (counter-index (car counters)) (counter-tt (car counters)))))
+
+(define (min-et counters)
+  (time-helper counters counter-index counter-et (counter-index (car counters)) (counter-et (car counters))))
+
+(define (update-tt old-tt et products)
+  (cond
+    ((equal? 0 et) old-tt)
+    ((> et products) (- old-tt et))
+    (else (- old-tt products))))
+
+(define (one-element-in-queue? C)
+  (cond
+    ((or (and (equal? 1 (queue-size-l (counter-queue C)))
+              (equal? 0 (queue-size-r (counter-queue C))))
+         (and (equal? 0 (queue-size-l (counter-queue C)))
+              (equal? 1 (queue-size-r (counter-queue C))))) #t)
+    (else #f)))
+
+(define (remove-first-from-counter C)  
+  (cond
+    ((equal? #t (queue-empty? (counter-queue C))) C)
+    
+    ((equal? #t (one-element-in-queue? C))
+     (make-counter (counter-index C) (update-tt (counter-tt C) (counter-et C) (cdr (top (counter-queue C))))
+      0 (counter-closed C) (dequeue (counter-queue C))))
+    
+    (else (make-counter (counter-index C) (update-tt (counter-tt C) (counter-et C) (cdr (top (counter-queue C))))
+                        (cdr (top (dequeue (counter-queue C)))) (counter-closed C) (dequeue (counter-queue C))))))
+
+
+(define (verify-times C minutes)
+  (cond
+    ((< minutes (counter-et C))
+     (make-counter (counter-index C) (- (counter-tt C) minutes) (- (counter-et C) minutes) (counter-closed C) (counter-queue C)))
+    (else (make-counter (counter-index C) 0 0 (counter-closed C) (counter-queue C)))
+    ))
+
+(define (pass-time-through-counter minutes)
+  (λ (C)
+    (cond
+      ((equal? #t (queue-empty? (counter-queue C))) (verify-times C minutes))
+      ((and (> minutes (counter-et C)) (> minutes (counter-tt C))) (make-counter (counter-index C) 0 0 (counter-queue C)))
+      ((and (<= minutes (counter-tt C)) (> minutes (counter-et C)))
+       (make-counter (counter-index C) (- (counter-tt C) minutes) 0 (counter-closed C) (counter-queue C)))
+      (else (make-counter (counter-index C) (- (counter-tt C) minutes) (- (counter-et C) minutes)
+                          (counter-closed C) (counter-queue C))))))
+
+  
+(define close-counter
+  (lambda (C)
+    (make-counter (counter-index C) (counter-tt C) (counter-et C) 1 (counter-queue C))))
+
+; TODO
+; Implementați funcția care simulează fluxul clienților pe la case.
+; ATENȚIE: Față de etapa 3, apare un nou tip de cerere, așadar
+; requests conține 5 tipuri de cereri (cele moștenite din etapa 3 plus una nouă):
+;   - (<name> <n-items>) - persoana <name> trebuie așezată la coadă la o casă              (ca înainte)
+;   - (delay <index> <minutes>) - casa <index> este întârziată cu <minutes> minute         (ca înainte)
+;   - (ensure <average>) - cât timp tt-ul mediu al caselor este mai mare decât
+;                          <average>, se adaugă case fără restricții (case slow)           (ca înainte)
+;   - <x> - trec <x> minute de la ultima cerere, iar starea caselor se actualizează
+;           corespunzător (cu efect asupra câmpurilor tt, et, queue)                       (ca înainte)
+;   - (close <index>) - casa index este închisă                                            (   NOU!   )
+; Sistemul trebuie să proceseze cele 5 tipuri de cereri în ordine, astfel:
+; - persoanele vor fi distribuite la casele DESCHISE cu tt minim; nu se va întâmpla
+;   niciodată ca o persoană să nu poată fi distribuită la nicio casă                       (mică modificare)
+; - când o casă suferă o întârziere, tt-ul și et-ul ei cresc (chiar dacă nu are clienți);
+;   nu aplicați vreun tratament special caselor închise                                    (ca înainte)
+; - tt-ul mediu (ttmed) se calculează pentru toate casele DESCHISE, 
+;   iar la nevoie veți adăuga case slow una câte una, până când ttmed <= <average>         (mică modificare)
+; - când timpul prin sistem avansează cu <x> minute, tt-ul, et-ul și queue-ul tuturor 
+;   caselor se actualizează pentru a reflecta trecerea timpului; dacă unul sau mai mulți 
+;   clienți termină de stat la coadă, ieșirile lor sunt contorizate în ordine cronologică. (ca înainte)
+; - când o casă se închide, ea nu mai primește clienți noi; clienții care erau deja acolo
+;   avansează normal, până la ieșirea din supermarket                                    
+; Rezultatul funcției serve va fi o pereche cu punct între:
+; - lista sortată cronologic a clienților care au părăsit supermarketul:
+;   - fiecare element din listă va avea forma (index_casă . nume)
+;   - dacă mai mulți clienți ies simultan, sortați-i crescător după indexul casei
+; - lista cozilor (de la case DESCHISE sau ÎNCHISE) care încă au clienți:
+;   - fiecare element va avea forma (index_casă . coadă) (coada este de tip queue)
+;   - lista este sortată după indexul casei
+
+(define (serve-helper finished requests fast-counters slow-counters)
+
+  (define (update-time index minutes counters)
+    (update (et+ minutes) (update (tt+ minutes) counters index) index))
+  
+  (define (add-delay index minutes)
+    (cond
+      ((<= index (counter-index (last fast-counters)))
+       (serve-helper finished (cdr requests) (update-time index minutes fast-counters) slow-counters))
+      (else (serve-helper finished (cdr requests) fast-counters (update-time index minutes slow-counters)))))
+
+
+  (define (verify-min-tt req name n-items fast slow)
+    (cond
+      ((<= (car (min-tt (filter (lambda (x) (equal? 0 (counter-closed x))) (append fast slow)))) (counter-index (last fast)))
+       (serve-helper finished (cdr req) (update (add-to-counter name n-items) fast
+                                         (car (min-tt (filter (lambda (x) (equal? 0 (counter-closed x))) (append fast slow))))) slow))
+      (else
+       (serve-helper finished (cdr req) fast (update (add-to-counter name n-items) slow
+                                             (car (min-tt (filter (lambda (x) (equal? 0 (counter-closed x))) (append fast slow)))))))))
+
+  (define (distribute name n-items)
+    (cond
+      ((<= n-items ITEMS)
+       (verify-min-tt requests name n-items fast-counters slow-counters))
+      (else
+       (serve-helper finished (cdr requests) fast-counters
+                     (update (add-to-counter name n-items) slow-counters
+                         (car (min-tt (filter (lambda (x) (equal? 0 (counter-closed x))) slow-counters))))))))
+
+
+  (define (check-fast-slow-close index fast slow)
+    (cond
+      ((<= index (counter-index (last fast)))
+       (serve-helper finished (cdr requests) (update close-counter fast index) slow))
+      (else (serve-helper finished (cdr requests) fast (update close-counter slow index)))))
+
+  
+  (if (null? requests)
+      (cons finished (foldl (lambda (x acc) (append acc (list (cons (counter-index x) (counter-queue x))))) null
+       (filter (lambda (x) (equal? #f (queue-empty? (counter-queue x))))
+               (sort (append fast-counters slow-counters) (lambda (x y) (< (counter-index x) (counter-index y)))))))
+      (match (car requests)
+        [(list 'delay index minutes) (add-delay index minutes)]
+        [(list 'ensure average) (ensure-necessity average finished requests fast-counters slow-counters)]
+        [(list 'close index) (check-fast-slow-close index fast-counters slow-counters)]
+        [(list name n-items) (distribute name n-items)]
+        [number (wait number finished requests fast-counters slow-counters 0)]
+        )))
+
+(define (serve requests fast-counters slow-counters)
+  (serve-helper '() requests fast-counters slow-counters))
+
+(define (ttmed counters)
+    (/ (foldl (lambda (x acc) (+ acc (counter-tt x))) 0 counters) (length counters)))
+
+(define (ensure-necessity average finished requests fast slow)
+  (cond
+    ((<= (ttmed (filter (lambda (x) (equal? 0 (counter-closed x))) (append fast slow))) average)
+     (serve-helper finished (cdr requests) fast slow))
+    (else (ensure-necessity average finished requests fast (append slow (list (empty-counter (+ 1 (counter-index (last slow))))))))))
+
+(define (decrement-time counters et)
+  (foldl (lambda (x acc) (append acc (update (pass-time-through-counter et) (list x) (counter-index x)))) null counters))
+
+(define (check-client-size x acc)
+  (cond
+    ((and (equal? #f (queue-empty? (counter-queue x))) (equal? 0 (counter-et x)))
+     (append acc (update remove-first-from-counter (list x) (counter-index x))))
+    (else (append acc (list x)))))
+
+(define (remove-from-counter counters)
+  (foldl (lambda (x acc) (check-client-size x acc)) null counters))
+
+(define (fill finished counters)
+  (cond
+    ((null? counters) finished)
+    ((and (equal? 0 (counter-et (car counters))) (equal? #f (queue-empty? (counter-queue (car counters)))))
+     (fill (append finished (list (cons (counter-index (car counters)) (car (top (counter-queue (car counters))))))) (cdr counters)))
+    (else (fill finished (cdr counters)))))
+
+(define (check-for-removal minutes finished requests fast slow passed)
+  (wait minutes (fill finished (append fast slow)) requests (remove-from-counter fast) (remove-from-counter slow) passed))
+
+(define (right-min-et counters)
+  (cdr (min-et (filter (lambda (x) (equal? #f (queue-empty? (counter-queue x)))) counters))))
+
+ (define (wait minutes finished requests fast slow passed)
+   (cond
+     ((null? (filter (lambda (x) (equal? #f (queue-empty? (counter-queue x)))) (append fast slow)))
+      (serve-helper finished (cdr requests) (decrement-time fast (- minutes passed)) (decrement-time slow (- minutes passed))))
+     
+     ((> (right-min-et (append fast slow)) (- minutes passed))
+      (serve-helper finished (cdr requests) (decrement-time fast (- minutes passed)) (decrement-time slow (- minutes passed))))
+     
+     (else (check-for-removal minutes finished requests
+                         (decrement-time fast (right-min-et (append fast slow)))
+                         (decrement-time slow (right-min-et (append fast slow)))
+                         (+ passed (right-min-et (append fast slow)))))))
+
+
+#|(define (z x y)
+(if (or (null? x) (null? y))
+'()
+(cons (car x) (cons (car y) (z (cdr y) (cdr x))))))
+
+(define (zz-helper x y acc)
+  (if (or (null? x) (null? y))
+      (reverse acc)
+      (zz-helper (cdr y) (cdr x) (cons (car y) (cons (car x) acc)))))
+
+(define (zz x y)
+  (zz-helper x y '()))
+
+(define (two-sums L)
+  (cons (sum-of-list-nv0 L) (sum-of-list-nv1 L)))
+
+
+(define (sum-of-list-nv0 list)
+  (foldl (lambda (x result)
+           (cond
+             ((list? x) result)
+             (else (+ result x))))
+         0
+         list))
+
+(define (sum-of-list-nv1 list)
+  (foldl (lambda (x result)
+           (cond
+             ((list? x) (+ result (sum-of-list-nv0 x)))
+             (else result)))
+         0
+         list))
+
+(define (longest-list L)
+  (foldl (lambda (x acc)
+           (cond
+             ((and (list? x) (> (length x) (length L))) x)
+             (else acc)
+             )) '() L))
+
+(define (counter-helper2 L)
+  (foldl (lambda (x total)
+         (cond
+           ((list? x) (+ total (count-helper x)))
+           (else total)
+           )) 0 L))
+
+(define (count-helper L)
+  (foldl (lambda (x total)
+         (cond
+           ((null? x) (+ total 1))
+           (else total)
+           )) 0 L))
+
+
+(define (count-nulls L)
+  (+ (count-helper L) (counter-helper2 L)))
+
+
+(define (f x)
+  (let h ((x x) (r '()))
+    (cond ((null? x) (reverse r))
+          ((list? (car x)) (h (append (car x) (car x) (cdr x)) r))
+          (else (h (cdr x) (cons (car x) r))))))
+
+(define (ff x)
+  (cond
+    ((null? x) x)
+    ((list? (car x)) (ff (append (car x) (car x) (cdr x))))
+    (else (append (list (car x)) (ff (cdr x))))
+    ))
+
+(define (t x)
+  (cond ((or (< x 0) (even? x)) 0)
+        ((< x 5) (quotient x 2))
+        (else (+ (t (- x 2)) (t (- x 4))))))
+
+
+
+(define (sum2 first second)
+  (cond
+    ((or (< second 0) (even? second)) (+ first second))
+    ((< second 5) (+ first second))
+    (else (sum2 first (+ second (- second 4))))
+    ))
+
+(define (sum1 first second)
+  (cond
+    ((or (< first 0) (even? first)) (sum2 0 second))
+    ((< first 5) (sum2 (quotient first 2) second))
+    (else (sum1 (+ first (- first 2)) second))
+    ))
+
+(define (tt x)
+  (cond
+    ((or (< x 0) (even? x)) 0)
+    ((< x 5) (quotient x 2))
+    (else (sum1 x x))
+    ))
+
+(define (w x)
+  (let h ((x x) (r 0))
+    (if (null? x)
+        (* 2 r)
+        (add1 (h (cdr x) (if (even? (car x)) r (add1 r)))))))
+
+
+
+(define (stream-take s n)
+  (cond ((zero? n) '())
+        ((stream-empty? s) '())
+        (else (cons (stream-first s)
+                    (stream-take (stream-rest s) (- n 1))))))
+
+#|(define my-stream
+  (stream-cons '(1)
+               (stream-map (lambda (L) (let ([new (list (add1 (car L)))])
+                                         (append new L new)))
+                           my-stream)))|#
+
+
+(define my-stream
+  (stream-cons '(1)
+               (stream-map (lambda (L) (let ([new (list (add1 (car L)))])
+                                         (append new L new)))
+                           my-stream)))
+
+
+(define (count-smaller L)
+  (reverse (remove-duplicates (foldl (lambda (x acc) (append acc (list (cons x (length (filter (lambda (y) (< y x)) L)))))) '() L))))
+
+(define (mul x y)
+ (cond ((zero? y) 0)
+ ((odd? y) (+ x (mul x (- y 1))))
+ (else (+ (mul x (/ y 2)) (mul x (/ y 2))))))|#
+
+
+#|(define (f L)
+  (cond ((or (null? L) (null? (cdr L))) L)
+        ((equal? (car L) (cadr L)) (f (cdr L)))
+        (else (cons (car L) (f (cdr L))))))
+
+(define (ff-helper L acc)
+  (cond ((or (null? L) (null? (cdr L))) (append acc L))
+        ((equal? (car L) (cadr L)) (ff-helper (cdr L) acc))
+        (else (ff-helper (cdr L) (append acc (list (car L)))))))
+
+(define (ff L)
+  (ff-helper L '()))|#
+
+(define (f L)
+  (if (or (null? L) (null? (cdr L)))
+      L
+      (cons (max (car L) (cadr L))
+            (f (cddr L)))))
+
+(define (ff-helper L acc)
+  (cond
+    ((or (null? L) (null? (cdr L))) acc)
+    (else (ff-helper (cddr L) (append acc (list (max (car L) (cadr L))))))
+    ))
+
+(define (ff L)
+  (ff-helper L '()))
+
+
+(define (alternate L f1 f2)
+  (foldl (lambda (x acc) (cond
+                            ((null? acc) (append acc (list (f1 x))))
+                            ((even? (length acc)) (append acc (list (f1 x))))
+                            ((not (even? (length acc))) (append acc (list (f2 x))))))
+         '() L))
+
+(define (odd-pos L)
+  (filter (lambda (x) (not (equal? x 'remove)))
+          (foldl (lambda (x acc) (cond
+                           ((null? L) (append acc (list 'remove)))
+                           ((odd? (length acc)) (append acc (list x)))
+                           ((even? (length acc)) (append acc (list 'remove)))
+                           )) '() L)))
+
+(define (process-equality x y acc)
+  (cond
+    ((equal? x y) (append (append (reverse (cdr (reverse acc))) (list 'EQ)) (list y)))
+    ((< x y) (append (append (reverse (cdr (reverse acc))) (list 'LT)) (list y)))
+    ((> x y) (append (append (reverse (cdr (reverse acc))) (list 'GT)) (list y)))))
+
+(define (process-equality2 x y acc)
+  (cond
+    ((equal? x y) (append (reverse (cdr (reverse acc))) (list 'EQ)))
+    ((< x y) (append (reverse (cdr (reverse acc))) (list 'LT)))
+    ((> x y) (append (reverse (cdr (reverse acc))) (list 'GT)))))
+
+(define (compare-seq L)
+  (foldl (lambda (x acc) (cond
+                           ((null? acc) (append acc (list x)))
+                           ((equal? (length acc) (- (length L) 1)) (process-equality2 (last acc) x acc))
+                           ((>= (length acc) 1) (process-equality (last acc) x acc))
+                           )) '() L))
+
+(define (judge L)
+  (cond
+    ((equal? L (filter (lambda (x) (equal? x (first L))) L)) #t)
+    (else #f)))
+
+(define (eq-helper L1 L2)
+  (judge (foldl (lambda (x y acc) (append acc (list (+ x y)))) '() L1 L2)))
+
+(define (eq-sums? L)
+  (eq-helper L (reverse L)))
+
+(define (stream-take s n)
+  (cond ((zero? n) '())
+        ((stream-empty? s) '())
+        (else (cons (stream-first s)
+                    (stream-take (stream-rest s) (- n 1))))))
+
+(define (stream-zip-with f s1 s2)
+  (if (or (stream-empty? s1) (stream-empty? s2))
+      empty-stream
+      (stream-cons (f (stream-first s1) (stream-first s2))
+                   (stream-zip-with f (stream-rest s1) (stream-rest s2)))))
+
+(define (naturals-from n)
+  (let loop ((seed n))
+    (stream-cons seed (loop (add1 seed)))))
+
+(define naturals (naturals-from 0))
+
+
+
+(define multiples
+  (stream-cons naturals
+               (stream-map (lambda (s) (stream-zip-with + s naturals))
+                           multiples)))
+
+(define alternate2
+  (stream-zip-with (lambda (x y) (append (list x) (list y))) naturals (naturals-from 2)))
+
+(define pyramids
+  (stream-cons '(1)
+               (stream-map (λ (L)
+                             (append '(1) (map add1 L) '(1)))
+                           pyramids)))
+
+
+(define my-stream
+  (stream-cons '(1) (stream-map (lambda (L) (append (list (+ 1 (car L))) L (list (+ 1 (car L))))) my-stream)))
+
+(define binomial-stream
+  (stream-cons '(1)
+               (stream-map (lambda (L) (map + (append (list 0) L) (reverse (append (list 0) L)))) binomial-stream)))
+
+
+(define (partial-unions sets)
+  (letrec
+      ((out (stream-cons '() (stream-zip-with
+                                  (lambda (union set)
+                                    (append union (filter (lambda (x) (not (member x union))) set))) out sets)))) out))
+
+(define powers-stream
+  (stream-cons '(2)
+               (stream-map (lambda (L)
+                             (append (list (* (first L) (first L))) L (list (* (first L) (first L))))) powers-stream)))
+
+(define power-of-two-stream
+  (stream-cons '(2)
+               (stream-map (lambda (L) (append (list (* 2 (first L))) L (list (* 2 (first L))))) power-of-two-stream)))
+
+
+
+(define repeat-stream
+  (stream-cons '(1) (stream-cons '(1 1)
+               (stream-map (lambda (L) (append L '(1))) repeat-stream))))
+
+
+(define even-stream
+  (let loop ((n 0))
+    (stream-cons n (loop (+ n 2)))))
+
+(define (decide n)
+  (cond
+    ((even? n) (* -1 (+ n 1)))
+    (else (+ 1 (* -1 n)))
+    ))
+
+(define signs-stream
+  (let loop ((n 0))
+    (stream-cons n (loop (decide n)))))
+
+(define fibo-stream
+  (stream-cons 0 (stream-cons 1 (let loop ((x 0) (y 1))
+    (stream-cons (+ x y) (loop y (+ x y)))))))
+
+
+#| Probleme cu recursivitate |#
+
+#| V2021 a) |#
+
+(define (fa L)
+  (if (or (null? L) (null? (cdr L)))
+      L
+      (cons (max (car L) (cadr L))
+            (fa (cddr L)))))
+
+(define (fa-helper L acc)
+  (cond
+    ((or (null? L) (null? (cdr L))) acc)
+    (else (fa-helper (cddr L) (append acc (list (max (car L) (cadr L))))))
+    ))
+
+
+(define (fa-coada L)
+  (fa-helper L '()))
+
+#| V2021 b) |#
+
+(define (fb L)
+  (cond ((or (null? L) (null? (cdr L))) L)
+        ((equal? (car L) (cadr L)) (fb (cdr L)))
+        (else (cons (car L) (fb (cdr L))))))
+
+(define (fb-helper L acc)
+  (cond
+    ((or (null? L) (null? (cdr L))) (append acc L))
+    ((equal? (car L) (cadr L)) (fb-helper (cdr L) acc))
+    (else (fb-helper (cdr L) (append acc (list (car L)))))
+    ))
+
+
+(define (fb-coada L)
+  (fb-helper L '()))
+
+#| V2021 c) |#
+
+(define (fc L x)
+  (cond ((null? L) x)
+        ((null? (cdr L)) (+ x (car L)))
+        ((equal? (car L) (cadr L)) (fc (cdr L) x))
+        (else (fc (cdr L) (+ x (car L))))))
+
+(define (fc-stiva L)
+  (cond
+    ((null? L) 0)
+    ((null? (cdr L)) (car L))
+    ((equal? (car L) (cadr L)) (fc-stiva (cdr L)))
+    (else (+ (car L) (fc-stiva (cdr L))))
+    ))
+
+#| V2021 d) |#
+
+(define (fd L x)
+  (cond ((null? L) x)
+        ((> (car L) x) (fd (cdr L) x))
+        (else (+ (car L) (fd (cdr L) x)))))
+
+(define (fd-coada L x)
+  (cond
+    ((null? L) x)
+    ((> (car L) x) (fd-coada (cdr L) x))
+    (else (fd-coada (cdr L) (+ x (car L))))
+    ))
+
+
+#| V2020 d) |#
+
+(define (w x)
+  (let h ((x x) (r 0))
+    (if (null? x)
+        (* 2 r)
+        (add1 (h (cdr x) (if (even? (car x)) r (add1 r)))))))
+
+
+(define (ww-helper x acc)
+  (cond
+    ((null? x) acc)
+    (else (ww-helper (cdr x) (if (even? (car x)) (+ acc 1) (+ acc 3))))
+    ))
+
+
+(define (ww-coada x)
+  (ww-helper x 0))
+
+
+(define (how-many-small L x)
+  (length (filter (lambda (t) (< t x)) L)))
+
+
+(define (count-smaller L)
+  (foldl (lambda (x acc) (append acc (list (cons x (how-many-small L x))))) '() (remove-duplicates L)))
+
+(define (two-sums L)
+  (cons (foldl (lambda (x acc) (+ acc x)) 0 (filter (lambda (y) (not (list? y))) L))
+        (foldl (lambda (x acc) (cond
+                     ((null? x) 0)
+                     (else (+ acc (foldl (lambda (y acc2) (+ acc2 y)) 0 x))))) 0 (filter (lambda (y) (list? y)) L))
+))
+
+
+(define (duplicate-helper L acc)
+  (cond
+    ((null? L) acc)
+    (else (duplicate-helper (cdr L) (append acc (list (car L)) (list (car L)))))))
+
+
+(define (duplicate-coada L)
+  (duplicate-helper L '()))
+
+
+(define (duplicate-stiva L)
+  (cond
+    ((null? L) '())
+    (else (append (list (car L)) (list (car L)) (duplicate-stiva (cdr L))))))
+
+(define (remove-odd-pos L)
+  (filter (lambda (y) (not (equal? y 'remove)))(foldl (lambda (x acc) (cond
+                           ((null? acc) (append acc (list 'remove)))
+                           ((even? (length acc)) (append acc (list 'remove)))
+                           (else (append acc (list x))))) '() L)))
+
+
+
+
+

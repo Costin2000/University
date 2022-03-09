@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 27 12:39:51 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="intrare_0" SIGIS="undef" SIGNAME="External_Ports_intrare_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memoryBuffer_1" PORT="intrare"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="a_0" SIGIS="undef" SIGNAME="External_Ports_a_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ANDGate_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="b_0" SIGIS="undef" SIGNAME="External_Ports_b_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ANDGate_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memoryBuffer_0" PORT="clk"/>
+        <CONNECTION INSTANCE="memoryBuffer_1" PORT="clk"/>
+        <CONNECTION INSTANCE="memoryBuffer_3" PORT="clk"/>
+        <CONNECTION INSTANCE="memoryBuffer_2" PORT="clk"/>
+        <CONNECTION INSTANCE="memoryBuffer_4" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memoryBuffer_0" PORT="reset"/>
+        <CONNECTION INSTANCE="memoryBuffer_1" PORT="reset"/>
+        <CONNECTION INSTANCE="memoryBuffer_3" PORT="reset"/>
+        <CONNECTION INSTANCE="memoryBuffer_2" PORT="reset"/>
+        <CONNECTION INSTANCE="memoryBuffer_4" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="enable_0" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memoryBuffer_0" PORT="enable"/>
+        <CONNECTION INSTANCE="memoryBuffer_1" PORT="enable"/>
+        <CONNECTION INSTANCE="memoryBuffer_3" PORT="enable"/>
+        <CONNECTION INSTANCE="memoryBuffer_2" PORT="enable"/>
+        <CONNECTION INSTANCE="memoryBuffer_4" PORT="enable"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="iesire_0" SIGIS="undef" SIGNAME="memoryBuffer_4_iesire">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memoryBuffer_4" PORT="iesire"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/ANDGate_0" HWVERSION="1.0" INSTANCE="ANDGate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ANDGate" VLNV="xilinx.com:module_ref:ANDGate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ANDGate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="External_Ports_a_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_b_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="ANDGate_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memoryBuffer_0" PORT="intrare"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ANDGate_1" HWVERSION="1.0" INSTANCE="ANDGate_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ANDGate" VLNV="xilinx.com:module_ref:ANDGate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ANDGate_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="memoryBuffer_0_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memoryBuffer_0" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="memoryBuffer_1_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memoryBuffer_1" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="ANDGate_1_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memoryBuffer_2" PORT="intrare"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ANDGate_2" HWVERSION="1.0" INSTANCE="ANDGate_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ANDGate" VLNV="xilinx.com:module_ref:ANDGate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ANDGate_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="memoryBuffer_3_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memoryBuffer_3" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="memoryBuffer_2_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memoryBuffer_2" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="ANDGate_2_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memoryBuffer_4" PORT="intrare"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/memoryBuffer_0" HWVERSION="1.0" INSTANCE="memoryBuffer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="memoryBuffer" VLNV="xilinx.com:module_ref:memoryBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_memoryBuffer_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="ANDGate_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ANDGate_0" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="memoryBuffer_0_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ANDGate_1" PORT="a"/>
+            <CONNECTION INSTANCE="memoryBuffer_3" PORT="intrare"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/memoryBuffer_1" HWVERSION="1.0" INSTANCE="memoryBuffer_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="memoryBuffer" VLNV="xilinx.com:module_ref:memoryBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_memoryBuffer_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="External_Ports_intrare_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="intrare_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="memoryBuffer_1_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ANDGate_1" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/memoryBuffer_2" HWVERSION="1.0" INSTANCE="memoryBuffer_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="memoryBuffer" VLNV="xilinx.com:module_ref:memoryBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_memoryBuffer_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="ANDGate_1_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ANDGate_1" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="memoryBuffer_2_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ANDGate_2" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/memoryBuffer_3" HWVERSION="1.0" INSTANCE="memoryBuffer_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="memoryBuffer" VLNV="xilinx.com:module_ref:memoryBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_memoryBuffer_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="memoryBuffer_0_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memoryBuffer_0" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="memoryBuffer_3_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ANDGate_2" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/memoryBuffer_4" HWVERSION="1.0" INSTANCE="memoryBuffer_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="memoryBuffer" VLNV="xilinx.com:module_ref:memoryBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_memoryBuffer_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="ANDGate_2_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ANDGate_2" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="memoryBuffer_4_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="iesire_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

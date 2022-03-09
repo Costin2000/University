@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab3S.srcs/sources_1/new/Automat.v" \
+"../../../../Lab3S.ip_user_files/bd/design_1/ip/design_1_Automat_0_0/sim/design_1_Automat_0_0.v" \
+"../../../../Lab3S.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../Lab3S.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../Lab3S.srcs/sim_1/new/test1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

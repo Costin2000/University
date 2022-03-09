@@ -1,0 +1,41 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.856407",
+   "Default View_TopLeft":"-592,-415",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port intrare_0 -pg 1 -lvl 0 -x -480 -y 60 -defaultsOSRD
+preplace port a_0 -pg 1 -lvl 0 -x -480 -y -100 -defaultsOSRD
+preplace port b_0 -pg 1 -lvl 0 -x -480 -y -70 -defaultsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -480 -y -210 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x -480 -y -190 -defaultsOSRD
+preplace port enable_0 -pg 1 -lvl 0 -x -480 -y -170 -defaultsOSRD
+preplace port iesire_0 -pg 1 -lvl 7 -x 1050 -y -10 -defaultsOSRD
+preplace inst ANDGate_0 -pg 1 -lvl 1 -x -350 -y -90 -defaultsOSRD
+preplace inst memoryBuffer_0 -pg 1 -lvl 2 -x -140 -y -70 -defaultsOSRD
+preplace inst memoryBuffer_1 -pg 1 -lvl 2 -x -140 -y 90 -defaultsOSRD
+preplace inst ANDGate_1 -pg 1 -lvl 3 -x 200 -y 50 -defaultsOSRD
+preplace inst memoryBuffer_2 -pg 1 -lvl 4 -x 410 -y 90 -defaultsOSRD
+preplace inst memoryBuffer_3 -pg 1 -lvl 4 -x 410 -y -110 -defaultsOSRD
+preplace inst ANDGate_2 -pg 1 -lvl 5 -x 670 -y -20 -defaultsOSRD
+preplace inst memoryBuffer_4 -pg 1 -lvl 6 -x 930 -y -10 -defaultsOSRD
+preplace netloc ANDGate_0_c 1 1 1 -250 -100n
+preplace netloc memoryBuffer_0_iesire 1 2 2 -40 -140 N
+preplace netloc memoryBuffer_1_iesire 1 2 1 -40 60n
+preplace netloc intrare_0_1 1 0 2 NJ 60 NJ
+preplace netloc a_0_1 1 0 1 N -100
+preplace netloc b_0_1 1 0 1 -460 -80n
+preplace netloc clk_0_1 1 0 6 NJ -210 -240J -170 N -170 310 180 N 180 760
+preplace netloc reset_0_1 1 0 6 NJ -190 -260J -160 N -160 300 0 510 50 770
+preplace netloc enable_0_1 1 0 6 NJ -170 -270J 180 N 180 290 190 N 190 780
+preplace netloc ANDGate_1_c 1 3 1 280 50n
+preplace netloc memoryBuffer_3_iesire 1 4 1 520 -110n
+preplace netloc memoryBuffer_2_iesire 1 4 1 520 -10n
+preplace netloc ANDGate_2_c 1 5 1 750 -40n
+preplace netloc memoryBuffer_4_iesire 1 6 1 N -10
+levelinfo -pg 1 -480 -350 -140 200 410 670 930 1050
+pagesize -pg 1 -db -bbox -sgen -600 -370 1160 210
+"
+}
+

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 26 15:46:50 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="y_0" SIGIS="undef" SIGNAME="External_Ports_y_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruBuffer_1" PORT="y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock_0" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruBuffer_0" PORT="clock"/>
+        <CONNECTION INSTANCE="registruBuffer_1" PORT="clock"/>
+        <CONNECTION INSTANCE="registruBuffer_3" PORT="clock"/>
+        <CONNECTION INSTANCE="registruBuffer_2" PORT="clock"/>
+        <CONNECTION INSTANCE="registruBuffer_4" PORT="clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruBuffer_0" PORT="reset"/>
+        <CONNECTION INSTANCE="registruBuffer_1" PORT="reset"/>
+        <CONNECTION INSTANCE="registruBuffer_3" PORT="reset"/>
+        <CONNECTION INSTANCE="registruBuffer_2" PORT="reset"/>
+        <CONNECTION INSTANCE="registruBuffer_4" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="enable_0" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruBuffer_0" PORT="enable"/>
+        <CONNECTION INSTANCE="registruBuffer_1" PORT="enable"/>
+        <CONNECTION INSTANCE="registruBuffer_3" PORT="enable"/>
+        <CONNECTION INSTANCE="registruBuffer_2" PORT="enable"/>
+        <CONNECTION INSTANCE="registruBuffer_4" PORT="enable"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="result_0" SIGIS="undef" SIGNAME="registruBuffer_4_result">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruBuffer_4" PORT="result"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="x_0" SIGIS="undef" SIGNAME="External_Ports_x_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="gateXOR_0" PORT="x"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="t_0" SIGIS="undef" SIGNAME="External_Ports_t_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="gateXOR_0" PORT="t"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/gateXOR_0" HWVERSION="1.0" INSTANCE="gateXOR_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="gateXOR" VLNV="xilinx.com:module_ref:gateXOR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_gateXOR_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="x" SIGIS="undef" SIGNAME="External_Ports_x_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="x_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t" SIGIS="undef" SIGNAME="External_Ports_t_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="t_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="result" SIGIS="undef" SIGNAME="gateXOR_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruBuffer_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/gateXOR_1" HWVERSION="1.0" INSTANCE="gateXOR_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="gateXOR" VLNV="xilinx.com:module_ref:gateXOR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_gateXOR_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="x" SIGIS="undef" SIGNAME="registruBuffer_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruBuffer_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t" SIGIS="undef" SIGNAME="registruBuffer_1_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruBuffer_1" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="result" SIGIS="undef" SIGNAME="gateXOR_1_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruBuffer_2" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/gateXOR_2" HWVERSION="1.0" INSTANCE="gateXOR_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="gateXOR" VLNV="xilinx.com:module_ref:gateXOR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_gateXOR_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="x" SIGIS="undef" SIGNAME="registruBuffer_3_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruBuffer_3" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="t" SIGIS="undef" SIGNAME="registruBuffer_2_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruBuffer_2" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="result" SIGIS="undef" SIGNAME="gateXOR_2_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruBuffer_4" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruBuffer_0" HWVERSION="1.0" INSTANCE="registruBuffer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruBuffer" VLNV="xilinx.com:module_ref:registruBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_registruBuffer_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="gateXOR_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gateXOR_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="result" SIGIS="undef" SIGNAME="registruBuffer_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gateXOR_1" PORT="x"/>
+            <CONNECTION INSTANCE="registruBuffer_3" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruBuffer_1" HWVERSION="1.0" INSTANCE="registruBuffer_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruBuffer" VLNV="xilinx.com:module_ref:registruBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_registruBuffer_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="External_Ports_y_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="y_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="result" SIGIS="undef" SIGNAME="registruBuffer_1_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gateXOR_1" PORT="t"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruBuffer_2" HWVERSION="1.0" INSTANCE="registruBuffer_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruBuffer" VLNV="xilinx.com:module_ref:registruBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_registruBuffer_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="gateXOR_1_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gateXOR_1" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="result" SIGIS="undef" SIGNAME="registruBuffer_2_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gateXOR_2" PORT="t"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruBuffer_3" HWVERSION="1.0" INSTANCE="registruBuffer_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruBuffer" VLNV="xilinx.com:module_ref:registruBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_registruBuffer_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="registruBuffer_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruBuffer_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="result" SIGIS="undef" SIGNAME="registruBuffer_3_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gateXOR_2" PORT="x"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruBuffer_4" HWVERSION="1.0" INSTANCE="registruBuffer_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruBuffer" VLNV="xilinx.com:module_ref:registruBuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_registruBuffer_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="gateXOR_2_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gateXOR_2" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="enable_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="result" SIGIS="undef" SIGNAME="registruBuffer_4_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="result_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,182 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.520747",
+   "Default View_TopLeft":"-7249,-2218",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port c_in_0 -pg 1 -lvl 0 -x -7390 -y -1030 -defaultsOSRD
+preplace port carry4_0 -pg 1 -lvl 13 -x -2960 -y -550 -defaultsOSRD
+preplace port GUAT_G_0 -pg 1 -lvl 13 -x -2960 -y -900 -defaultsOSRD
+preplace port GUAT_P_0 -pg 1 -lvl 13 -x -2960 -y -880 -defaultsOSRD
+preplace portBus a_0 -pg 1 -lvl 0 -x -7390 -y -1070 -defaultsOSRD
+preplace portBus b_0 -pg 1 -lvl 0 -x -7390 -y -1050 -defaultsOSRD
+preplace portBus sum_0 -pg 1 -lvl 13 -x -2960 -y -200 -defaultsOSRD
+preplace inst sumator_complet_1bit_0 -pg 1 -lvl 7 -x -4960 -y -1440 -defaultsOSRD
+preplace inst sumator_complet_1bit_1 -pg 1 -lvl 7 -x -4960 -y -1250 -defaultsOSRD
+preplace inst sumator_complet_1bit_2 -pg 1 -lvl 7 -x -4960 -y -1110 -defaultsOSRD
+preplace inst sumator_complet_1bit_3 -pg 1 -lvl 7 -x -4960 -y -920 -defaultsOSRD
+preplace inst UAT_0 -pg 1 -lvl 9 -x -4330 -y -1200 -defaultsOSRD
+preplace inst modul_concat_sum_0 -pg 1 -lvl 8 -x -4610 -y -1190 -defaultsOSRD
+preplace inst GUAT_0 -pg 1 -lvl 11 -x -3460 -y -880 -defaultsOSRD
+preplace inst sumator_complet_1bit_4 -pg 1 -lvl 3 -x -6500 -y -1430 -defaultsOSRD
+preplace inst sumator_complet_1bit_5 -pg 1 -lvl 3 -x -6500 -y -1270 -defaultsOSRD
+preplace inst sumator_complet_1bit_6 -pg 1 -lvl 3 -x -6500 -y -1090 -defaultsOSRD
+preplace inst sumator_complet_1bit_7 -pg 1 -lvl 3 -x -6500 -y -900 -defaultsOSRD
+preplace inst modul_concat_sum_1 -pg 1 -lvl 4 -x -6130 -y -1250 -defaultsOSRD
+preplace inst modul_defalcare_0 -pg 1 -lvl 2 -x -7000 -y -1220 -defaultsOSRD
+preplace inst modul_defalcare_1 -pg 1 -lvl 2 -x -7000 -y -810 -defaultsOSRD
+preplace inst UAT_1 -pg 1 -lvl 5 -x -5870 -y -1260 -defaultsOSRD
+preplace inst sumator_complet_1bit_8 -pg 1 -lvl 3 -x -6500 -y -710 -defaultsOSRD
+preplace inst sumator_complet_1bit_9 -pg 1 -lvl 3 -x -6500 -y -540 -defaultsOSRD
+preplace inst sumator_complet_1bit_10 -pg 1 -lvl 3 -x -6500 -y -350 -defaultsOSRD
+preplace inst sumator_complet_1bit_11 -pg 1 -lvl 3 -x -6500 -y -180 -defaultsOSRD
+preplace inst modul_concat_sum_2 -pg 1 -lvl 4 -x -6130 -y -540 -defaultsOSRD
+preplace inst UAT_2 -pg 1 -lvl 5 -x -5870 -y -550 -defaultsOSRD
+preplace inst modul_input_0 -pg 1 -lvl 1 -x -7250 -y -1050 -defaultsOSRD
+preplace inst sumator_complet_1bit_12 -pg 1 -lvl 7 -x -4960 -y -670 -defaultsOSRD
+preplace inst sumator_complet_1bit_13 -pg 1 -lvl 7 -x -4960 -y -510 -defaultsOSRD
+preplace inst sumator_complet_1bit_14 -pg 1 -lvl 7 -x -4960 -y -340 -defaultsOSRD
+preplace inst sumator_complet_1bit_15 -pg 1 -lvl 7 -x -4960 -y -190 -defaultsOSRD
+preplace inst modul_concat_sum_3 -pg 1 -lvl 8 -x -4610 -y -450 -defaultsOSRD
+preplace inst UAT_3 -pg 1 -lvl 9 -x -4330 -y -460 -defaultsOSRD
+preplace inst splitter_GUAT_0 -pg 1 -lvl 12 -x -3150 -y -550 -defaultsOSRD
+preplace inst modul_concat_uat_0 -pg 1 -lvl 10 -x -3990 -y -820 -defaultsOSRD
+preplace inst defalcare_UAT_0 -pg 1 -lvl 10 -x -3990 -y -1130 -defaultsOSRD
+preplace inst defalcare_UAT_1 -pg 1 -lvl 6 -x -5600 -y -1230 -defaultsOSRD
+preplace inst defalcare_UAT_2 -pg 1 -lvl 6 -x -5600 -y -500 -defaultsOSRD
+preplace inst defalcare_UAT_3 -pg 1 -lvl 10 -x -3990 -y -430 -defaultsOSRD
+preplace inst modul_refacere_suma_0 -pg 1 -lvl 11 -x -3460 -y -200 -defaultsOSRD
+preplace netloc sumator_complet_1bit_0_p 1 7 1 -4750 -1460n
+preplace netloc sumator_complet_1bit_1_p 1 7 1 -4790 -1270n
+preplace netloc sumator_complet_1bit_2_p 1 7 1 -4840 -1220n
+preplace netloc sumator_complet_1bit_3_p 1 7 1 -4810 -1200n
+preplace netloc sumator_complet_1bit_0_g 1 7 1 -4770 -1440n
+preplace netloc sumator_complet_1bit_1_g 1 7 1 -4800 -1250n
+preplace netloc sumator_complet_1bit_2_g 1 7 1 -4800 -1140n
+preplace netloc sumator_complet_1bit_3_g 1 7 1 -4790 -1120n
+preplace netloc sumator_complet_1bit_4_p 1 3 1 -6320 -1450n
+preplace netloc sumator_complet_1bit_5_p 1 3 1 -6350 -1300n
+preplace netloc sumator_complet_1bit_6_p 1 3 1 -6320 -1280n
+preplace netloc sumator_complet_1bit_7_p 1 3 1 -6300 -1260n
+preplace netloc sumator_complet_1bit_4_g 1 3 1 -6390 -1430n
+preplace netloc sumator_complet_1bit_5_g 1 3 1 -6260 -1270n
+preplace netloc sumator_complet_1bit_6_g 1 3 1 -6310 -1200n
+preplace netloc sumator_complet_1bit_7_g 1 3 1 -6260 -1180n
+preplace netloc modul_concat_sum_0_g_out 1 8 1 N -1200
+preplace netloc modul_concat_sum_0_p_out 1 8 1 N -1180
+preplace netloc modul_concat_sum_1_g_out 1 4 1 N -1260
+preplace netloc modul_concat_sum_1_p_out 1 4 1 N -1240
+preplace netloc sumator_complet_1bit_8_p 1 3 1 -6370 -730n
+preplace netloc sumator_complet_1bit_9_p 1 3 1 -6310 -590n
+preplace netloc sumator_complet_1bit_10_p 1 3 1 -6290 -570n
+preplace netloc sumator_complet_1bit_11_p 1 3 1 -6270 -550n
+preplace netloc sumator_complet_1bit_8_g 1 3 1 -6380 -710n
+preplace netloc sumator_complet_1bit_9_g 1 3 1 -6390 -540n
+preplace netloc sumator_complet_1bit_10_g 1 3 1 -6260 -490n
+preplace netloc sumator_complet_1bit_11_g 1 3 1 -6250 -470n
+preplace netloc modul_concat_sum_2_g_out 1 4 1 N -550
+preplace netloc modul_concat_sum_2_p_out 1 4 1 N -530
+preplace netloc modul_defalcare_0_a1 1 2 5 -6690 -1350 -6380J -1430 NJ -1430 N -1430 -5410
+preplace netloc modul_defalcare_0_a2 1 2 5 -6700J -1190 -6370J -1420 NJ -1420 N -1420 -5330
+preplace netloc modul_defalcare_0_a3 1 2 5 -6710J -1180 -6330J -1380 NJ -1380 N -1380 -5370
+preplace netloc modul_defalcare_0_a4 1 2 5 -6720J -1170 -6340J -1400 NJ -1400 N -1400 -5360
+preplace netloc modul_defalcare_0_a5 1 2 1 -6860 -1450n
+preplace netloc modul_defalcare_0_a6 1 2 1 -6810 -1290n
+preplace netloc modul_defalcare_0_a7 1 2 1 -6730 -1250n
+preplace netloc modul_defalcare_0_a8 1 2 1 -6740 -1230n
+preplace netloc modul_defalcare_0_a9 1 2 1 -6780 -1210n
+preplace netloc modul_defalcare_0_a10 1 2 1 -6810 -1190n
+preplace netloc modul_defalcare_0_a11 1 2 1 -6840 -1170n
+preplace netloc modul_defalcare_0_a12 1 2 1 -6860 -1150n
+preplace netloc modul_input_0_a_out 1 1 1 -7110 -1220n
+preplace netloc modul_input_0_b_out 1 1 1 -7130 -1050n
+preplace netloc a_0_1 1 0 1 N -1070
+preplace netloc b_0_1 1 0 1 N -1050
+preplace netloc c_in_0_1 1 0 1 N -1030
+preplace netloc modul_defalcare_1_a1 1 2 5 -6880 -1550 NJ -1550 NJ -1550 N -1550 -5300
+preplace netloc modul_defalcare_1_a2 1 2 5 -6850 -1530 NJ -1530 NJ -1530 N -1530 -5310
+preplace netloc modul_defalcare_1_a3 1 2 5 -6790 -990 -6290J -1080 NJ -1080 N -1080 -5380
+preplace netloc modul_defalcare_1_a4 1 2 5 -6890 -980 NJ -980 NJ -980 N -980 -5430
+preplace netloc modul_defalcare_1_a5 1 2 1 -6800 -1430n
+preplace netloc modul_defalcare_1_a6 1 2 1 -6770 -1270n
+preplace netloc modul_defalcare_1_a7 1 2 1 -6750 -1090n
+preplace netloc modul_defalcare_1_a8 1 2 1 -6880 -900n
+preplace netloc modul_defalcare_1_a9 1 2 1 -6850 -800n
+preplace netloc modul_defalcare_1_a10 1 2 1 -6870 -780n
+preplace netloc modul_defalcare_1_a11 1 2 1 -6880 -760n
+preplace netloc modul_defalcare_1_a12 1 2 1 -6890 -740n
+preplace netloc modul_input_0_c_in_out 1 1 10 -7120 -1540 NJ -1540 -6320J -1510 NJ -1510 N -1510 -5290 -1530 N -1530 -4480 -1280 N -1280 -3710
+preplace netloc sumator_complet_1bit_12_p 1 7 1 -4750 -690n
+preplace netloc sumator_complet_1bit_13_p 1 7 1 -4800 -530n
+preplace netloc sumator_complet_1bit_14_p 1 7 1 -4780 -480n
+preplace netloc sumator_complet_1bit_15_p 1 7 1 -4770 -460n
+preplace netloc sumator_complet_1bit_12_g 1 7 1 -4790 -670n
+preplace netloc sumator_complet_1bit_13_g 1 7 1 -4810 -510n
+preplace netloc sumator_complet_1bit_14_g 1 7 1 -4760 -400n
+preplace netloc sumator_complet_1bit_15_g 1 7 1 -4750 -380n
+preplace netloc modul_concat_sum_3_g_out 1 8 1 N -460
+preplace netloc modul_concat_sum_3_p_out 1 8 1 N -440
+preplace netloc modul_defalcare_0_a13 1 2 5 -6790J -1010 -6270J -1000 NJ -1000 N -1000 -5410
+preplace netloc modul_defalcare_0_a14 1 2 5 -6830J -820 NJ -820 NJ -820 N -820 -5420
+preplace netloc modul_defalcare_0_a15 1 2 5 -6890J -1560 NJ -1560 NJ -1560 N -1560 -5350
+preplace netloc modul_defalcare_0_a16 1 2 5 -6820J -1000 -6280J -990 NJ -990 N -990 -5440
+preplace netloc modul_defalcare_1_a13 1 2 5 -6720 -810 NJ -810 NJ -810 N -810 -5430
+preplace netloc modul_defalcare_1_a14 1 2 5 -6690J -790 -6380J -760 NJ -760 N -760 -5450
+preplace netloc modul_defalcare_1_a15 1 2 5 -6700J -800 NJ -800 NJ -800 N -800 -5460
+preplace netloc modul_defalcare_1_a16 1 2 5 -6760J -1520 NJ -1520 NJ -1520 N -1520 -5400
+preplace netloc GUAT_0_carry_GUAT 1 11 1 -3310 -860n
+preplace netloc splitter_GUAT_0_carry4 1 12 1 -2990 -550n
+preplace netloc GUAT_0_GUAT_G 1 11 2 N -900 N
+preplace netloc GUAT_0_GUAT_P 1 11 2 N -880 N
+preplace netloc splitter_GUAT_0_carry1 1 2 11 -6640 -1510 -6390 -1500 -6010 -1500 NJ -1500 -5360 -1520 NJ -1520 NJ -1520 NJ -1520 N -1520 N -1520 -2990
+preplace netloc splitter_GUAT_0_carry2 1 2 11 -6640 -630 -6350 -680 -6010 -770 NJ -770 N -770 NJ -770 NJ -770 -4190J -670 N -670 N -670 -3000
+preplace netloc splitter_GUAT_0_carry3 1 6 7 -5290 -760 N -760 -4480 -640 NJ -640 N -640 N -640 -3010
+preplace netloc UAT_0_UAT_G 1 9 1 -4150 -1220n
+preplace netloc UAT_0_UAT_P 1 9 1 -4120 -1200n
+preplace netloc UAT_1_UAT_G 1 5 5 -5720J -1310 -5380 -1330 -4790J -1350 NJ -1350 -4140
+preplace netloc UAT_1_UAT_P 1 5 5 -5730J -1320 -5390 -1360 NJ -1360 NJ -1360 -4110
+preplace netloc UAT_2_UAT_G 1 5 5 -5720 -780 N -780 NJ -780 NJ -780 -4180J
+preplace netloc UAT_2_UAT_P 1 5 5 -5730 -830 N -830 -4750J -850 NJ -850 NJ
+preplace netloc UAT_3_UAT_G 1 9 1 -4120 -750n
+preplace netloc UAT_3_UAT_P 1 9 1 -4160 -830n
+preplace netloc modul_concat_uat_0_uat_g 1 10 1 -3870 -880n
+preplace netloc modul_concat_uat_0_uat_p 1 10 1 -3860 -860n
+preplace netloc sumator_complet_1bit_0_sum 1 7 4 NJ -1420 NJ -1420 NJ -1420 -3700
+preplace netloc sumator_complet_1bit_1_sum 1 7 4 -4840J -1320 NJ -1320 NJ -1320 -3720
+preplace netloc sumator_complet_1bit_2_sum 1 7 4 -4750J -1050 NJ -1050 NJ -1050 -3750
+preplace netloc sumator_complet_1bit_3_sum 1 7 4 -4750J -950 NJ -950 NJ -950 -3760
+preplace netloc sumator_complet_1bit_4_sum 1 3 8 NJ -1410 NJ -1410 NJ -1410 -5320 -1350 -4800J -1340 NJ -1340 NJ -1340 -3730
+preplace netloc sumator_complet_1bit_5_sum 1 3 8 -6360J -1390 NJ -1390 NJ -1390 -5340 -1340 -4840J -1330 NJ -1330 NJ -1330 -3740
+preplace netloc sumator_complet_1bit_6_sum 1 3 8 NJ -1070 NJ -1070 NJ -1070 -5380 -1000 NJ -1000 NJ -1000 NJ -1000 -3780
+preplace netloc sumator_complet_1bit_7_sum 1 3 8 -6250J -1010 NJ -1010 NJ -1010 N -1010 NJ -1010 NJ -1010 NJ -1010 -3770
+preplace netloc sumator_complet_1bit_8_sum 1 3 8 NJ -690 NJ -690 NJ -690 -5480 -750 NJ -750 -4490J -690 NJ -690 -3790
+preplace netloc sumator_complet_1bit_9_sum 1 3 8 -6330J -790 NJ -790 NJ -790 N -790 NJ -790 NJ -790 -4170J -680 -3800
+preplace netloc sumator_complet_1bit_10_sum 1 3 8 NJ -330 NJ -330 NJ -330 -5450 -100 -4800J -120 NJ -120 NJ -120 -3710
+preplace netloc sumator_complet_1bit_11_sum 1 3 8 N -160 NJ -160 NJ -160 -5460 -110 NJ -110 NJ -110 NJ -110 -3830J
+preplace netloc sumator_complet_1bit_12_sum 1 7 4 NJ -650 NJ -650 NJ -650 -3810
+preplace netloc sumator_complet_1bit_13_sum 1 7 4 -4840J -290 NJ -290 NJ -290 -3840
+preplace netloc sumator_complet_1bit_14_sum 1 7 4 -4850J -300 NJ -300 NJ -300 -3820
+preplace netloc sumator_complet_1bit_15_sum 1 7 4 -4800 -130 NJ -130 NJ -130 -3850J
+preplace netloc modul_refacere_suma_0_sum 1 11 2 NJ -200 NJ
+preplace netloc UAT_0_carry_UAT 1 9 1 -4130 -1180n
+preplace netloc defalcare_UAT_0_c_in_0 1 6 5 -5310 -1030 NJ -1030 NJ -1030 NJ -1030 -3770
+preplace netloc defalcare_UAT_0_c_in_1 1 6 5 -5290 -1020 NJ -1020 NJ -1020 NJ -1020 -3780
+preplace netloc defalcare_UAT_0_c_in_2 1 6 5 -5290 -840 -4770J -960 NJ -960 NJ -960 -3870
+preplace netloc UAT_1_carry_UAT 1 5 1 -5720 -1240n
+preplace netloc defalcare_UAT_1_c_in_0 1 2 5 -6660 -1600 NJ -1600 NJ -1600 NJ -1600 -5460
+preplace netloc defalcare_UAT_1_c_in_1 1 2 5 -6650 -1580 NJ -1580 NJ -1580 NJ -1580 -5480
+preplace netloc defalcare_UAT_1_c_in_2 1 2 5 -6680 -1590 NJ -1590 NJ -1590 NJ -1590 -5440
+preplace netloc UAT_2_carry_UAT 1 5 1 -5720 -530n
+preplace netloc defalcare_UAT_2_c_in_0 1 2 5 -6670 -1570 NJ -1570 NJ -1570 NJ -1570 -5470
+preplace netloc defalcare_UAT_2_c_in_1 1 2 5 -6640 -620 -6260J -670 NJ -670 NJ -670 -5480
+preplace netloc defalcare_UAT_2_c_in_2 1 2 5 -6640 -100 NJ -100 NJ -100 NJ -100 -5470
+preplace netloc UAT_3_carry_UAT 1 9 1 -4150 -440n
+preplace netloc defalcare_UAT_3_c_in_0 1 6 5 -5290 -430 -4820J -310 NJ -310 NJ -310 -3840
+preplace netloc defalcare_UAT_3_c_in_1 1 6 5 -5290 -420 -4830J -320 NJ -320 NJ -320 -3870
+preplace netloc defalcare_UAT_3_c_in_2 1 6 5 -5290 -90 NJ -90 NJ -90 NJ -90 -3860
+levelinfo -pg 1 -7390 -7250 -7000 -6500 -6130 -5870 -5600 -4960 -4610 -4330 -3990 -3460 -3150 -2960
+pagesize -pg 1 -db -bbox -sgen -7510 -1820 -2820 830
+"
+}
+0

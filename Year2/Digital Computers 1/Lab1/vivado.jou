@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 31 22:46:35 2021
+# Process ID: 26596
+# Current directory: X:/Facultate/CN/Automat
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3196 X:\Facultate\CN\Automat\Automat.xpr
+# Log file: X:/Facultate/CN/Automat/vivado.log
+# Journal file: X:/Facultate/CN/Automat\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project X:/Facultate/CN/Automat/Automat.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sim1.tcl
+close_sim

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="984fs"></ZoomEndTime>
+      <Cursor1Time time="8fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="182"></NameColumnWidth>
+      <ValueColumnWidth column_width="128"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="array" fp_name="/test2/a_0">
+      <obj_property name="ElementShortName">a_0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a_0[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test2/b_0">
+      <obj_property name="ElementShortName">b_0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b_0[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test2/c_in_0">
+      <obj_property name="ElementShortName">c_in_0</obj_property>
+      <obj_property name="ObjectShortName">c_in_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test2/sum_0">
+      <obj_property name="ElementShortName">sum_0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_0[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test2/GUAT_G_0">
+      <obj_property name="ElementShortName">GUAT_G_0</obj_property>
+      <obj_property name="ObjectShortName">GUAT_G_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test2/GUAT_P_0">
+      <obj_property name="ElementShortName">GUAT_P_0</obj_property>
+      <obj_property name="ObjectShortName">GUAT_P_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test2/carry4_0">
+      <obj_property name="ElementShortName">carry4_0</obj_property>
+      <obj_property name="ObjectShortName">carry4_0</obj_property>
+   </wvobject>
+</wave_config>

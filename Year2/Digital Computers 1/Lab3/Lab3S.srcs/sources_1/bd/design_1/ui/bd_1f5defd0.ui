@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.0",
+   "Default View_TopLeft":"-227,-75",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port Ron1_0 -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port Ron10_0 -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace port Ron5_0 -pg 1 -lvl 0 -x -10 -y 110 -defaultsOSRD
+preplace port Ron_rest1_0 -pg 1 -lvl 2 -x 270 -y 90 -defaultsOSRD
+preplace port Ron_rest5_0 -pg 1 -lvl 2 -x 270 -y 110 -defaultsOSRD
+preplace port SANDWICH_0 -pg 1 -lvl 2 -x 270 -y 70 -defaultsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace inst Automat_0 -pg 1 -lvl 1 -x 130 -y 90 -defaultsOSRD
+preplace netloc Ron1_0_1 1 0 1 NJ 90
+preplace netloc Ron10_0_1 1 0 1 NJ 130
+preplace netloc Ron5_0_1 1 0 1 NJ 110
+preplace netloc Automat_0_Ron_rest1 1 1 1 NJ 90
+preplace netloc Automat_0_Ron_rest5 1 1 1 NJ 110
+preplace netloc Automat_0_SANDWICH 1 1 1 NJ 70
+preplace netloc clk_0_1 1 0 1 NJ 50
+preplace netloc reset_0_1 1 0 1 NJ 70
+levelinfo -pg 1 -10 130 270
+pagesize -pg 1 -db -bbox -sgen -130 -10 420 200
+"
+}
+0

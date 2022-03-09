@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab3S/Lab3S.srcs/sources_1/new/Automat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Automat
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab3S/Lab3S.ip_user_files/bd/design_1/ip/design_1_Automat_0_0/sim/design_1_Automat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Automat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab3S/Lab3S.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab3S/Lab3S.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab3S/Lab3S.srcs/sim_1/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1

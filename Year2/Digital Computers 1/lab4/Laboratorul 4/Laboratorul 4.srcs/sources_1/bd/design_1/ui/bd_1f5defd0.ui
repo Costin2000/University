@@ -1,0 +1,183 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.732543",
+   "Default View_TopLeft":"-1457,-669",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port GUAT_G_0 -pg 1 -lvl 15 -x 3900 -y 100 -defaultsOSRD
+preplace port GUAT_P_0 -pg 1 -lvl 15 -x 3900 -y 120 -defaultsOSRD
+preplace port carry4_0 -pg 1 -lvl 15 -x 3900 -y 300 -defaultsOSRD
+preplace port c_in_0 -pg 1 -lvl 0 -x -1340 -y 120 -defaultsOSRD
+preplace portBus a_0 -pg 1 -lvl 0 -x -1340 -y -90 -defaultsOSRD
+preplace portBus b_0 -pg 1 -lvl 0 -x -1340 -y -70 -defaultsOSRD
+preplace portBus sum_out_0 -pg 1 -lvl 15 -x 3900 -y 840 -defaultsOSRD
+preplace inst sumator_complet_1bit_0 -pg 1 -lvl 7 -x 1210 -y -350 -defaultsOSRD
+preplace inst sumator_complet_1bit_1 -pg 1 -lvl 7 -x 1210 -y -190 -defaultsOSRD
+preplace inst sumator_complet_1bit_2 -pg 1 -lvl 7 -x 1210 -y -10 -defaultsOSRD
+preplace inst sumator_complet_1bit_3 -pg 1 -lvl 7 -x 1210 -y 150 -defaultsOSRD
+preplace inst modul_concatenare_0 -pg 1 -lvl 8 -x 1590 -y -190 -defaultsOSRD
+preplace inst UAT_0 -pg 1 -lvl 9 -x 2160 -y -200 -defaultsOSRD
+preplace inst sumator_complet_1bit_4 -pg 1 -lvl 3 -x -130 -y -500 -defaultsOSRD
+preplace inst sumator_complet_1bit_5 -pg 1 -lvl 3 -x -130 -y -360 -defaultsOSRD
+preplace inst sumator_complet_1bit_6 -pg 1 -lvl 3 -x -130 -y -220 -defaultsOSRD
+preplace inst sumator_complet_1bit_7 -pg 1 -lvl 3 -x -130 -y -80 -defaultsOSRD
+preplace inst modul_concatenare_1 -pg 1 -lvl 4 -x 190 -y -290 -defaultsOSRD
+preplace inst UAT_1 -pg 1 -lvl 5 -x 480 -y -280 -defaultsOSRD
+preplace inst sumator_complet_1bit_8 -pg 1 -lvl 3 -x -130 -y 260 -defaultsOSRD
+preplace inst sumator_complet_1bit_9 -pg 1 -lvl 3 -x -130 -y 410 -defaultsOSRD
+preplace inst sumator_complet_1bit_10 -pg 1 -lvl 3 -x -130 -y 590 -defaultsOSRD
+preplace inst sumator_complet_1bit_11 -pg 1 -lvl 3 -x -130 -y 740 -defaultsOSRD
+preplace inst modul_concatenare_2 -pg 1 -lvl 4 -x 190 -y 350 -defaultsOSRD
+preplace inst UAT_2 -pg 1 -lvl 5 -x 480 -y 370 -defaultsOSRD
+preplace inst sumator_complet_1bit_12 -pg 1 -lvl 7 -x 1210 -y 370 -defaultsOSRD
+preplace inst sumator_complet_1bit_13 -pg 1 -lvl 7 -x 1210 -y 540 -defaultsOSRD
+preplace inst sumator_complet_1bit_14 -pg 1 -lvl 7 -x 1210 -y 720 -defaultsOSRD
+preplace inst sumator_complet_1bit_15 -pg 1 -lvl 7 -x 1210 -y 880 -defaultsOSRD
+preplace inst modul_concatenare_3 -pg 1 -lvl 8 -x 1590 -y 480 -defaultsOSRD
+preplace inst UAT_3 -pg 1 -lvl 9 -x 2160 -y 440 -defaultsOSRD
+preplace inst extragere_0 -pg 1 -lvl 2 -x -630 -y -200 -defaultsOSRD
+preplace inst extragere_1 -pg 1 -lvl 2 -x -630 -y 350 -defaultsOSRD
+preplace inst GUAT_0 -pg 1 -lvl 13 -x 3430 -y 120 -defaultsOSRD
+preplace inst extragere_GUAT_0 -pg 1 -lvl 14 -x 3730 -y 270 -defaultsOSRD
+preplace inst intrare_0 -pg 1 -lvl 1 -x -890 -y -80 -defaultsOSRD
+preplace inst intrare_c_in_0 -pg 1 -lvl 1 -x -890 -y 120 -defaultsOSRD
+preplace inst concatenare_uat_0 -pg 1 -lvl 11 -x 2750 -y 120 -defaultsOSRD
+preplace inst split_UAT_0 -pg 1 -lvl 10 -x 2450 -y -120 -defaultsOSRD
+preplace inst split_UAT_1 -pg 1 -lvl 6 -x 780 -y -180 -defaultsOSRD
+preplace inst split_UAT_2 -pg 1 -lvl 6 -x 780 -y 490 -defaultsOSRD
+preplace inst split_UAT_3 -pg 1 -lvl 10 -x 2450 -y 510 -defaultsOSRD
+preplace inst concatenare_suma_0 -pg 1 -lvl 12 -x 3150 -y 840 -defaultsOSRD
+preplace netloc sumator_complet_1bit_0_p 1 7 1 1460 -370n
+preplace netloc sumator_complet_1bit_1_p 1 7 1 1320 -240n
+preplace netloc sumator_complet_1bit_2_p 1 7 1 1330 -220n
+preplace netloc sumator_complet_1bit_3_p 1 7 1 1350 -200n
+preplace netloc sumator_complet_1bit_0_g 1 7 1 1450 -350n
+preplace netloc sumator_complet_1bit_1_g 1 7 1 1440 -190n
+preplace netloc sumator_complet_1bit_2_g 1 7 1 1340 -140n
+preplace netloc sumator_complet_1bit_3_g 1 7 1 1380 -120n
+preplace netloc modul_concatenare_0_g_out 1 8 1 N -200
+preplace netloc modul_concatenare_0_p_out 1 8 1 N -180
+preplace netloc sumator_complet_1bit_4_p 1 3 1 40 -520n
+preplace netloc sumator_complet_1bit_5_p 1 3 1 20 -380n
+preplace netloc sumator_complet_1bit_6_p 1 3 1 -20 -320n
+preplace netloc sumator_complet_1bit_7_p 1 3 1 -10 -300n
+preplace netloc sumator_complet_1bit_4_g 1 3 1 30 -500n
+preplace netloc sumator_complet_1bit_5_g 1 3 1 0 -360n
+preplace netloc sumator_complet_1bit_6_g 1 3 1 0 -240n
+preplace netloc sumator_complet_1bit_7_g 1 3 1 20 -220n
+preplace netloc modul_concatenare_1_p_out 1 4 1 300 -280n
+preplace netloc modul_concatenare_1_g_out 1 4 1 310 -300n
+preplace netloc sumator_complet_1bit_8_p 1 3 1 30 240n
+preplace netloc sumator_complet_1bit_9_p 1 3 1 -10 300n
+preplace netloc sumator_complet_1bit_8_g 1 3 1 -20 260n
+preplace netloc sumator_complet_1bit_9_g 1 3 1 10 380n
+preplace netloc modul_concatenare_2_g_out 1 4 1 310 340n
+preplace netloc modul_concatenare_2_p_out 1 4 1 300 360n
+preplace netloc sumator_complet_1bit_12_p 1 7 1 1350 350n
+preplace netloc sumator_complet_1bit_13_p 1 7 1 1380 430n
+preplace netloc sumator_complet_1bit_14_p 1 7 1 1420 450n
+preplace netloc sumator_complet_1bit_15_p 1 7 1 1440 470n
+preplace netloc sumator_complet_1bit_12_g 1 7 1 1330 370n
+preplace netloc sumator_complet_1bit_13_g 1 7 1 1430 510n
+preplace netloc sumator_complet_1bit_14_g 1 7 1 1450 530n
+preplace netloc sumator_complet_1bit_15_g 1 7 1 1460 550n
+preplace netloc modul_concatenare_3_g_out 1 8 1 1700 440n
+preplace netloc modul_concatenare_3_p_out 1 8 1 1710 460n
+preplace netloc extragere_0_a1 1 2 5 -530 -620 NJ -620 NJ -620 NJ -620 1040
+preplace netloc extragere_0_a2 1 2 5 -520J -610 NJ -610 NJ -610 N -610 1030
+preplace netloc extragere_0_a3 1 2 5 -510J -600 NJ -600 NJ -600 N -600 1010
+preplace netloc extragere_0_a4 1 2 5 -340J 80 NJ 80 NJ 80 N 80 1050
+preplace netloc extragere_0_a5 1 2 1 -490 -520n
+preplace netloc extragere_0_a6 1 2 1 -470 -380n
+preplace netloc extragere_0_a7 1 2 1 -470 -240n
+preplace netloc extragere_0_a8 1 2 1 -330 -210n
+preplace netloc extragere_0_a9 1 2 1 -370 -190n
+preplace netloc extragere_0_a10 1 2 1 -410 -170n
+preplace netloc extragere_0_a13 1 2 5 -390J 50 NJ 50 NJ 50 N 50 980
+preplace netloc extragere_0_a14 1 2 5 -420J 60 NJ 60 NJ 60 N 60 950
+preplace netloc extragere_0_a15 1 2 5 -400J 10 NJ 10 NJ 10 N 10 960
+preplace netloc extragere_0_a16 1 2 5 -430J 20 NJ 20 NJ 20 N 20 920
+preplace netloc extragere_1_a1 1 2 5 -480 -590 NJ -590 NJ -590 NJ -590 1020
+preplace netloc extragere_1_a2 1 2 5 -430 40 30J -160 NJ -160 660J -260 1000
+preplace netloc extragere_1_a3 1 2 5 -390J 90 40J -10 NJ -10 N -10 N
+preplace netloc extragere_1_a4 1 2 5 -360 150 NJ 150 NJ 150 NJ 150 N
+preplace netloc extragere_1_a5 1 2 1 -460 -500n
+preplace netloc extragere_1_a6 1 2 1 -440 -360n
+preplace netloc extragere_1_a7 1 2 1 -380 -220n
+preplace netloc extragere_1_a8 1 2 1 -350 -80n
+preplace netloc extragere_1_a9 1 2 1 -330 260n
+preplace netloc extragere_1_a10 1 2 1 -480 380n
+preplace netloc extragere_1_a11 1 2 1 -490 400n
+preplace netloc extragere_1_a12 1 2 1 -510 420n
+preplace netloc extragere_0_a11 1 2 1 -450 -150n
+preplace netloc extragere_0_a12 1 2 1 -470 -130n
+preplace netloc extragere_1_a13 1 2 5 -340J 160 NJ 160 NJ 160 N 160 940
+preplace netloc extragere_1_a14 1 2 5 -500 490 NJ 490 NJ 490 640J 570 1020
+preplace netloc extragere_1_a15 1 2 5 -520J 820 NJ 820 NJ 820 N 820 1050
+preplace netloc extragere_1_a16 1 2 5 -530J 830 NJ 830 NJ 830 N 830 900
+preplace netloc GUAT_0_GUAT_G 1 13 2 NJ 100 N
+preplace netloc GUAT_0_GUAT_P 1 13 2 NJ 120 N
+preplace netloc GUAT_0_carry_GUAT 1 13 1 3580 140n
+preplace netloc extragere_GUAT_0_carry4 1 14 1 N 300
+preplace netloc intrare_0_a_out 1 1 1 -770 -200n
+preplace netloc intrare_0_b_out 1 1 1 -770 -70n
+preplace netloc a_0_1 1 0 1 N -90
+preplace netloc b_0_1 1 0 1 N -70
+preplace netloc c_in_0_1 1 0 1 N 120
+preplace netloc intrare_c_in_0_c_in_out 1 1 12 -760 70 NJ 70 NJ 70 NJ 70 NJ 70 990 -110 1410J -60 1700J -60 2310 -40 2570 -50 3010 100 N
+preplace netloc extragere_GUAT_0_carry1 1 2 13 -440 -630 N -630 320 -480 NJ -480 N -480 NJ -480 NJ -480 NJ -480 N -480 N -480 N -480 NJ -480 3880
+preplace netloc extragere_GUAT_0_carry2 1 2 13 -320 170 N 170 320 240 NJ 240 970 250 NJ 250 NJ 250 NJ 250 N 250 N 250 3280 200 3590J 180 3870
+preplace netloc extragere_GUAT_0_carry3 1 6 9 1070 290 N 290 1700 360 NJ 360 N 360 N 360 N 360 NJ 360 3870
+preplace netloc concatenare_suma_0_sum_out 1 12 3 NJ 840 NJ 840 NJ
+preplace netloc sumator_complet_1bit_0_sum 1 7 5 NJ -330 NJ -330 N -330 N -330 3020
+preplace netloc sumator_complet_1bit_1_sum 1 7 5 1420J -50 NJ -50 2300 -30 N -30 2980
+preplace netloc sumator_complet_1bit_2_sum 1 7 5 1370J -10 NJ -10 N -10 N -10 2970
+preplace netloc sumator_complet_1bit_3_sum 1 7 5 1390J 280 NJ 280 N 280 N 280 2940
+preplace netloc sumator_complet_1bit_4_sum 1 3 9 NJ -480 310J -470 NJ -470 N -470 NJ -470 NJ -470 N -470 N -470 3000
+preplace netloc sumator_complet_1bit_5_sum 1 3 9 -20J -420 NJ -420 NJ -420 990 -440 NJ -440 NJ -440 N -440 N -440 2990
+preplace netloc sumator_complet_1bit_6_sum 1 3 9 40J -100 NJ -100 NJ -100 N -100 1400J 0 NJ 0 N 0 2620 -20 2950
+preplace netloc sumator_complet_1bit_7_sum 1 3 9 NJ -60 NJ -60 NJ -60 1000 70 1360J -20 NJ -20 N -20 2590 -40 2960
+preplace netloc sumator_complet_1bit_8_sum 1 3 9 -10J 220 300J 250 NJ 250 930 260 NJ 260 NJ 260 N 260 N 260 2930
+preplace netloc sumator_complet_1bit_9_sum 1 3 9 -20J 480 NJ 480 660J 410 910 450 1370J 330 NJ 330 N 330 N 330 2920
+preplace netloc sumator_complet_1bit_10_sum 1 3 9 NJ 610 NJ 610 NJ 610 900 630 NJ 630 NJ 630 N 630 N 630 2900
+preplace netloc sumator_complet_1bit_11_sum 1 3 9 NJ 760 NJ 760 NJ 760 1020 640 NJ 640 NJ 640 N 640 N 640 2880
+preplace netloc sumator_complet_1bit_12_sum 1 7 5 1380J 340 NJ 340 N 340 N 340 2910
+preplace netloc sumator_complet_1bit_13_sum 1 7 5 1400J 350 NJ 350 N 350 N 350 2890
+preplace netloc sumator_complet_1bit_14_sum 1 7 5 NJ 740 NJ 740 N 740 N 740 2870
+preplace netloc sumator_complet_1bit_15_sum 1 7 5 N 900 NJ 900 NJ 900 N 900 2860
+preplace netloc UAT_0_UAT_G 1 9 2 N -220 2600
+preplace netloc UAT_0_UAT_P 1 9 2 N -200 2630
+preplace netloc UAT_1_UAT_G 1 5 6 650J -490 N -490 NJ -490 NJ -490 N -490 2610
+preplace netloc UAT_1_UAT_P 1 5 6 NJ -280 1020 -270 1430J 10 NJ 10 N 10 2580
+preplace netloc UAT_2_UAT_G 1 5 6 660 230 N 230 NJ 230 NJ 230 NJ 230 2590
+preplace netloc UAT_2_UAT_P 1 5 6 650 -90 N -90 1390J 20 NJ 20 NJ 20 2570
+preplace netloc UAT_3_UAT_G 1 9 2 2310 240 2620
+preplace netloc UAT_3_UAT_P 1 9 2 2300 110 N
+preplace netloc concatenare_uat_0_g_out 1 11 2 NJ 110 3280
+preplace netloc concatenare_uat_0_p_out 1 11 2 NJ 130 3280
+preplace netloc UAT_0_carry_UAT 1 9 1 2310 -180n
+preplace netloc split_UAT_0_c0 1 6 5 1050 -460 NJ -460 NJ -460 NJ -460 2590
+preplace netloc split_UAT_0_c1 1 6 5 1060 -450 NJ -450 NJ -450 NJ -450 2580
+preplace netloc split_UAT_0_c2 1 6 5 1070 -430 NJ -430 NJ -430 NJ -430 2570
+preplace netloc UAT_1_carry_UAT 1 5 1 650 -260n
+preplace netloc split_UAT_1_c0 1 2 5 -340 -580 NJ -580 NJ -580 NJ -580 960
+preplace netloc split_UAT_1_c1 1 2 5 -320 0 NJ 0 NJ 0 NJ 0 960
+preplace netloc split_UAT_1_c2 1 2 5 -310 30 NJ 30 NJ 30 NJ 30 900
+preplace netloc UAT_2_carry_UAT 1 5 1 650 390n
+preplace netloc split_UAT_2_c0 1 2 5 -310 180 NJ 180 NJ 180 NJ 180 900
+preplace netloc split_UAT_2_c1 1 2 5 -310 510 NJ 510 NJ 510 620J 580 910
+preplace netloc split_UAT_2_c2 1 2 5 -320 500 NJ 500 NJ 500 630J 590 900
+preplace netloc UAT_3_carry_UAT 1 9 1 2310 460n
+preplace netloc split_UAT_3_c0 1 6 5 1060 270 NJ 270 NJ 270 NJ 270 2600
+preplace netloc split_UAT_3_c1 1 6 5 1070 800 NJ 800 NJ 800 NJ 800 2600
+preplace netloc split_UAT_3_c2 1 6 5 1060 620 NJ 620 NJ 620 NJ 620 2570
+preplace netloc sumator_complet_1bit_10_p 1 3 1 0 320n
+preplace netloc sumator_complet_1bit_11_p 1 3 1 20 340n
+preplace netloc sumator_complet_1bit_10_g 1 3 1 30 400n
+preplace netloc sumator_complet_1bit_11_g 1 3 1 40 420n
+levelinfo -pg 1 -1340 -890 -630 -130 190 480 780 1210 1590 2160 2450 2750 3150 3430 3730 3900
+pagesize -pg 1 -db -bbox -sgen -1460 -740 4070 1050
+"
+}
+0

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jun  1 21:26:10 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="automat_V1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="Ceai_0" SIGIS="undef" SIGNAME="automat_0_Ceai">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="Ceai"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Procesare_0" SIGIS="undef" SIGNAME="automat_0_Procesare">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="Procesare"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Rest_0" SIGIS="undef" SIGNAME="External_Ports_Rest_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="Rest"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Rest1_0" SIGIS="undef" SIGNAME="automat_0_Rest1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="Rest1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Rest5_0" SIGIS="undef" SIGNAME="automat_0_Rest5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="Rest5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Ron1_0" SIGIS="undef" SIGNAME="External_Ports_Ron1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="Ron1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Ron10_0" SIGIS="undef" SIGNAME="External_Ports_Ron10_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="Ron10"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Ron5_0" SIGIS="undef" SIGNAME="External_Ports_Ron5_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="Ron5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock_0" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="stare_0" RIGHT="0" SIGIS="undef" SIGNAME="automat_0_stare">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="automat_0" PORT="stare"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/automat_0" HWVERSION="1.0" INSTANCE="automat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="automat" VLNV="xilinx.com:module_ref:automat:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="automat_V1_automat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ron10" SIGIS="undef" SIGNAME="External_Ports_Ron10_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ron10_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ron5" SIGIS="undef" SIGNAME="External_Ports_Ron5_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ron5_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ron1" SIGIS="undef" SIGNAME="External_Ports_Ron1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ron1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Rest" SIGIS="undef" SIGNAME="External_Ports_Rest_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Rest_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Rest5" SIGIS="undef" SIGNAME="automat_0_Rest5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Rest5_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Rest1" SIGIS="undef" SIGNAME="automat_0_Rest1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Rest1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Ceai" SIGIS="undef" SIGNAME="automat_0_Ceai">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ceai_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Procesare" SIGIS="undef" SIGNAME="automat_0_Procesare">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Procesare_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="stare" RIGHT="0" SIGIS="undef" SIGNAME="automat_0_stare">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="stare_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

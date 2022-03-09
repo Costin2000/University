@@ -1,0 +1,1684 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 19 19:01:47 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="GUAT_G_0" SIGIS="undef" SIGNAME="GUAT_0_GUAT_G">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="GUAT_0" PORT="GUAT_G"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="GUAT_P_0" SIGIS="undef" SIGNAME="GUAT_0_GUAT_P">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="GUAT_0" PORT="GUAT_P"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="carry4_0" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="extragere_GUAT_0" PORT="carry4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="a_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="intrare_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="b_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="intrare_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="c_in_0" SIGIS="undef" SIGNAME="External_Ports_c_in_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="intrare_c_in_0" PORT="c_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="sum_out_0" RIGHT="0" SIGIS="undef" SIGNAME="concatenare_suma_0_sum_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/GUAT_0" HWVERSION="1.0" INSTANCE="GUAT_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="GUAT" VLNV="xilinx.com:module_ref:GUAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_GUAT_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="intrare_c_in_0_c_in_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="intrare_c_in_0" PORT="c_in_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="UAT_G" RIGHT="0" SIGIS="undef" SIGNAME="concatenare_uat_0_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="g_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="UAT_P" RIGHT="0" SIGIS="undef" SIGNAME="concatenare_uat_0_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="p_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="GUAT_G" SIGIS="undef" SIGNAME="GUAT_0_GUAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GUAT_G_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="GUAT_P" SIGIS="undef" SIGNAME="GUAT_0_GUAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="GUAT_P_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="carry_GUAT" RIGHT="1" SIGIS="undef" SIGNAME="GUAT_0_carry_GUAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_GUAT_0" PORT="carry_GUAT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/UAT_0" HWVERSION="1.0" INSTANCE="UAT_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="UAT" VLNV="xilinx.com:module_ref:UAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_UAT_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="intrare_c_in_0_c_in_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="intrare_c_in_0" PORT="c_in_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="g_in" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_0_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="g_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="p_in" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_0_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="p_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="UAT_G" SIGIS="undef" SIGNAME="UAT_0_UAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="g0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="UAT_P" SIGIS="undef" SIGNAME="UAT_0_UAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="p0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="carry_UAT" RIGHT="0" SIGIS="undef" SIGNAME="UAT_0_carry_UAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_0" PORT="carry_uat"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/UAT_1" HWVERSION="1.0" INSTANCE="UAT_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="UAT" VLNV="xilinx.com:module_ref:UAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_UAT_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_GUAT_0" PORT="carry1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="g_in" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_1_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="g_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="p_in" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_1_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="p_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="UAT_G" SIGIS="undef" SIGNAME="UAT_1_UAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="g1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="UAT_P" SIGIS="undef" SIGNAME="UAT_1_UAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="p1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="carry_UAT" RIGHT="0" SIGIS="undef" SIGNAME="UAT_1_carry_UAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_1" PORT="carry_uat"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/UAT_2" HWVERSION="1.0" INSTANCE="UAT_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="UAT" VLNV="xilinx.com:module_ref:UAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_UAT_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_GUAT_0" PORT="carry2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="g_in" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_2_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="g_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="p_in" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_2_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="p_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="UAT_G" SIGIS="undef" SIGNAME="UAT_2_UAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="g2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="UAT_P" SIGIS="undef" SIGNAME="UAT_2_UAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="p2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="carry_UAT" RIGHT="0" SIGIS="undef" SIGNAME="UAT_2_carry_UAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_2" PORT="carry_uat"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/UAT_3" HWVERSION="1.0" INSTANCE="UAT_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="UAT" VLNV="xilinx.com:module_ref:UAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_UAT_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_GUAT_0" PORT="carry3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="g_in" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_3_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="g_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="p_in" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_3_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="p_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="UAT_G" SIGIS="undef" SIGNAME="UAT_3_UAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="g3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="UAT_P" SIGIS="undef" SIGNAME="UAT_3_UAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_uat_0" PORT="p3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="carry_UAT" RIGHT="0" SIGIS="undef" SIGNAME="UAT_3_carry_UAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_3" PORT="carry_uat"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/concatenare_suma_0" HWVERSION="1.0" INSTANCE="concatenare_suma_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="concatenare_suma" VLNV="xilinx.com:module_ref:concatenare_suma:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_concatenare_suma_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="sum0" SIGIS="undef" SIGNAME="sumator_complet_1bit_0_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_0" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum1" SIGIS="undef" SIGNAME="sumator_complet_1bit_1_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_1" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum2" SIGIS="undef" SIGNAME="sumator_complet_1bit_2_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_2" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum3" SIGIS="undef" SIGNAME="sumator_complet_1bit_3_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_3" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum4" SIGIS="undef" SIGNAME="sumator_complet_1bit_4_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_4" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum5" SIGIS="undef" SIGNAME="sumator_complet_1bit_5_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_5" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum6" SIGIS="undef" SIGNAME="sumator_complet_1bit_6_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_6" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum7" SIGIS="undef" SIGNAME="sumator_complet_1bit_7_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_7" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum8" SIGIS="undef" SIGNAME="sumator_complet_1bit_8_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_8" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum9" SIGIS="undef" SIGNAME="sumator_complet_1bit_9_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_9" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum10" SIGIS="undef" SIGNAME="sumator_complet_1bit_10_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_10" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum11" SIGIS="undef" SIGNAME="sumator_complet_1bit_11_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_11" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum12" SIGIS="undef" SIGNAME="sumator_complet_1bit_12_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_12" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum13" SIGIS="undef" SIGNAME="sumator_complet_1bit_13_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_13" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum14" SIGIS="undef" SIGNAME="sumator_complet_1bit_14_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_14" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sum15" SIGIS="undef" SIGNAME="sumator_complet_1bit_15_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_15" PORT="sum"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="sum_out" RIGHT="0" SIGIS="undef" SIGNAME="concatenare_suma_0_sum_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sum_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/concatenare_uat_0" HWVERSION="1.0" INSTANCE="concatenare_uat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="concatenare_uat" VLNV="xilinx.com:module_ref:concatenare_uat:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_concatenare_uat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="p0" SIGIS="undef" SIGNAME="UAT_0_UAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_0" PORT="UAT_P"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p1" SIGIS="undef" SIGNAME="UAT_1_UAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_1" PORT="UAT_P"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p2" SIGIS="undef" SIGNAME="UAT_2_UAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_2" PORT="UAT_P"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p3" SIGIS="undef" SIGNAME="UAT_3_UAT_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_3" PORT="UAT_P"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g0" SIGIS="undef" SIGNAME="UAT_0_UAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_0" PORT="UAT_G"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g1" SIGIS="undef" SIGNAME="UAT_1_UAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_1" PORT="UAT_G"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g2" SIGIS="undef" SIGNAME="UAT_2_UAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_2" PORT="UAT_G"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g3" SIGIS="undef" SIGNAME="UAT_3_UAT_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_3" PORT="UAT_G"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="g_out" RIGHT="0" SIGIS="undef" SIGNAME="concatenare_uat_0_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GUAT_0" PORT="UAT_G"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="concatenare_uat_0_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GUAT_0" PORT="UAT_P"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/extragere_0" HWVERSION="1.0" INSTANCE="extragere_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="extragere" VLNV="xilinx.com:module_ref:extragere:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_extragere_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="intrare_0_a_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="intrare_0" PORT="a_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a1" SIGIS="undef" SIGNAME="extragere_0_a1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a2" SIGIS="undef" SIGNAME="extragere_0_a2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_1" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a3" SIGIS="undef" SIGNAME="extragere_0_a3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_2" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a4" SIGIS="undef" SIGNAME="extragere_0_a4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_3" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a5" SIGIS="undef" SIGNAME="extragere_0_a5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_4" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a6" SIGIS="undef" SIGNAME="extragere_0_a6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_5" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a7" SIGIS="undef" SIGNAME="extragere_0_a7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_6" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a8" SIGIS="undef" SIGNAME="extragere_0_a8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_7" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a9" SIGIS="undef" SIGNAME="extragere_0_a9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_8" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a10" SIGIS="undef" SIGNAME="extragere_0_a10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_9" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a11" SIGIS="undef" SIGNAME="extragere_0_a11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_10" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a12" SIGIS="undef" SIGNAME="extragere_0_a12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_11" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a13" SIGIS="undef" SIGNAME="extragere_0_a13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_12" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a14" SIGIS="undef" SIGNAME="extragere_0_a14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_13" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a15" SIGIS="undef" SIGNAME="extragere_0_a15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_14" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a16" SIGIS="undef" SIGNAME="extragere_0_a16">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_15" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/extragere_1" HWVERSION="1.0" INSTANCE="extragere_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="extragere" VLNV="xilinx.com:module_ref:extragere:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_extragere_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="intrare_0_b_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="intrare_0" PORT="b_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a1" SIGIS="undef" SIGNAME="extragere_1_a1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a2" SIGIS="undef" SIGNAME="extragere_1_a2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_1" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a3" SIGIS="undef" SIGNAME="extragere_1_a3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_2" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a4" SIGIS="undef" SIGNAME="extragere_1_a4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_3" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a5" SIGIS="undef" SIGNAME="extragere_1_a5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_4" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a6" SIGIS="undef" SIGNAME="extragere_1_a6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_5" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a7" SIGIS="undef" SIGNAME="extragere_1_a7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_6" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a8" SIGIS="undef" SIGNAME="extragere_1_a8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_7" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a9" SIGIS="undef" SIGNAME="extragere_1_a9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_8" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a10" SIGIS="undef" SIGNAME="extragere_1_a10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_9" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a11" SIGIS="undef" SIGNAME="extragere_1_a11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_10" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a12" SIGIS="undef" SIGNAME="extragere_1_a12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_11" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a13" SIGIS="undef" SIGNAME="extragere_1_a13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_12" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a14" SIGIS="undef" SIGNAME="extragere_1_a14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_13" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a15" SIGIS="undef" SIGNAME="extragere_1_a15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_14" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a16" SIGIS="undef" SIGNAME="extragere_1_a16">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_15" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/extragere_GUAT_0" HWVERSION="1.0" INSTANCE="extragere_GUAT_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="extragere_GUAT" VLNV="xilinx.com:module_ref:extragere_GUAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_extragere_GUAT_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="carry_GUAT" RIGHT="1" SIGIS="undef" SIGNAME="GUAT_0_carry_GUAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GUAT_0" PORT="carry_GUAT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="carry1" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_1" PORT="c_in"/>
+            <CONNECTION INSTANCE="sumator_complet_1bit_4" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="carry2" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_2" PORT="c_in"/>
+            <CONNECTION INSTANCE="sumator_complet_1bit_8" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="carry3" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_3" PORT="c_in"/>
+            <CONNECTION INSTANCE="sumator_complet_1bit_12" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="carry4" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="carry4_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/intrare_0" HWVERSION="1.0" INSTANCE="intrare_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="intrare" VLNV="xilinx.com:module_ref:intrare:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_intrare_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_b_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="a_out" RIGHT="0" SIGIS="undef" SIGNAME="intrare_0_a_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="b_out" RIGHT="0" SIGIS="undef" SIGNAME="intrare_0_b_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/intrare_c_in_0" HWVERSION="1.0" INSTANCE="intrare_c_in_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="intrare_c_in" VLNV="xilinx.com:module_ref:intrare_c_in:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_intrare_c_in_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="External_Ports_c_in_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="c_in_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c_in_out" SIGIS="undef" SIGNAME="intrare_c_in_0_c_in_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_0" PORT="c_in"/>
+            <CONNECTION INSTANCE="sumator_complet_1bit_0" PORT="c_in"/>
+            <CONNECTION INSTANCE="GUAT_0" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/modul_concatenare_0" HWVERSION="1.0" INSTANCE="modul_concatenare_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="modul_concatenare" VLNV="xilinx.com:module_ref:modul_concatenare:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_modul_concatenare_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="p1" SIGIS="undef" SIGNAME="sumator_complet_1bit_0_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_0" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p2" SIGIS="undef" SIGNAME="sumator_complet_1bit_1_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_1" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p3" SIGIS="undef" SIGNAME="sumator_complet_1bit_2_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_2" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p4" SIGIS="undef" SIGNAME="sumator_complet_1bit_3_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_3" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g1" SIGIS="undef" SIGNAME="sumator_complet_1bit_0_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_0" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g2" SIGIS="undef" SIGNAME="sumator_complet_1bit_1_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_1" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g3" SIGIS="undef" SIGNAME="sumator_complet_1bit_2_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_2" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g4" SIGIS="undef" SIGNAME="sumator_complet_1bit_3_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_3" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="g_out" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_0_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_0" PORT="g_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_0_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_0" PORT="p_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/modul_concatenare_1" HWVERSION="1.0" INSTANCE="modul_concatenare_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="modul_concatenare" VLNV="xilinx.com:module_ref:modul_concatenare:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_modul_concatenare_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="p1" SIGIS="undef" SIGNAME="sumator_complet_1bit_4_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_4" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p2" SIGIS="undef" SIGNAME="sumator_complet_1bit_5_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_5" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p3" SIGIS="undef" SIGNAME="sumator_complet_1bit_6_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_6" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p4" SIGIS="undef" SIGNAME="sumator_complet_1bit_7_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_7" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g1" SIGIS="undef" SIGNAME="sumator_complet_1bit_4_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_4" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g2" SIGIS="undef" SIGNAME="sumator_complet_1bit_5_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_5" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g3" SIGIS="undef" SIGNAME="sumator_complet_1bit_6_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_6" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g4" SIGIS="undef" SIGNAME="sumator_complet_1bit_7_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_7" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="g_out" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_1_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_1" PORT="g_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_1_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_1" PORT="p_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/modul_concatenare_2" HWVERSION="1.0" INSTANCE="modul_concatenare_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="modul_concatenare" VLNV="xilinx.com:module_ref:modul_concatenare:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_modul_concatenare_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="p1" SIGIS="undef" SIGNAME="sumator_complet_1bit_8_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_8" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p2" SIGIS="undef" SIGNAME="sumator_complet_1bit_9_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_9" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p3" SIGIS="undef" SIGNAME="sumator_complet_1bit_10_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_10" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p4" SIGIS="undef" SIGNAME="sumator_complet_1bit_11_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_11" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g1" SIGIS="undef" SIGNAME="sumator_complet_1bit_8_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_8" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g2" SIGIS="undef" SIGNAME="sumator_complet_1bit_9_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_9" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g3" SIGIS="undef" SIGNAME="sumator_complet_1bit_10_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_10" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g4" SIGIS="undef" SIGNAME="sumator_complet_1bit_11_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_11" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="g_out" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_2_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_2" PORT="g_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_2_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_2" PORT="p_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/modul_concatenare_3" HWVERSION="1.0" INSTANCE="modul_concatenare_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="modul_concatenare" VLNV="xilinx.com:module_ref:modul_concatenare:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_modul_concatenare_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="p1" SIGIS="undef" SIGNAME="sumator_complet_1bit_12_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_12" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p2" SIGIS="undef" SIGNAME="sumator_complet_1bit_13_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_13" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p3" SIGIS="undef" SIGNAME="sumator_complet_1bit_14_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_14" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="p4" SIGIS="undef" SIGNAME="sumator_complet_1bit_15_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_15" PORT="p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g1" SIGIS="undef" SIGNAME="sumator_complet_1bit_12_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_12" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g2" SIGIS="undef" SIGNAME="sumator_complet_1bit_13_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_13" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g3" SIGIS="undef" SIGNAME="sumator_complet_1bit_14_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_14" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="g4" SIGIS="undef" SIGNAME="sumator_complet_1bit_15_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_15" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="g_out" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_3_g_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_3" PORT="g_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="modul_concatenare_3_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_3" PORT="p_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/split_UAT_0" HWVERSION="1.0" INSTANCE="split_UAT_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="split_UAT" VLNV="xilinx.com:module_ref:split_UAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_split_UAT_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="carry_uat" RIGHT="0" SIGIS="undef" SIGNAME="UAT_0_carry_UAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_0" PORT="carry_UAT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c0" SIGIS="undef" SIGNAME="split_UAT_0_c0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_1" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c1" SIGIS="undef" SIGNAME="split_UAT_0_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_2" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c2" SIGIS="undef" SIGNAME="split_UAT_0_c2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_3" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/split_UAT_1" HWVERSION="1.0" INSTANCE="split_UAT_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="split_UAT" VLNV="xilinx.com:module_ref:split_UAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_split_UAT_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="carry_uat" RIGHT="0" SIGIS="undef" SIGNAME="UAT_1_carry_UAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_1" PORT="carry_UAT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c0" SIGIS="undef" SIGNAME="split_UAT_1_c0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_5" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c1" SIGIS="undef" SIGNAME="split_UAT_1_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_6" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c2" SIGIS="undef" SIGNAME="split_UAT_1_c2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_7" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/split_UAT_2" HWVERSION="1.0" INSTANCE="split_UAT_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="split_UAT" VLNV="xilinx.com:module_ref:split_UAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_split_UAT_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="carry_uat" RIGHT="0" SIGIS="undef" SIGNAME="UAT_2_carry_UAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_2" PORT="carry_UAT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c0" SIGIS="undef" SIGNAME="split_UAT_2_c0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_9" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c1" SIGIS="undef" SIGNAME="split_UAT_2_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_10" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c2" SIGIS="undef" SIGNAME="split_UAT_2_c2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_11" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/split_UAT_3" HWVERSION="1.0" INSTANCE="split_UAT_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="split_UAT" VLNV="xilinx.com:module_ref:split_UAT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_split_UAT_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="carry_uat" RIGHT="0" SIGIS="undef" SIGNAME="UAT_3_carry_UAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="UAT_3" PORT="carry_UAT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c0" SIGIS="undef" SIGNAME="split_UAT_3_c0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_13" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c1" SIGIS="undef" SIGNAME="split_UAT_3_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_14" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c2" SIGIS="undef" SIGNAME="split_UAT_3_c2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sumator_complet_1bit_15" PORT="c_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_0" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="intrare_c_in_0_c_in_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="intrare_c_in_0" PORT="c_in_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_0_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="p1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_0_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="g1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_0_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_1" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_0_c0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_0" PORT="c0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_1_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="p2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_1_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="g2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_1_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_10" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_10_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_2_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_2" PORT="c1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_10_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="p3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_10_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="g3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_10_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum10"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_11" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_11_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_2_c2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_2" PORT="c2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_11_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="p4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_11_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="g4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_11_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum11"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_12" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_12" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_12_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_GUAT_0" PORT="carry3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_12_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="p1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_12_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="g1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_12_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum12"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_13" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_13" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_13_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_3_c0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_3" PORT="c0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_13_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="p2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_13_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="g2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_13_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum13"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_14" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_14" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_14_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_3_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_3" PORT="c1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_14_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="p3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_14_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="g3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_14_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum14"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_15" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_15" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_15_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a16">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a16"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a16">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a16"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_3_c2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_3" PORT="c2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_15_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="p4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_15_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_3" PORT="g4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_15_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum15"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_2" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_0_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_0" PORT="c1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_2_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="p3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_2_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="g3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_2_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_3" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_0_c2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_0" PORT="c2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_3_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="p4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_3_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_0" PORT="g4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_3_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_4" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_GUAT_0" PORT="carry1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_4_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="p1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_4_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="g1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_4_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_5" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_1_c0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_1" PORT="c0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_5_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="p2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_5_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="g2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_5_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum5"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_6" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_1_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_1" PORT="c1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_6_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="p3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_6_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="g3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_6_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum6"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_7" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_7_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_1_c2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_1" PORT="c2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_7_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="p4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_7_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_1" PORT="g4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_7_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum7"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_8" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_8_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="extragere_GUAT_0_carry2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_GUAT_0" PORT="carry2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_8_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="p1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_8_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="g1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_8_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum8"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sumator_complet_1bit_9" HWVERSION="1.0" INSTANCE="sumator_complet_1bit_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sumator_complet_1bit" VLNV="xilinx.com:module_ref:sumator_complet_1bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sumator_complet_1bit_9_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="extragere_0_a10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_0" PORT="a10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="extragere_1_a10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="extragere_1" PORT="a10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c_in" SIGIS="undef" SIGNAME="split_UAT_2_c0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_UAT_2" PORT="c0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="p" SIGIS="undef" SIGNAME="sumator_complet_1bit_9_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="p2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="sumator_complet_1bit_9_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="modul_concatenare_2" PORT="g2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sum" SIGIS="undef" SIGNAME="sumator_complet_1bit_9_sum">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatenare_suma_0" PORT="sum9"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

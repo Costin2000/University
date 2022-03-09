@@ -1,0 +1,222 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9C2C948644A1B92C",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Automat.gen/sources_1/bd/automat_V1",
+      "name": "automat_V1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "automat_0": ""
+    },
+    "ports": {
+      "Ceai_0": {
+        "direction": "O"
+      },
+      "Procesare_0": {
+        "direction": "O"
+      },
+      "Rest_0": {
+        "direction": "I"
+      },
+      "Rest1_0": {
+        "direction": "O"
+      },
+      "Rest5_0": {
+        "direction": "O"
+      },
+      "Ron1_0": {
+        "direction": "I"
+      },
+      "Ron10_0": {
+        "direction": "I"
+      },
+      "Ron5_0": {
+        "direction": "I"
+      },
+      "clock_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "automat_V1_clock_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "stare_0": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      }
+    },
+    "components": {
+      "automat_0": {
+        "vlnv": "xilinx.com:module_ref:automat:1.0",
+        "xci_name": "automat_V1_automat_0_0",
+        "xci_path": "ip/automat_V1_automat_0_0_1/automat_V1_automat_0_0.xci",
+        "inst_hier_path": "automat_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "automat",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "automat_V1_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Ron10": {
+            "direction": "I"
+          },
+          "Ron5": {
+            "direction": "I"
+          },
+          "Ron1": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Rest": {
+            "direction": "I"
+          },
+          "Rest5": {
+            "direction": "O"
+          },
+          "Rest1": {
+            "direction": "O"
+          },
+          "Ceai": {
+            "direction": "O"
+          },
+          "Procesare": {
+            "direction": "O"
+          },
+          "stare": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "automat_0_Ceai": {
+        "ports": [
+          "automat_0/Ceai",
+          "Ceai_0"
+        ]
+      },
+      "automat_0_Procesare": {
+        "ports": [
+          "automat_0/Procesare",
+          "Procesare_0"
+        ]
+      },
+      "Rest_0_1": {
+        "ports": [
+          "Rest_0",
+          "automat_0/Rest"
+        ]
+      },
+      "automat_0_Rest1": {
+        "ports": [
+          "automat_0/Rest1",
+          "Rest1_0"
+        ]
+      },
+      "automat_0_Rest5": {
+        "ports": [
+          "automat_0/Rest5",
+          "Rest5_0"
+        ]
+      },
+      "Ron1_0_1": {
+        "ports": [
+          "Ron1_0",
+          "automat_0/Ron1"
+        ]
+      },
+      "Ron10_0_1": {
+        "ports": [
+          "Ron10_0",
+          "automat_0/Ron10"
+        ]
+      },
+      "Ron5_0_1": {
+        "ports": [
+          "Ron5_0",
+          "automat_0/Ron5"
+        ]
+      },
+      "clock_0_1": {
+        "ports": [
+          "clock_0",
+          "automat_0/clock"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "automat_0/reset"
+        ]
+      },
+      "automat_0_stare": {
+        "ports": [
+          "automat_0/stare",
+          "stare_0"
+        ]
+      }
+    }
+  }
+}

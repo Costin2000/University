@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun  3 13:19:12 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="ceas_figure" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk_out_led_0" SIGIS="undef" SIGNAME="External_Ports_clk_out_led_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pAND_0" PORT="B"/>
+        <CONNECTION INSTANCE="numarator_59_0" PORT="clk_out_led"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="5" NAME="data_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="numarator_59_0" PORT="data"/>
+        <CONNECTION INSTANCE="numarator_59_1" PORT="data"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="direction_0" SIGIS="undef" SIGNAME="External_Ports_direction_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="numarator_59_0" PORT="direction"/>
+        <CONNECTION INSTANCE="numarator_59_1" PORT="direction"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="load_0" SIGIS="undef" SIGNAME="External_Ports_load_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pOR_0" PORT="B"/>
+        <CONNECTION INSTANCE="numarator_59_0" PORT="load"/>
+        <CONNECTION INSTANCE="numarator_59_1" PORT="load"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="pauza_0" SIGIS="undef" SIGNAME="External_Ports_pauza_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="numarator_59_0" PORT="pauza"/>
+        <CONNECTION INSTANCE="numarator_59_1" PORT="pauza"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="numarator_59_0" PORT="reset"/>
+        <CONNECTION INSTANCE="numarator_59_1" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="BCD0_0" RIGHT="0" SIGIS="undef" SIGNAME="bin2bcd_0_BCD0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bin2bcd_0" PORT="BCD0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="BCD1_0" RIGHT="0" SIGIS="undef" SIGNAME="bin2bcd_0_BCD1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bin2bcd_0" PORT="BCD1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="BCD0_1" RIGHT="0" SIGIS="undef" SIGNAME="bin2bcd_1_BCD0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bin2bcd_1" PORT="BCD0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="BCD1_1" RIGHT="0" SIGIS="undef" SIGNAME="bin2bcd_1_BCD1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bin2bcd_1" PORT="BCD1"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/bin2bcd_0" HWVERSION="1.0" INSTANCE="bin2bcd_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bin2bcd" VLNV="xilinx.com:module_ref:bin2bcd:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ceas_figure_bin2bcd_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="5" NAME="valoare_bin" RIGHT="0" SIGIS="undef" SIGNAME="numarator_59_0_valoare_bin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="numarator_59_0" PORT="valoare_bin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD0" RIGHT="0" SIGIS="undef" SIGNAME="bin2bcd_0_BCD0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BCD0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD1" RIGHT="0" SIGIS="undef" SIGNAME="bin2bcd_0_BCD1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BCD1_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/bin2bcd_1" HWVERSION="1.0" INSTANCE="bin2bcd_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bin2bcd" VLNV="xilinx.com:module_ref:bin2bcd:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ceas_figure_bin2bcd_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="5" NAME="valoare_bin" RIGHT="0" SIGIS="undef" SIGNAME="numarator_59_1_valoare_bin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="numarator_59_1" PORT="valoare_bin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD0" RIGHT="0" SIGIS="undef" SIGNAME="bin2bcd_1_BCD0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BCD0_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD1" RIGHT="0" SIGIS="undef" SIGNAME="bin2bcd_1_BCD1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BCD1_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/numarator_59_0" HWVERSION="1.0" INSTANCE="numarator_59_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="numarator_59" VLNV="xilinx.com:module_ref:numarator_59:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ceas_figure_numarator_59_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_out_led" SIGIS="undef" SIGNAME="External_Ports_clk_out_led_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_out_led_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pauza" SIGIS="undef" SIGNAME="External_Ports_pauza_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pauza_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="direction" SIGIS="undef" SIGNAME="External_Ports_direction_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="direction_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="data" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="valoare_bin" RIGHT="0" SIGIS="undef" SIGNAME="numarator_59_0_valoare_bin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bin2bcd_0" PORT="valoare_bin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="carry_out" SIGIS="undef" SIGNAME="numarator_59_0_carry_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pOR_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/numarator_59_1" HWVERSION="1.0" INSTANCE="numarator_59_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="numarator_59" VLNV="xilinx.com:module_ref:numarator_59:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ceas_figure_numarator_59_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_out_led" SIGIS="undef" SIGNAME="pAND_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pAND_0" PORT="C"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pauza" SIGIS="undef" SIGNAME="External_Ports_pauza_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pauza_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="direction" SIGIS="undef" SIGNAME="External_Ports_direction_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="direction_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="data" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="valoare_bin" RIGHT="0" SIGIS="undef" SIGNAME="numarator_59_1_valoare_bin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bin2bcd_1" PORT="valoare_bin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="carry_out" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/pAND_0" HWVERSION="1.0" INSTANCE="pAND_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pAND" VLNV="xilinx.com:module_ref:pAND:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ceas_figure_pAND_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="pOR_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pOR_0" PORT="C"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_clk_out_led_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_out_led_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C" SIGIS="undef" SIGNAME="pAND_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="numarator_59_1" PORT="clk_out_led"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/pOR_0" HWVERSION="1.0" INSTANCE="pOR_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pOR" VLNV="xilinx.com:module_ref:pOR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ceas_figure_pOR_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="numarator_59_0_carry_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="numarator_59_0" PORT="carry_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C" SIGIS="undef" SIGNAME="pOR_0_C">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pAND_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

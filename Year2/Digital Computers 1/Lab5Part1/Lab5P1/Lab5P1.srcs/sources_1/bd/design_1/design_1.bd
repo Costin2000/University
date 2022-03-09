@@ -1,0 +1,452 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4B682725B5616AE5",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Lab5P1.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "gateXOR_0": "",
+      "registruBuffer_0": "",
+      "registruBuffer_1": "",
+      "gateXOR_1": "",
+      "registruBuffer_2": "",
+      "registruBuffer_3": "",
+      "gateXOR_2": "",
+      "registruBuffer_4": ""
+    },
+    "ports": {
+      "y_0": {
+        "direction": "I"
+      },
+      "clock_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clock_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "enable_0": {
+        "direction": "I"
+      },
+      "result_0": {
+        "direction": "O"
+      },
+      "x_0": {
+        "direction": "I"
+      },
+      "t_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "gateXOR_0": {
+        "vlnv": "xilinx.com:module_ref:gateXOR:1.0",
+        "xci_name": "design_1_gateXOR_0_0",
+        "xci_path": "ip/design_1_gateXOR_0_0/design_1_gateXOR_0_0.xci",
+        "inst_hier_path": "gateXOR_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "gateXOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I"
+          },
+          "t": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruBuffer_0": {
+        "vlnv": "xilinx.com:module_ref:registruBuffer:1.0",
+        "xci_name": "design_1_registruBuffer_0_0",
+        "xci_path": "ip/design_1_registruBuffer_0_0/design_1_registruBuffer_0_0.xci",
+        "inst_hier_path": "registruBuffer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "y": {
+            "direction": "I"
+          },
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruBuffer_1": {
+        "vlnv": "xilinx.com:module_ref:registruBuffer:1.0",
+        "xci_name": "design_1_registruBuffer_1_0",
+        "xci_path": "ip/design_1_registruBuffer_1_0/design_1_registruBuffer_1_0.xci",
+        "inst_hier_path": "registruBuffer_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "y": {
+            "direction": "I"
+          },
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          }
+        }
+      },
+      "gateXOR_1": {
+        "vlnv": "xilinx.com:module_ref:gateXOR:1.0",
+        "xci_name": "design_1_gateXOR_1_0",
+        "xci_path": "ip/design_1_gateXOR_1_0/design_1_gateXOR_1_0.xci",
+        "inst_hier_path": "gateXOR_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "gateXOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I"
+          },
+          "t": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruBuffer_2": {
+        "vlnv": "xilinx.com:module_ref:registruBuffer:1.0",
+        "xci_name": "design_1_registruBuffer_2_0",
+        "xci_path": "ip/design_1_registruBuffer_2_0/design_1_registruBuffer_2_0.xci",
+        "inst_hier_path": "registruBuffer_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "y": {
+            "direction": "I"
+          },
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruBuffer_3": {
+        "vlnv": "xilinx.com:module_ref:registruBuffer:1.0",
+        "xci_name": "design_1_registruBuffer_3_0",
+        "xci_path": "ip/design_1_registruBuffer_3_0/design_1_registruBuffer_3_0.xci",
+        "inst_hier_path": "registruBuffer_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "y": {
+            "direction": "I"
+          },
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          }
+        }
+      },
+      "gateXOR_2": {
+        "vlnv": "xilinx.com:module_ref:gateXOR:1.0",
+        "xci_name": "design_1_gateXOR_2_0",
+        "xci_path": "ip/design_1_gateXOR_2_0/design_1_gateXOR_2_0.xci",
+        "inst_hier_path": "gateXOR_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "gateXOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I"
+          },
+          "t": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruBuffer_4": {
+        "vlnv": "xilinx.com:module_ref:registruBuffer:1.0",
+        "xci_name": "design_1_registruBuffer_4_0",
+        "xci_path": "ip/design_1_registruBuffer_4_0/design_1_registruBuffer_4_0.xci",
+        "inst_hier_path": "registruBuffer_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "y": {
+            "direction": "I"
+          },
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clock_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "gateXOR_0_result": {
+        "ports": [
+          "gateXOR_0/result",
+          "registruBuffer_0/y"
+        ]
+      },
+      "y_0_1": {
+        "ports": [
+          "y_0",
+          "registruBuffer_1/y"
+        ]
+      },
+      "clock_0_1": {
+        "ports": [
+          "clock_0",
+          "registruBuffer_0/clock",
+          "registruBuffer_1/clock",
+          "registruBuffer_3/clock",
+          "registruBuffer_2/clock",
+          "registruBuffer_4/clock"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "registruBuffer_0/reset",
+          "registruBuffer_1/reset",
+          "registruBuffer_3/reset",
+          "registruBuffer_2/reset",
+          "registruBuffer_4/reset"
+        ]
+      },
+      "enable_0_1": {
+        "ports": [
+          "enable_0",
+          "registruBuffer_0/enable",
+          "registruBuffer_1/enable",
+          "registruBuffer_3/enable",
+          "registruBuffer_2/enable",
+          "registruBuffer_4/enable"
+        ]
+      },
+      "registruBuffer_1_result": {
+        "ports": [
+          "registruBuffer_1/result",
+          "gateXOR_1/t"
+        ]
+      },
+      "registruBuffer_0_result": {
+        "ports": [
+          "registruBuffer_0/result",
+          "gateXOR_1/x",
+          "registruBuffer_3/y"
+        ]
+      },
+      "gateXOR_1_result": {
+        "ports": [
+          "gateXOR_1/result",
+          "registruBuffer_2/y"
+        ]
+      },
+      "registruBuffer_3_result": {
+        "ports": [
+          "registruBuffer_3/result",
+          "gateXOR_2/x"
+        ]
+      },
+      "registruBuffer_2_result": {
+        "ports": [
+          "registruBuffer_2/result",
+          "gateXOR_2/t"
+        ]
+      },
+      "gateXOR_2_result": {
+        "ports": [
+          "gateXOR_2/result",
+          "registruBuffer_4/y"
+        ]
+      },
+      "registruBuffer_4_result": {
+        "ports": [
+          "registruBuffer_4/result",
+          "result_0"
+        ]
+      },
+      "x_0_1": {
+        "ports": [
+          "x_0",
+          "gateXOR_0/x"
+        ]
+      },
+      "t_0_1": {
+        "ports": [
+          "t_0",
+          "gateXOR_0/t"
+        ]
+      }
+    }
+  }
+}

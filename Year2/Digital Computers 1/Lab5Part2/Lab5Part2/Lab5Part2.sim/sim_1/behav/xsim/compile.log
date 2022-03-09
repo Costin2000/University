@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.srcs/sources_1/new/ANDGate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ANDGate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.srcs/sources_1/new/memoryBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memoryBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_ANDGate_0_0/sim/design_1_ANDGate_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_ANDGate_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_0_0/sim/design_1_memoryBuffer_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_1_0/sim/design_1_memoryBuffer_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_ANDGate_1_0/sim/design_1_ANDGate_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_ANDGate_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_2_0/sim/design_1_memoryBuffer_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_3_0/sim/design_1_memoryBuffer_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_ANDGate_2_0/sim/design_1_ANDGate_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_ANDGate_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_4_0/sim/design_1_memoryBuffer_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

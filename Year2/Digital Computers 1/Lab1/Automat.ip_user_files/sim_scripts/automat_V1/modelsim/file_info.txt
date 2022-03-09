@@ -1,0 +1,3 @@
+automat_V1.v,verilog,xil_defaultlib,../../../bd/automat_V1/sim/automat_V1.v,
+automat_V1_automat_0_0.v,verilog,xil_defaultlib,../../../bd/automat_V1/ip/automat_V1_automat_0_0_1/sim/automat_V1_automat_0_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

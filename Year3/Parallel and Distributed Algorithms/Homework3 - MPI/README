@@ -1,0 +1,44 @@
+Brebu Costin-Bogdan - 336CB
+
+In functie de rankuri am urmatoarele implementari:
+
+Rank-urile proceselor coordonatoare (0, 1, 2)
+-------------------------------------------------------------------------------
+->  citirea din fisier, fiecare worker isi extrage topologia proprie
+->  anunt procesele workeri asignate care este rankul procesului lor 
+coordonator
+->  le transmit celorlalte doua procese coordonatoare lungimea stringului pe
+care acestea trebuie sa il astepte de la mine in urmatorul mesaj si dupa le 
+transmit topologia mea intrun array de charuri
+->  cu toate topologiile aflate, compun topologia finala a sistemului
+->  le trimit si thredurilor workeri topologia intreaga si o printez in consola
+->  procesul 0 creeaza vectorul de dimensiunea data in argv si i-l trimite
+celorlalte procese coordonatoare
+->  transmit cati workeri am si aflu si cati workeri au celelalte doua procese
+coordonatoare si astfel aflu numarul total de workeri
+->  cu numarul aflat, creez staruri si enduri pentru fiecare worker in parte
+->  le trimit tuturor workerilor asignati secventa din vector asupra careia
+trebuie sa aduca modificari
+->  primesc secventele modificate de la workeri si le modifica in vectorul 
+original
+
+    => procesele cu rank 1 si 2 ii transmit procesului cu rank 0 modificarile
+    pe care workerii lor le-au adus
+    => procesul 0 le uneste, obtine rezultatul final si le afiseaza
+-------------------------------------------------------------------------------
+
+Procesele workeri:
+-------------------------------------------------------------------------------
+-> afla threadul coordonator
+-> afla topologia intreaga si o afiseaza
+-> primeste lungimea secventei din vector, ulterior primeste si secventa
+asignata
+-> dubleaza fiecare element din secventa primita
+-> trimite secventa modificata coordonatorului
+-------------------------------------------------------------------------------
+
+Am facut printari de forma "M(sursa,destinatie)"
+Din cauza numeroaselor printf-uri uneori, extrem de rar la mine pe local, se
+mai intampla sa pice testul de "Depunctare mesaje". Acest Lucru se intampla din
+cauza suprapunerii mesajelor de printf, nu din cauza comunicarii in mod gresit
+intre procese. 

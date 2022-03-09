@@ -1,0 +1,2148 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x7025418570254185",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Lab4.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "sumator_complet_1bit_0": "",
+      "sumator_complet_1bit_1": "",
+      "sumator_complet_1bit_2": "",
+      "sumator_complet_1bit_3": "",
+      "UAT_0": "",
+      "modul_concat_sum_0": "",
+      "GUAT_0": "",
+      "sumator_complet_1bit_4": "",
+      "sumator_complet_1bit_5": "",
+      "sumator_complet_1bit_6": "",
+      "sumator_complet_1bit_7": "",
+      "modul_concat_sum_1": "",
+      "modul_defalcare_0": "",
+      "modul_defalcare_1": "",
+      "UAT_1": "",
+      "sumator_complet_1bit_8": "",
+      "sumator_complet_1bit_9": "",
+      "sumator_complet_1bit_10": "",
+      "sumator_complet_1bit_11": "",
+      "modul_concat_sum_2": "",
+      "UAT_2": "",
+      "modul_input_0": "",
+      "sumator_complet_1bit_12": "",
+      "sumator_complet_1bit_13": "",
+      "sumator_complet_1bit_14": "",
+      "sumator_complet_1bit_15": "",
+      "modul_concat_sum_3": "",
+      "UAT_3": "",
+      "splitter_GUAT_0": "",
+      "modul_concat_uat_0": "",
+      "defalcare_UAT_0": "",
+      "defalcare_UAT_1": "",
+      "defalcare_UAT_2": "",
+      "defalcare_UAT_3": "",
+      "modul_refacere_suma_0": ""
+    },
+    "ports": {
+      "a_0": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "b_0": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "c_in_0": {
+        "direction": "I"
+      },
+      "carry4_0": {
+        "direction": "O"
+      },
+      "GUAT_G_0": {
+        "direction": "O"
+      },
+      "GUAT_P_0": {
+        "direction": "O"
+      },
+      "sum_0": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "sumator_complet_1bit_0": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_0_1",
+        "xci_path": "ip/design_1_sumator_complet_1bit_0_1/design_1_sumator_complet_1bit_0_1.xci",
+        "inst_hier_path": "sumator_complet_1bit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_1": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_1_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_1_0/design_1_sumator_complet_1bit_1_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_2": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_2_1",
+        "xci_path": "ip/design_1_sumator_complet_1bit_2_1/design_1_sumator_complet_1bit_2_1.xci",
+        "inst_hier_path": "sumator_complet_1bit_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_3": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_3_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_3_0/design_1_sumator_complet_1bit_3_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "UAT_0": {
+        "vlnv": "xilinx.com:module_ref:UAT:1.0",
+        "xci_name": "design_1_UAT_0_0",
+        "xci_path": "ip/design_1_UAT_0_0/design_1_UAT_0_0.xci",
+        "inst_hier_path": "UAT_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "UAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_in": {
+            "direction": "I"
+          },
+          "g_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "p_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "UAT_G": {
+            "direction": "O"
+          },
+          "UAT_P": {
+            "direction": "O"
+          },
+          "carry_UAT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "modul_concat_sum_0": {
+        "vlnv": "xilinx.com:module_ref:modul_concat_sum:1.0",
+        "xci_name": "design_1_modul_concat_sum_0_0",
+        "xci_path": "ip/design_1_modul_concat_sum_0_0/design_1_modul_concat_sum_0_0.xci",
+        "inst_hier_path": "modul_concat_sum_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_concat_sum",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "p1": {
+            "direction": "I"
+          },
+          "p2": {
+            "direction": "I"
+          },
+          "p3": {
+            "direction": "I"
+          },
+          "p4": {
+            "direction": "I"
+          },
+          "g1": {
+            "direction": "I"
+          },
+          "g2": {
+            "direction": "I"
+          },
+          "g3": {
+            "direction": "I"
+          },
+          "g4": {
+            "direction": "I"
+          },
+          "g_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "p_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "GUAT_0": {
+        "vlnv": "xilinx.com:module_ref:GUAT:1.0",
+        "xci_name": "design_1_GUAT_0_0",
+        "xci_path": "ip/design_1_GUAT_0_0/design_1_GUAT_0_0.xci",
+        "inst_hier_path": "GUAT_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "GUAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_in": {
+            "direction": "I"
+          },
+          "UAT_G": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "UAT_P": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "GUAT_G": {
+            "direction": "O"
+          },
+          "GUAT_P": {
+            "direction": "O"
+          },
+          "carry_GUAT": {
+            "direction": "O",
+            "left": "4",
+            "right": "1"
+          }
+        }
+      },
+      "sumator_complet_1bit_4": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_4_1",
+        "xci_path": "ip/design_1_sumator_complet_1bit_4_1/design_1_sumator_complet_1bit_4_1.xci",
+        "inst_hier_path": "sumator_complet_1bit_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_5": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_5_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_5_0/design_1_sumator_complet_1bit_5_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_5",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_6": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_6_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_6_0/design_1_sumator_complet_1bit_6_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_6",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_7": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_7_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_7_0/design_1_sumator_complet_1bit_7_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_7",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "modul_concat_sum_1": {
+        "vlnv": "xilinx.com:module_ref:modul_concat_sum:1.0",
+        "xci_name": "design_1_modul_concat_sum_1_0",
+        "xci_path": "ip/design_1_modul_concat_sum_1_0/design_1_modul_concat_sum_1_0.xci",
+        "inst_hier_path": "modul_concat_sum_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_concat_sum",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "p1": {
+            "direction": "I"
+          },
+          "p2": {
+            "direction": "I"
+          },
+          "p3": {
+            "direction": "I"
+          },
+          "p4": {
+            "direction": "I"
+          },
+          "g1": {
+            "direction": "I"
+          },
+          "g2": {
+            "direction": "I"
+          },
+          "g3": {
+            "direction": "I"
+          },
+          "g4": {
+            "direction": "I"
+          },
+          "g_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "p_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "modul_defalcare_0": {
+        "vlnv": "xilinx.com:module_ref:modul_defalcare:1.0",
+        "xci_name": "design_1_modul_defalcare_0_1",
+        "xci_path": "ip/design_1_modul_defalcare_0_1/design_1_modul_defalcare_0_1.xci",
+        "inst_hier_path": "modul_defalcare_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_defalcare",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "a1": {
+            "direction": "O"
+          },
+          "a2": {
+            "direction": "O"
+          },
+          "a3": {
+            "direction": "O"
+          },
+          "a4": {
+            "direction": "O"
+          },
+          "a5": {
+            "direction": "O"
+          },
+          "a6": {
+            "direction": "O"
+          },
+          "a7": {
+            "direction": "O"
+          },
+          "a8": {
+            "direction": "O"
+          },
+          "a9": {
+            "direction": "O"
+          },
+          "a10": {
+            "direction": "O"
+          },
+          "a11": {
+            "direction": "O"
+          },
+          "a12": {
+            "direction": "O"
+          },
+          "a13": {
+            "direction": "O"
+          },
+          "a14": {
+            "direction": "O"
+          },
+          "a15": {
+            "direction": "O"
+          },
+          "a16": {
+            "direction": "O"
+          }
+        }
+      },
+      "modul_defalcare_1": {
+        "vlnv": "xilinx.com:module_ref:modul_defalcare:1.0",
+        "xci_name": "design_1_modul_defalcare_1_1",
+        "xci_path": "ip/design_1_modul_defalcare_1_1/design_1_modul_defalcare_1_1.xci",
+        "inst_hier_path": "modul_defalcare_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_defalcare",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "a1": {
+            "direction": "O"
+          },
+          "a2": {
+            "direction": "O"
+          },
+          "a3": {
+            "direction": "O"
+          },
+          "a4": {
+            "direction": "O"
+          },
+          "a5": {
+            "direction": "O"
+          },
+          "a6": {
+            "direction": "O"
+          },
+          "a7": {
+            "direction": "O"
+          },
+          "a8": {
+            "direction": "O"
+          },
+          "a9": {
+            "direction": "O"
+          },
+          "a10": {
+            "direction": "O"
+          },
+          "a11": {
+            "direction": "O"
+          },
+          "a12": {
+            "direction": "O"
+          },
+          "a13": {
+            "direction": "O"
+          },
+          "a14": {
+            "direction": "O"
+          },
+          "a15": {
+            "direction": "O"
+          },
+          "a16": {
+            "direction": "O"
+          }
+        }
+      },
+      "UAT_1": {
+        "vlnv": "xilinx.com:module_ref:UAT:1.0",
+        "xci_name": "design_1_UAT_1_0",
+        "xci_path": "ip/design_1_UAT_1_0/design_1_UAT_1_0.xci",
+        "inst_hier_path": "UAT_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "UAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_in": {
+            "direction": "I"
+          },
+          "g_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "p_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "UAT_G": {
+            "direction": "O"
+          },
+          "UAT_P": {
+            "direction": "O"
+          },
+          "carry_UAT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "sumator_complet_1bit_8": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_8_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_8_0/design_1_sumator_complet_1bit_8_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_8",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_9": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_9_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_9_0/design_1_sumator_complet_1bit_9_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_9",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_10": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_10_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_10_0/design_1_sumator_complet_1bit_10_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_10",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_11": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_11_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_11_0/design_1_sumator_complet_1bit_11_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_11",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "modul_concat_sum_2": {
+        "vlnv": "xilinx.com:module_ref:modul_concat_sum:1.0",
+        "xci_name": "design_1_modul_concat_sum_2_0",
+        "xci_path": "ip/design_1_modul_concat_sum_2_0/design_1_modul_concat_sum_2_0.xci",
+        "inst_hier_path": "modul_concat_sum_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_concat_sum",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "p1": {
+            "direction": "I"
+          },
+          "p2": {
+            "direction": "I"
+          },
+          "p3": {
+            "direction": "I"
+          },
+          "p4": {
+            "direction": "I"
+          },
+          "g1": {
+            "direction": "I"
+          },
+          "g2": {
+            "direction": "I"
+          },
+          "g3": {
+            "direction": "I"
+          },
+          "g4": {
+            "direction": "I"
+          },
+          "g_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "p_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "UAT_2": {
+        "vlnv": "xilinx.com:module_ref:UAT:1.0",
+        "xci_name": "design_1_UAT_2_0",
+        "xci_path": "ip/design_1_UAT_2_0/design_1_UAT_2_0.xci",
+        "inst_hier_path": "UAT_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "UAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_in": {
+            "direction": "I"
+          },
+          "g_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "p_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "UAT_G": {
+            "direction": "O"
+          },
+          "UAT_P": {
+            "direction": "O"
+          },
+          "carry_UAT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "modul_input_0": {
+        "vlnv": "xilinx.com:module_ref:modul_input:1.0",
+        "xci_name": "design_1_modul_input_0_1",
+        "xci_path": "ip/design_1_modul_input_0_1/design_1_modul_input_0_1.xci",
+        "inst_hier_path": "modul_input_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_input",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "b": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "a_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "b_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "c_in_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_12": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_12_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_12_0/design_1_sumator_complet_1bit_12_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_12",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_13": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_13_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_13_0/design_1_sumator_complet_1bit_13_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_13",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_14": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_14_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_14_0/design_1_sumator_complet_1bit_14_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_14",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "sumator_complet_1bit_15": {
+        "vlnv": "xilinx.com:module_ref:sumator_complet_1bit:1.0",
+        "xci_name": "design_1_sumator_complet_1bit_15_0",
+        "xci_path": "ip/design_1_sumator_complet_1bit_15_0/design_1_sumator_complet_1bit_15_0.xci",
+        "inst_hier_path": "sumator_complet_1bit_15",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sumator_complet_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c_in": {
+            "direction": "I"
+          },
+          "p": {
+            "direction": "O"
+          },
+          "g": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O"
+          }
+        }
+      },
+      "modul_concat_sum_3": {
+        "vlnv": "xilinx.com:module_ref:modul_concat_sum:1.0",
+        "xci_name": "design_1_modul_concat_sum_3_0",
+        "xci_path": "ip/design_1_modul_concat_sum_3_0/design_1_modul_concat_sum_3_0.xci",
+        "inst_hier_path": "modul_concat_sum_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_concat_sum",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "p1": {
+            "direction": "I"
+          },
+          "p2": {
+            "direction": "I"
+          },
+          "p3": {
+            "direction": "I"
+          },
+          "p4": {
+            "direction": "I"
+          },
+          "g1": {
+            "direction": "I"
+          },
+          "g2": {
+            "direction": "I"
+          },
+          "g3": {
+            "direction": "I"
+          },
+          "g4": {
+            "direction": "I"
+          },
+          "g_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "p_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "UAT_3": {
+        "vlnv": "xilinx.com:module_ref:UAT:1.0",
+        "xci_name": "design_1_UAT_3_0",
+        "xci_path": "ip/design_1_UAT_3_0/design_1_UAT_3_0.xci",
+        "inst_hier_path": "UAT_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "UAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_in": {
+            "direction": "I"
+          },
+          "g_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "p_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "UAT_G": {
+            "direction": "O"
+          },
+          "UAT_P": {
+            "direction": "O"
+          },
+          "carry_UAT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "splitter_GUAT_0": {
+        "vlnv": "xilinx.com:module_ref:splitter_GUAT:1.0",
+        "xci_name": "design_1_splitter_GUAT_0_0",
+        "xci_path": "ip/design_1_splitter_GUAT_0_0/design_1_splitter_GUAT_0_0.xci",
+        "inst_hier_path": "splitter_GUAT_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "splitter_GUAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "carry_GUAT": {
+            "direction": "I",
+            "left": "4",
+            "right": "1"
+          },
+          "carry1": {
+            "direction": "O"
+          },
+          "carry2": {
+            "direction": "O"
+          },
+          "carry3": {
+            "direction": "O"
+          },
+          "carry4": {
+            "direction": "O"
+          }
+        }
+      },
+      "modul_concat_uat_0": {
+        "vlnv": "xilinx.com:module_ref:modul_concat_uat:1.0",
+        "xci_name": "design_1_modul_concat_uat_0_0",
+        "xci_path": "ip/design_1_modul_concat_uat_0_0/design_1_modul_concat_uat_0_0.xci",
+        "inst_hier_path": "modul_concat_uat_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_concat_uat",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "p0": {
+            "direction": "I"
+          },
+          "p1": {
+            "direction": "I"
+          },
+          "p2": {
+            "direction": "I"
+          },
+          "p3": {
+            "direction": "I"
+          },
+          "g0": {
+            "direction": "I"
+          },
+          "g1": {
+            "direction": "I"
+          },
+          "g2": {
+            "direction": "I"
+          },
+          "g3": {
+            "direction": "I"
+          },
+          "uat_g": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "uat_p": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "defalcare_UAT_0": {
+        "vlnv": "xilinx.com:module_ref:defalcare_UAT:1.0",
+        "xci_name": "design_1_defalcare_UAT_0_0",
+        "xci_path": "ip/design_1_defalcare_UAT_0_0/design_1_defalcare_UAT_0_0.xci",
+        "inst_hier_path": "defalcare_UAT_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "defalcare_UAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_UAT": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "c_in_0": {
+            "direction": "O"
+          },
+          "c_in_1": {
+            "direction": "O"
+          },
+          "c_in_2": {
+            "direction": "O"
+          }
+        }
+      },
+      "defalcare_UAT_1": {
+        "vlnv": "xilinx.com:module_ref:defalcare_UAT:1.0",
+        "xci_name": "design_1_defalcare_UAT_1_0",
+        "xci_path": "ip/design_1_defalcare_UAT_1_0/design_1_defalcare_UAT_1_0.xci",
+        "inst_hier_path": "defalcare_UAT_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "defalcare_UAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_UAT": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "c_in_0": {
+            "direction": "O"
+          },
+          "c_in_1": {
+            "direction": "O"
+          },
+          "c_in_2": {
+            "direction": "O"
+          }
+        }
+      },
+      "defalcare_UAT_2": {
+        "vlnv": "xilinx.com:module_ref:defalcare_UAT:1.0",
+        "xci_name": "design_1_defalcare_UAT_2_0",
+        "xci_path": "ip/design_1_defalcare_UAT_2_0/design_1_defalcare_UAT_2_0.xci",
+        "inst_hier_path": "defalcare_UAT_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "defalcare_UAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_UAT": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "c_in_0": {
+            "direction": "O"
+          },
+          "c_in_1": {
+            "direction": "O"
+          },
+          "c_in_2": {
+            "direction": "O"
+          }
+        }
+      },
+      "defalcare_UAT_3": {
+        "vlnv": "xilinx.com:module_ref:defalcare_UAT:1.0",
+        "xci_name": "design_1_defalcare_UAT_3_0",
+        "xci_path": "ip/design_1_defalcare_UAT_3_0/design_1_defalcare_UAT_3_0.xci",
+        "inst_hier_path": "defalcare_UAT_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "defalcare_UAT",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "c_UAT": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "c_in_0": {
+            "direction": "O"
+          },
+          "c_in_1": {
+            "direction": "O"
+          },
+          "c_in_2": {
+            "direction": "O"
+          }
+        }
+      },
+      "modul_refacere_suma_0": {
+        "vlnv": "xilinx.com:module_ref:modul_refacere_suma:1.0",
+        "xci_name": "design_1_modul_refacere_suma_0_0",
+        "xci_path": "ip/design_1_modul_refacere_suma_0_0/design_1_modul_refacere_suma_0_0.xci",
+        "inst_hier_path": "modul_refacere_suma_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "modul_refacere_suma",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "s0": {
+            "direction": "I"
+          },
+          "s1": {
+            "direction": "I"
+          },
+          "s2": {
+            "direction": "I"
+          },
+          "s3": {
+            "direction": "I"
+          },
+          "s4": {
+            "direction": "I"
+          },
+          "s5": {
+            "direction": "I"
+          },
+          "s6": {
+            "direction": "I"
+          },
+          "s7": {
+            "direction": "I"
+          },
+          "s8": {
+            "direction": "I"
+          },
+          "s9": {
+            "direction": "I"
+          },
+          "s10": {
+            "direction": "I"
+          },
+          "s11": {
+            "direction": "I"
+          },
+          "s12": {
+            "direction": "I"
+          },
+          "s13": {
+            "direction": "I"
+          },
+          "s14": {
+            "direction": "I"
+          },
+          "s15": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sumator_complet_1bit_0_p": {
+        "ports": [
+          "sumator_complet_1bit_0/p",
+          "modul_concat_sum_0/p1"
+        ]
+      },
+      "sumator_complet_1bit_1_p": {
+        "ports": [
+          "sumator_complet_1bit_1/p",
+          "modul_concat_sum_0/p2"
+        ]
+      },
+      "sumator_complet_1bit_2_p": {
+        "ports": [
+          "sumator_complet_1bit_2/p",
+          "modul_concat_sum_0/p3"
+        ]
+      },
+      "sumator_complet_1bit_3_p": {
+        "ports": [
+          "sumator_complet_1bit_3/p",
+          "modul_concat_sum_0/p4"
+        ]
+      },
+      "sumator_complet_1bit_0_g": {
+        "ports": [
+          "sumator_complet_1bit_0/g",
+          "modul_concat_sum_0/g1"
+        ]
+      },
+      "sumator_complet_1bit_1_g": {
+        "ports": [
+          "sumator_complet_1bit_1/g",
+          "modul_concat_sum_0/g2"
+        ]
+      },
+      "sumator_complet_1bit_2_g": {
+        "ports": [
+          "sumator_complet_1bit_2/g",
+          "modul_concat_sum_0/g3"
+        ]
+      },
+      "sumator_complet_1bit_3_g": {
+        "ports": [
+          "sumator_complet_1bit_3/g",
+          "modul_concat_sum_0/g4"
+        ]
+      },
+      "sumator_complet_1bit_4_p": {
+        "ports": [
+          "sumator_complet_1bit_4/p",
+          "modul_concat_sum_1/p1"
+        ]
+      },
+      "sumator_complet_1bit_5_p": {
+        "ports": [
+          "sumator_complet_1bit_5/p",
+          "modul_concat_sum_1/p2"
+        ]
+      },
+      "sumator_complet_1bit_6_p": {
+        "ports": [
+          "sumator_complet_1bit_6/p",
+          "modul_concat_sum_1/p3"
+        ]
+      },
+      "sumator_complet_1bit_7_p": {
+        "ports": [
+          "sumator_complet_1bit_7/p",
+          "modul_concat_sum_1/p4"
+        ]
+      },
+      "sumator_complet_1bit_4_g": {
+        "ports": [
+          "sumator_complet_1bit_4/g",
+          "modul_concat_sum_1/g1"
+        ]
+      },
+      "sumator_complet_1bit_5_g": {
+        "ports": [
+          "sumator_complet_1bit_5/g",
+          "modul_concat_sum_1/g2"
+        ]
+      },
+      "sumator_complet_1bit_6_g": {
+        "ports": [
+          "sumator_complet_1bit_6/g",
+          "modul_concat_sum_1/g3"
+        ]
+      },
+      "sumator_complet_1bit_7_g": {
+        "ports": [
+          "sumator_complet_1bit_7/g",
+          "modul_concat_sum_1/g4"
+        ]
+      },
+      "modul_concat_sum_0_g_out": {
+        "ports": [
+          "modul_concat_sum_0/g_out",
+          "UAT_0/g_in"
+        ]
+      },
+      "modul_concat_sum_0_p_out": {
+        "ports": [
+          "modul_concat_sum_0/p_out",
+          "UAT_0/p_in"
+        ]
+      },
+      "modul_concat_sum_1_g_out": {
+        "ports": [
+          "modul_concat_sum_1/g_out",
+          "UAT_1/g_in"
+        ]
+      },
+      "modul_concat_sum_1_p_out": {
+        "ports": [
+          "modul_concat_sum_1/p_out",
+          "UAT_1/p_in"
+        ]
+      },
+      "sumator_complet_1bit_8_p": {
+        "ports": [
+          "sumator_complet_1bit_8/p",
+          "modul_concat_sum_2/p1"
+        ]
+      },
+      "sumator_complet_1bit_9_p": {
+        "ports": [
+          "sumator_complet_1bit_9/p",
+          "modul_concat_sum_2/p2"
+        ]
+      },
+      "sumator_complet_1bit_10_p": {
+        "ports": [
+          "sumator_complet_1bit_10/p",
+          "modul_concat_sum_2/p3"
+        ]
+      },
+      "sumator_complet_1bit_11_p": {
+        "ports": [
+          "sumator_complet_1bit_11/p",
+          "modul_concat_sum_2/p4"
+        ]
+      },
+      "sumator_complet_1bit_8_g": {
+        "ports": [
+          "sumator_complet_1bit_8/g",
+          "modul_concat_sum_2/g1"
+        ]
+      },
+      "sumator_complet_1bit_9_g": {
+        "ports": [
+          "sumator_complet_1bit_9/g",
+          "modul_concat_sum_2/g2"
+        ]
+      },
+      "sumator_complet_1bit_10_g": {
+        "ports": [
+          "sumator_complet_1bit_10/g",
+          "modul_concat_sum_2/g3"
+        ]
+      },
+      "sumator_complet_1bit_11_g": {
+        "ports": [
+          "sumator_complet_1bit_11/g",
+          "modul_concat_sum_2/g4"
+        ]
+      },
+      "modul_concat_sum_2_g_out": {
+        "ports": [
+          "modul_concat_sum_2/g_out",
+          "UAT_2/g_in"
+        ]
+      },
+      "modul_concat_sum_2_p_out": {
+        "ports": [
+          "modul_concat_sum_2/p_out",
+          "UAT_2/p_in"
+        ]
+      },
+      "modul_defalcare_0_a1": {
+        "ports": [
+          "modul_defalcare_0/a1",
+          "sumator_complet_1bit_0/a"
+        ]
+      },
+      "modul_defalcare_0_a2": {
+        "ports": [
+          "modul_defalcare_0/a2",
+          "sumator_complet_1bit_1/a"
+        ]
+      },
+      "modul_defalcare_0_a3": {
+        "ports": [
+          "modul_defalcare_0/a3",
+          "sumator_complet_1bit_2/a"
+        ]
+      },
+      "modul_defalcare_0_a4": {
+        "ports": [
+          "modul_defalcare_0/a4",
+          "sumator_complet_1bit_3/a"
+        ]
+      },
+      "modul_defalcare_0_a5": {
+        "ports": [
+          "modul_defalcare_0/a5",
+          "sumator_complet_1bit_4/a"
+        ]
+      },
+      "modul_defalcare_0_a6": {
+        "ports": [
+          "modul_defalcare_0/a6",
+          "sumator_complet_1bit_5/a"
+        ]
+      },
+      "modul_defalcare_0_a7": {
+        "ports": [
+          "modul_defalcare_0/a7",
+          "sumator_complet_1bit_6/a"
+        ]
+      },
+      "modul_defalcare_0_a8": {
+        "ports": [
+          "modul_defalcare_0/a8",
+          "sumator_complet_1bit_7/a"
+        ]
+      },
+      "modul_defalcare_0_a9": {
+        "ports": [
+          "modul_defalcare_0/a9",
+          "sumator_complet_1bit_8/a"
+        ]
+      },
+      "modul_defalcare_0_a10": {
+        "ports": [
+          "modul_defalcare_0/a10",
+          "sumator_complet_1bit_9/a"
+        ]
+      },
+      "modul_defalcare_0_a11": {
+        "ports": [
+          "modul_defalcare_0/a11",
+          "sumator_complet_1bit_10/a"
+        ]
+      },
+      "modul_defalcare_0_a12": {
+        "ports": [
+          "modul_defalcare_0/a12",
+          "sumator_complet_1bit_11/a"
+        ]
+      },
+      "modul_input_0_a_out": {
+        "ports": [
+          "modul_input_0/a_out",
+          "modul_defalcare_0/a"
+        ]
+      },
+      "modul_input_0_b_out": {
+        "ports": [
+          "modul_input_0/b_out",
+          "modul_defalcare_1/a"
+        ]
+      },
+      "a_0_1": {
+        "ports": [
+          "a_0",
+          "modul_input_0/a"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b_0",
+          "modul_input_0/b"
+        ]
+      },
+      "c_in_0_1": {
+        "ports": [
+          "c_in_0",
+          "modul_input_0/c_in"
+        ]
+      },
+      "modul_defalcare_1_a1": {
+        "ports": [
+          "modul_defalcare_1/a1",
+          "sumator_complet_1bit_0/b"
+        ]
+      },
+      "modul_defalcare_1_a2": {
+        "ports": [
+          "modul_defalcare_1/a2",
+          "sumator_complet_1bit_1/b"
+        ]
+      },
+      "modul_defalcare_1_a3": {
+        "ports": [
+          "modul_defalcare_1/a3",
+          "sumator_complet_1bit_2/b"
+        ]
+      },
+      "modul_defalcare_1_a4": {
+        "ports": [
+          "modul_defalcare_1/a4",
+          "sumator_complet_1bit_3/b"
+        ]
+      },
+      "modul_defalcare_1_a5": {
+        "ports": [
+          "modul_defalcare_1/a5",
+          "sumator_complet_1bit_4/b"
+        ]
+      },
+      "modul_defalcare_1_a6": {
+        "ports": [
+          "modul_defalcare_1/a6",
+          "sumator_complet_1bit_5/b"
+        ]
+      },
+      "modul_defalcare_1_a7": {
+        "ports": [
+          "modul_defalcare_1/a7",
+          "sumator_complet_1bit_6/b"
+        ]
+      },
+      "modul_defalcare_1_a8": {
+        "ports": [
+          "modul_defalcare_1/a8",
+          "sumator_complet_1bit_7/b"
+        ]
+      },
+      "modul_defalcare_1_a9": {
+        "ports": [
+          "modul_defalcare_1/a9",
+          "sumator_complet_1bit_8/b"
+        ]
+      },
+      "modul_defalcare_1_a10": {
+        "ports": [
+          "modul_defalcare_1/a10",
+          "sumator_complet_1bit_9/b"
+        ]
+      },
+      "modul_defalcare_1_a11": {
+        "ports": [
+          "modul_defalcare_1/a11",
+          "sumator_complet_1bit_10/b"
+        ]
+      },
+      "modul_defalcare_1_a12": {
+        "ports": [
+          "modul_defalcare_1/a12",
+          "sumator_complet_1bit_11/b"
+        ]
+      },
+      "modul_input_0_c_in_out": {
+        "ports": [
+          "modul_input_0/c_in_out",
+          "sumator_complet_1bit_0/c_in",
+          "UAT_0/c_in",
+          "GUAT_0/c_in"
+        ]
+      },
+      "sumator_complet_1bit_12_p": {
+        "ports": [
+          "sumator_complet_1bit_12/p",
+          "modul_concat_sum_3/p1"
+        ]
+      },
+      "sumator_complet_1bit_13_p": {
+        "ports": [
+          "sumator_complet_1bit_13/p",
+          "modul_concat_sum_3/p2"
+        ]
+      },
+      "sumator_complet_1bit_14_p": {
+        "ports": [
+          "sumator_complet_1bit_14/p",
+          "modul_concat_sum_3/p3"
+        ]
+      },
+      "sumator_complet_1bit_15_p": {
+        "ports": [
+          "sumator_complet_1bit_15/p",
+          "modul_concat_sum_3/p4"
+        ]
+      },
+      "sumator_complet_1bit_12_g": {
+        "ports": [
+          "sumator_complet_1bit_12/g",
+          "modul_concat_sum_3/g1"
+        ]
+      },
+      "sumator_complet_1bit_13_g": {
+        "ports": [
+          "sumator_complet_1bit_13/g",
+          "modul_concat_sum_3/g2"
+        ]
+      },
+      "sumator_complet_1bit_14_g": {
+        "ports": [
+          "sumator_complet_1bit_14/g",
+          "modul_concat_sum_3/g3"
+        ]
+      },
+      "sumator_complet_1bit_15_g": {
+        "ports": [
+          "sumator_complet_1bit_15/g",
+          "modul_concat_sum_3/g4"
+        ]
+      },
+      "modul_concat_sum_3_g_out": {
+        "ports": [
+          "modul_concat_sum_3/g_out",
+          "UAT_3/g_in"
+        ]
+      },
+      "modul_concat_sum_3_p_out": {
+        "ports": [
+          "modul_concat_sum_3/p_out",
+          "UAT_3/p_in"
+        ]
+      },
+      "modul_defalcare_0_a13": {
+        "ports": [
+          "modul_defalcare_0/a13",
+          "sumator_complet_1bit_12/a"
+        ]
+      },
+      "modul_defalcare_0_a14": {
+        "ports": [
+          "modul_defalcare_0/a14",
+          "sumator_complet_1bit_13/a"
+        ]
+      },
+      "modul_defalcare_0_a15": {
+        "ports": [
+          "modul_defalcare_0/a15",
+          "sumator_complet_1bit_14/a"
+        ]
+      },
+      "modul_defalcare_0_a16": {
+        "ports": [
+          "modul_defalcare_0/a16",
+          "sumator_complet_1bit_15/a"
+        ]
+      },
+      "modul_defalcare_1_a13": {
+        "ports": [
+          "modul_defalcare_1/a13",
+          "sumator_complet_1bit_12/b"
+        ]
+      },
+      "modul_defalcare_1_a14": {
+        "ports": [
+          "modul_defalcare_1/a14",
+          "sumator_complet_1bit_13/b"
+        ]
+      },
+      "modul_defalcare_1_a15": {
+        "ports": [
+          "modul_defalcare_1/a15",
+          "sumator_complet_1bit_14/b"
+        ]
+      },
+      "modul_defalcare_1_a16": {
+        "ports": [
+          "modul_defalcare_1/a16",
+          "sumator_complet_1bit_15/b"
+        ]
+      },
+      "GUAT_0_carry_GUAT": {
+        "ports": [
+          "GUAT_0/carry_GUAT",
+          "splitter_GUAT_0/carry_GUAT"
+        ]
+      },
+      "splitter_GUAT_0_carry4": {
+        "ports": [
+          "splitter_GUAT_0/carry4",
+          "carry4_0"
+        ]
+      },
+      "GUAT_0_GUAT_G": {
+        "ports": [
+          "GUAT_0/GUAT_G",
+          "GUAT_G_0"
+        ]
+      },
+      "GUAT_0_GUAT_P": {
+        "ports": [
+          "GUAT_0/GUAT_P",
+          "GUAT_P_0"
+        ]
+      },
+      "splitter_GUAT_0_carry1": {
+        "ports": [
+          "splitter_GUAT_0/carry1",
+          "UAT_1/c_in",
+          "sumator_complet_1bit_4/c_in"
+        ]
+      },
+      "splitter_GUAT_0_carry2": {
+        "ports": [
+          "splitter_GUAT_0/carry2",
+          "UAT_2/c_in",
+          "sumator_complet_1bit_8/c_in"
+        ]
+      },
+      "splitter_GUAT_0_carry3": {
+        "ports": [
+          "splitter_GUAT_0/carry3",
+          "UAT_3/c_in",
+          "sumator_complet_1bit_12/c_in"
+        ]
+      },
+      "UAT_0_UAT_G": {
+        "ports": [
+          "UAT_0/UAT_G",
+          "modul_concat_uat_0/g0"
+        ]
+      },
+      "UAT_0_UAT_P": {
+        "ports": [
+          "UAT_0/UAT_P",
+          "modul_concat_uat_0/p0"
+        ]
+      },
+      "UAT_1_UAT_G": {
+        "ports": [
+          "UAT_1/UAT_G",
+          "modul_concat_uat_0/g1"
+        ]
+      },
+      "UAT_1_UAT_P": {
+        "ports": [
+          "UAT_1/UAT_P",
+          "modul_concat_uat_0/p1"
+        ]
+      },
+      "UAT_2_UAT_G": {
+        "ports": [
+          "UAT_2/UAT_G",
+          "modul_concat_uat_0/g2"
+        ]
+      },
+      "UAT_2_UAT_P": {
+        "ports": [
+          "UAT_2/UAT_P",
+          "modul_concat_uat_0/p2"
+        ]
+      },
+      "UAT_3_UAT_G": {
+        "ports": [
+          "UAT_3/UAT_G",
+          "modul_concat_uat_0/g3"
+        ]
+      },
+      "UAT_3_UAT_P": {
+        "ports": [
+          "UAT_3/UAT_P",
+          "modul_concat_uat_0/p3"
+        ]
+      },
+      "modul_concat_uat_0_uat_g": {
+        "ports": [
+          "modul_concat_uat_0/uat_g",
+          "GUAT_0/UAT_G"
+        ]
+      },
+      "modul_concat_uat_0_uat_p": {
+        "ports": [
+          "modul_concat_uat_0/uat_p",
+          "GUAT_0/UAT_P"
+        ]
+      },
+      "sumator_complet_1bit_0_sum": {
+        "ports": [
+          "sumator_complet_1bit_0/sum",
+          "modul_refacere_suma_0/s0"
+        ]
+      },
+      "sumator_complet_1bit_1_sum": {
+        "ports": [
+          "sumator_complet_1bit_1/sum",
+          "modul_refacere_suma_0/s1"
+        ]
+      },
+      "sumator_complet_1bit_2_sum": {
+        "ports": [
+          "sumator_complet_1bit_2/sum",
+          "modul_refacere_suma_0/s2"
+        ]
+      },
+      "sumator_complet_1bit_3_sum": {
+        "ports": [
+          "sumator_complet_1bit_3/sum",
+          "modul_refacere_suma_0/s3"
+        ]
+      },
+      "sumator_complet_1bit_4_sum": {
+        "ports": [
+          "sumator_complet_1bit_4/sum",
+          "modul_refacere_suma_0/s4"
+        ]
+      },
+      "sumator_complet_1bit_5_sum": {
+        "ports": [
+          "sumator_complet_1bit_5/sum",
+          "modul_refacere_suma_0/s5"
+        ]
+      },
+      "sumator_complet_1bit_6_sum": {
+        "ports": [
+          "sumator_complet_1bit_6/sum",
+          "modul_refacere_suma_0/s6"
+        ]
+      },
+      "sumator_complet_1bit_7_sum": {
+        "ports": [
+          "sumator_complet_1bit_7/sum",
+          "modul_refacere_suma_0/s7"
+        ]
+      },
+      "sumator_complet_1bit_8_sum": {
+        "ports": [
+          "sumator_complet_1bit_8/sum",
+          "modul_refacere_suma_0/s8"
+        ]
+      },
+      "sumator_complet_1bit_9_sum": {
+        "ports": [
+          "sumator_complet_1bit_9/sum",
+          "modul_refacere_suma_0/s9"
+        ]
+      },
+      "sumator_complet_1bit_10_sum": {
+        "ports": [
+          "sumator_complet_1bit_10/sum",
+          "modul_refacere_suma_0/s10"
+        ]
+      },
+      "sumator_complet_1bit_11_sum": {
+        "ports": [
+          "sumator_complet_1bit_11/sum",
+          "modul_refacere_suma_0/s11"
+        ]
+      },
+      "sumator_complet_1bit_12_sum": {
+        "ports": [
+          "sumator_complet_1bit_12/sum",
+          "modul_refacere_suma_0/s12"
+        ]
+      },
+      "sumator_complet_1bit_13_sum": {
+        "ports": [
+          "sumator_complet_1bit_13/sum",
+          "modul_refacere_suma_0/s13"
+        ]
+      },
+      "sumator_complet_1bit_14_sum": {
+        "ports": [
+          "sumator_complet_1bit_14/sum",
+          "modul_refacere_suma_0/s14"
+        ]
+      },
+      "sumator_complet_1bit_15_sum": {
+        "ports": [
+          "sumator_complet_1bit_15/sum",
+          "modul_refacere_suma_0/s15"
+        ]
+      },
+      "modul_refacere_suma_0_sum": {
+        "ports": [
+          "modul_refacere_suma_0/sum",
+          "sum_0"
+        ]
+      },
+      "UAT_0_carry_UAT": {
+        "ports": [
+          "UAT_0/carry_UAT",
+          "defalcare_UAT_0/c_UAT"
+        ]
+      },
+      "defalcare_UAT_0_c_in_0": {
+        "ports": [
+          "defalcare_UAT_0/c_in_0",
+          "sumator_complet_1bit_1/c_in"
+        ]
+      },
+      "defalcare_UAT_0_c_in_1": {
+        "ports": [
+          "defalcare_UAT_0/c_in_1",
+          "sumator_complet_1bit_2/c_in"
+        ]
+      },
+      "defalcare_UAT_0_c_in_2": {
+        "ports": [
+          "defalcare_UAT_0/c_in_2",
+          "sumator_complet_1bit_3/c_in"
+        ]
+      },
+      "UAT_1_carry_UAT": {
+        "ports": [
+          "UAT_1/carry_UAT",
+          "defalcare_UAT_1/c_UAT"
+        ]
+      },
+      "defalcare_UAT_1_c_in_0": {
+        "ports": [
+          "defalcare_UAT_1/c_in_0",
+          "sumator_complet_1bit_5/c_in"
+        ]
+      },
+      "defalcare_UAT_1_c_in_1": {
+        "ports": [
+          "defalcare_UAT_1/c_in_1",
+          "sumator_complet_1bit_6/c_in"
+        ]
+      },
+      "defalcare_UAT_1_c_in_2": {
+        "ports": [
+          "defalcare_UAT_1/c_in_2",
+          "sumator_complet_1bit_7/c_in"
+        ]
+      },
+      "UAT_2_carry_UAT": {
+        "ports": [
+          "UAT_2/carry_UAT",
+          "defalcare_UAT_2/c_UAT"
+        ]
+      },
+      "defalcare_UAT_2_c_in_0": {
+        "ports": [
+          "defalcare_UAT_2/c_in_0",
+          "sumator_complet_1bit_9/c_in"
+        ]
+      },
+      "defalcare_UAT_2_c_in_1": {
+        "ports": [
+          "defalcare_UAT_2/c_in_1",
+          "sumator_complet_1bit_10/c_in"
+        ]
+      },
+      "defalcare_UAT_2_c_in_2": {
+        "ports": [
+          "defalcare_UAT_2/c_in_2",
+          "sumator_complet_1bit_11/c_in"
+        ]
+      },
+      "UAT_3_carry_UAT": {
+        "ports": [
+          "UAT_3/carry_UAT",
+          "defalcare_UAT_3/c_UAT"
+        ]
+      },
+      "defalcare_UAT_3_c_in_0": {
+        "ports": [
+          "defalcare_UAT_3/c_in_0",
+          "sumator_complet_1bit_13/c_in"
+        ]
+      },
+      "defalcare_UAT_3_c_in_1": {
+        "ports": [
+          "defalcare_UAT_3/c_in_1",
+          "sumator_complet_1bit_14/c_in"
+        ]
+      },
+      "defalcare_UAT_3_c_in_2": {
+        "ports": [
+          "defalcare_UAT_3/c_in_2",
+          "sumator_complet_1bit_15/c_in"
+        ]
+      }
+    }
+  }
+}

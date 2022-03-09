@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.srcs/sources_1/new/gateXOR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gateXOR
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.srcs/sources_1/new/registruBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registruBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/ip/design_1_gateXOR_0_0/sim/design_1_gateXOR_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_gateXOR_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/ip/design_1_registruBuffer_0_0/sim/design_1_registruBuffer_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_registruBuffer_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/ip/design_1_registruBuffer_1_0/sim/design_1_registruBuffer_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_registruBuffer_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/ip/design_1_gateXOR_1_0/sim/design_1_gateXOR_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_gateXOR_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/ip/design_1_registruBuffer_2_0/sim/design_1_registruBuffer_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_registruBuffer_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/ip/design_1_registruBuffer_3_0/sim/design_1_registruBuffer_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_registruBuffer_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/ip/design_1_gateXOR_2_0/sim/design_1_gateXOR_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_gateXOR_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/ip/design_1_registruBuffer_4_0/sim/design_1_registruBuffer_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_registruBuffer_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.srcs/sim_1/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Laborator5part1/Lab5P1/Lab5P1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

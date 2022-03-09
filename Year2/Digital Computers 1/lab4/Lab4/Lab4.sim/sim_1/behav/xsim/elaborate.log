@@ -1,0 +1,60 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto b2f6dfd125114884946e82e43c12b234 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.GUAT
+Compiling module xil_defaultlib.design_1_GUAT_0_0
+Compiling module xil_defaultlib.UAT
+Compiling module xil_defaultlib.design_1_UAT_0_0
+Compiling module xil_defaultlib.design_1_UAT_1_0
+Compiling module xil_defaultlib.design_1_UAT_2_0
+Compiling module xil_defaultlib.design_1_UAT_3_0
+Compiling module xil_defaultlib.defalcare_UAT
+Compiling module xil_defaultlib.design_1_defalcare_UAT_0_0
+Compiling module xil_defaultlib.design_1_defalcare_UAT_1_0
+Compiling module xil_defaultlib.design_1_defalcare_UAT_2_0
+Compiling module xil_defaultlib.design_1_defalcare_UAT_3_0
+Compiling module xil_defaultlib.modul_concat_sum
+Compiling module xil_defaultlib.design_1_modul_concat_sum_0_0
+Compiling module xil_defaultlib.design_1_modul_concat_sum_1_0
+Compiling module xil_defaultlib.design_1_modul_concat_sum_2_0
+Compiling module xil_defaultlib.design_1_modul_concat_sum_3_0
+Compiling module xil_defaultlib.modul_concat_uat
+Compiling module xil_defaultlib.design_1_modul_concat_uat_0_0
+Compiling module xil_defaultlib.modul_defalcare
+Compiling module xil_defaultlib.design_1_modul_defalcare_0_1
+Compiling module xil_defaultlib.design_1_modul_defalcare_1_1
+Compiling module xil_defaultlib.modul_input
+Compiling module xil_defaultlib.design_1_modul_input_0_1
+Compiling module xil_defaultlib.modul_refacere_suma
+Compiling module xil_defaultlib.design_1_modul_refacere_suma_0_0
+Compiling module xil_defaultlib.splitter_GUAT
+Compiling module xil_defaultlib.design_1_splitter_GUAT_0_0
+Compiling module xil_defaultlib.sumator_complet_1bit
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_0_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_1_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_10...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_11...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_12...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_13...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_14...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_15...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_2_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_3_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_4_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_5_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_6_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_7_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_8_...
+Compiling module xil_defaultlib.design_1_sumator_complet_1bit_9_...
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test2_behav

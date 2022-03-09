@@ -1,0 +1,452 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x615BC4C5A680729",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Lab5Part2.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ANDGate_0": "",
+      "memoryBuffer_0": "",
+      "memoryBuffer_1": "",
+      "ANDGate_1": "",
+      "memoryBuffer_2": "",
+      "memoryBuffer_3": "",
+      "ANDGate_2": "",
+      "memoryBuffer_4": ""
+    },
+    "ports": {
+      "intrare_0": {
+        "direction": "I"
+      },
+      "a_0": {
+        "direction": "I"
+      },
+      "b_0": {
+        "direction": "I"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "enable_0": {
+        "direction": "I"
+      },
+      "iesire_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "ANDGate_0": {
+        "vlnv": "xilinx.com:module_ref:ANDGate:1.0",
+        "xci_name": "design_1_ANDGate_0_0",
+        "xci_path": "ip/design_1_ANDGate_0_0/design_1_ANDGate_0_0.xci",
+        "inst_hier_path": "ANDGate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ANDGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "O"
+          }
+        }
+      },
+      "memoryBuffer_0": {
+        "vlnv": "xilinx.com:module_ref:memoryBuffer:1.0",
+        "xci_name": "design_1_memoryBuffer_0_0",
+        "xci_path": "ip/design_1_memoryBuffer_0_0/design_1_memoryBuffer_0_0.xci",
+        "inst_hier_path": "memoryBuffer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "memoryBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "memoryBuffer_1": {
+        "vlnv": "xilinx.com:module_ref:memoryBuffer:1.0",
+        "xci_name": "design_1_memoryBuffer_1_0",
+        "xci_path": "ip/design_1_memoryBuffer_1_0/design_1_memoryBuffer_1_0.xci",
+        "inst_hier_path": "memoryBuffer_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "memoryBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "ANDGate_1": {
+        "vlnv": "xilinx.com:module_ref:ANDGate:1.0",
+        "xci_name": "design_1_ANDGate_1_0",
+        "xci_path": "ip/design_1_ANDGate_1_0/design_1_ANDGate_1_0.xci",
+        "inst_hier_path": "ANDGate_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ANDGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "O"
+          }
+        }
+      },
+      "memoryBuffer_2": {
+        "vlnv": "xilinx.com:module_ref:memoryBuffer:1.0",
+        "xci_name": "design_1_memoryBuffer_2_0",
+        "xci_path": "ip/design_1_memoryBuffer_2_0/design_1_memoryBuffer_2_0.xci",
+        "inst_hier_path": "memoryBuffer_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "memoryBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "memoryBuffer_3": {
+        "vlnv": "xilinx.com:module_ref:memoryBuffer:1.0",
+        "xci_name": "design_1_memoryBuffer_3_0",
+        "xci_path": "ip/design_1_memoryBuffer_3_0/design_1_memoryBuffer_3_0.xci",
+        "inst_hier_path": "memoryBuffer_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "memoryBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "ANDGate_2": {
+        "vlnv": "xilinx.com:module_ref:ANDGate:1.0",
+        "xci_name": "design_1_ANDGate_2_0",
+        "xci_path": "ip/design_1_ANDGate_2_0/design_1_ANDGate_2_0.xci",
+        "inst_hier_path": "ANDGate_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ANDGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "O"
+          }
+        }
+      },
+      "memoryBuffer_4": {
+        "vlnv": "xilinx.com:module_ref:memoryBuffer:1.0",
+        "xci_name": "design_1_memoryBuffer_4_0",
+        "xci_path": "ip/design_1_memoryBuffer_4_0/design_1_memoryBuffer_4_0.xci",
+        "inst_hier_path": "memoryBuffer_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "memoryBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "ANDGate_0_c": {
+        "ports": [
+          "ANDGate_0/c",
+          "memoryBuffer_0/intrare"
+        ]
+      },
+      "memoryBuffer_0_iesire": {
+        "ports": [
+          "memoryBuffer_0/iesire",
+          "ANDGate_1/a",
+          "memoryBuffer_3/intrare"
+        ]
+      },
+      "memoryBuffer_1_iesire": {
+        "ports": [
+          "memoryBuffer_1/iesire",
+          "ANDGate_1/b"
+        ]
+      },
+      "intrare_0_1": {
+        "ports": [
+          "intrare_0",
+          "memoryBuffer_1/intrare"
+        ]
+      },
+      "a_0_1": {
+        "ports": [
+          "a_0",
+          "ANDGate_0/a"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b_0",
+          "ANDGate_0/b"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "memoryBuffer_0/clk",
+          "memoryBuffer_1/clk",
+          "memoryBuffer_3/clk",
+          "memoryBuffer_2/clk",
+          "memoryBuffer_4/clk"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "memoryBuffer_0/reset",
+          "memoryBuffer_1/reset",
+          "memoryBuffer_3/reset",
+          "memoryBuffer_2/reset",
+          "memoryBuffer_4/reset"
+        ]
+      },
+      "enable_0_1": {
+        "ports": [
+          "enable_0",
+          "memoryBuffer_0/enable",
+          "memoryBuffer_1/enable",
+          "memoryBuffer_3/enable",
+          "memoryBuffer_2/enable",
+          "memoryBuffer_4/enable"
+        ]
+      },
+      "ANDGate_1_c": {
+        "ports": [
+          "ANDGate_1/c",
+          "memoryBuffer_2/intrare"
+        ]
+      },
+      "memoryBuffer_3_iesire": {
+        "ports": [
+          "memoryBuffer_3/iesire",
+          "ANDGate_2/a"
+        ]
+      },
+      "memoryBuffer_2_iesire": {
+        "ports": [
+          "memoryBuffer_2/iesire",
+          "ANDGate_2/b"
+        ]
+      },
+      "ANDGate_2_c": {
+        "ports": [
+          "ANDGate_2/c",
+          "memoryBuffer_4/intrare"
+        ]
+      },
+      "memoryBuffer_4_iesire": {
+        "ports": [
+          "memoryBuffer_4/iesire",
+          "iesire_0"
+        ]
+      }
+    }
+  }
+}

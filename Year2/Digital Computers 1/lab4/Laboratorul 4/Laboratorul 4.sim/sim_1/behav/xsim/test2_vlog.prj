@@ -1,0 +1,58 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Laboratorul 4.srcs/sources_1/new/sumator_complet_1bit.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/modul_concatenare.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/UAT.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/extragere.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/GUAT.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/extragere_GUAT.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/intrare.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/intrare_c_in.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/concatenare_suma.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/concatenare_uat.v" \
+"../../../../Laboratorul 4.srcs/sources_1/new/split_UAT.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_0_0/sim/design_1_sumator_complet_1bit_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_1_0/sim/design_1_sumator_complet_1bit_1_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_2_0/sim/design_1_sumator_complet_1bit_2_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_3_0/sim/design_1_sumator_complet_1bit_3_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_modul_concatenare_0_0/sim/design_1_modul_concatenare_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_UAT_0_0/sim/design_1_UAT_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_4_0/sim/design_1_sumator_complet_1bit_4_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_5_0/sim/design_1_sumator_complet_1bit_5_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_6_0/sim/design_1_sumator_complet_1bit_6_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_7_0/sim/design_1_sumator_complet_1bit_7_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_modul_concatenare_1_0/sim/design_1_modul_concatenare_1_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_UAT_1_0/sim/design_1_UAT_1_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_8_0/sim/design_1_sumator_complet_1bit_8_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_9_0/sim/design_1_sumator_complet_1bit_9_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_10_0/sim/design_1_sumator_complet_1bit_10_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_11_0/sim/design_1_sumator_complet_1bit_11_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_modul_concatenare_2_0/sim/design_1_modul_concatenare_2_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_UAT_2_0/sim/design_1_UAT_2_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_12_0/sim/design_1_sumator_complet_1bit_12_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_13_0/sim/design_1_sumator_complet_1bit_13_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_14_0/sim/design_1_sumator_complet_1bit_14_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_sumator_complet_1bit_15_0/sim/design_1_sumator_complet_1bit_15_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_modul_concatenare_3_0/sim/design_1_modul_concatenare_3_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_UAT_3_0/sim/design_1_UAT_3_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_extragere_0_0/sim/design_1_extragere_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_extragere_1_0/sim/design_1_extragere_1_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_GUAT_0_0/sim/design_1_GUAT_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_extragere_GUAT_0_0/sim/design_1_extragere_GUAT_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_intrare_0_1/sim/design_1_intrare_0_1.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_intrare_c_in_0_0/sim/design_1_intrare_c_in_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_concatenare_suma_0_0/sim/design_1_concatenare_suma_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_concatenare_uat_0_0/sim/design_1_concatenare_uat_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_split_UAT_0_0/sim/design_1_split_UAT_0_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_split_UAT_1_0/sim/design_1_split_UAT_1_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_split_UAT_2_0/sim/design_1_split_UAT_2_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/ip/design_1_split_UAT_3_0/sim/design_1_split_UAT_3_0.v" \
+"../../../../Laboratorul 4.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../Laboratorul 4.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../Laboratorul 4.srcs/sim_1/new/test2.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

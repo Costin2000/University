@@ -1,0 +1,238 @@
+Brebu Costin-Bogdan 321CD
+
+
+Tin sa mentionez ca pe local imi trec toate testele fara a ma apropia
+de limita de timp, iar pe VMchecker imi pica mai multe.
+Consider ca are legatura cu numarul mare de incarcari concomitente la aceasta
+ora, durand mai mult sa testeze din cauza suprasolicitarii.
+V-as ruga, daca este posibil, sa rulati si local.
+
+1) Crypto.java
+--------------------------------------------------------------------------------
+Mi-am creat o clasa "PersonalComputer" care are doi membrii:
+	- P = performanta calculatorului (la cate monede poate lucra
+			el pe ora)
+	- U = costul pt a upgrada calculator astfel incat acesta
+			sa poate lucra la o moneda in plus pe ora
+
+Am folosit scanner pentru citirea din fisier si am retinut datele intr-un 
+arraylist<PersonalComputer>
+
+N - numarul de calculatoare
+P - bugetul lui Gigel pentru upgradeuri
+
+Dupa ce am stocat in array il sortez dupa P, folosind 
+sort(Comparator.comparing)
+
+Deoarece am sortat vectorul dupa P stiu ca initial costul pentru ca Gigel
+sa isi mareasca cu 1 numarul de monede pe ora este minim arr[0].U.
+
+Creez o bucla infinita din care ies daca nu mai am suficienti bani pentru 
+a creste numarul de monede pe ora cu 1
+
+in bucla infinita indeplinesc urmatorii pasi:
+	- Cu primul for:
+		calculez cat trebuie sa cheltuiesc ca sa creasca cu 1 numarul de
+			monede pe ora.
+		Daca au mai multe calculatoare performanta == performanta_minima
+			le adun costurile de upgrade pt a le upgrada in acelasi timp,
+			astfel avand o eficienta mai buna.
+		Suma costurilor acestora devine noua suma pe care gigel trebuie sa o
+		 	plateasca pt a produce o moneda in plus pe ora
+
+	- Tratez cazul exceptional cand toate calculatoarle au 
+	performanta == performanta_minima si le fac upgradeuri tuturor in acelasi 
+	timp pana cand raman fara bani, la final dand break
+
+	- Creez alta bucla infinita si fac upgradeuri calculatoarelor cu cost minim
+	pana cand raman fara bani sau minimul curent a ajuns sa fie egal cu 
+	a doua cea mai slaba performanta a unui calculator
+
+La iesirea din bucla afisez numarul de monede pe care le face gigel pe ora
+(performanta celui mai slab calculator)
+
+complexitate de O(N^3)
+
+
+
+2) Stocks.java
+--------------------------------------------------------------------------------
+Aceasta problema am rezolvat-o folosint programarea dinamica. Am realizat ca 
+se rezuma la problema rucsacului extinsa. Am gasit siteul al carui link il pun
+mai jos, de unde am citit explicatiile si am vazut un model de implementare. 
+Chiar daca acesta nu mergea aplicat direct pe problema noastra, a fost un foarte
+bun punct de plecare.
+
+Link: https://www.geeksforgeeks.org/extended-knapsack-problem/
+
+Pentru implementarea mea:
+
+
+Mi-am creat o clasa "Actiune" care are trei membrii:
+	- currentValue = valoarea curenta a actiunii 
+	- minValue = cel mai mic pret pe care il poate avea actiunea
+	- maxValue = valoarea maxima pe care o poate atinge actiunea
+
+N - numarul de actiuni
+B - bugetul
+L - pierderea maxima pe care gigel si-o permite
+
+Am folosit scanner pentru citirea din fisier si am retinut datele intr-un 
+arraylist<Actiune>
+
+Imi declar un array tridimensional, dp, de dimensiuni (N + 1)x(B + 1)x(L + 1)
+dp[i][j][k] - reprezinta profitul maxim cand iau in considerare
+	doar primele i elemente, un buget de j si o pierdere maxima de k
+
+Consider 
+dp[0][x][y] = 0, dp[x][0][y] = 0, dp[x][y][0] = 0 oricare are fi x, y
+
+Strabat vectorul tridimensional:
+	- De fiecare data cand trec la un alt element ii calculez profitul-maxim
+	  si pierderea maxima date de acel element.
+		Profit = maxValue - currentValue
+		Pierdere = currentValue - minValue
+
+	- In interiorul celui de al treilea for verific sa nu am pierderi mai mari
+	 decat limita curenta admisa (indexul curent al celui de al treilea for)si
+	 sa nu depasesc bugetul curent (indexul celui de al doilea for). 
+	 	Daca se respecta aceste conditii verific cu aceeasi regula de recurenta
+	 ca la knapsackul simplu, vazand daca merita cumparata Actiunea Curenta 
+	 sau nu.
+	 	In caz contrar, profitul pe iteratia curenta (dp[i][j][k]) o sa fie 
+	 egal cu cel anterior unde am luat in considerare cu o actiune in minus
+	 (dp[i - 1][j][k])
+
+Dupa terminarea iterarii prin dp si completarea acestuia profitul pentru cazul
+cand avem N elemente, B bani si L maxim pierderi acceptate, se va afla pe 
+pozitia dp[N][B][L]. Retin acest element si il afisez in fisierul de out.
+
+complexitate de O(N x B x L)
+
+
+
+3) Valley.java
+--------------------------------------------------------------------------------
+N - numarul de varfuri
+
+Am folosit scanner pentru citirea din fisier si am retinut datele intr-un 
+arraylist<Integer>, fiecare element reprezentand inaltimea varfului respectiv
+
+Concomitent cu citirea din fisier mi-am determinat si cel mai mic varf,
+salvandu-i inaltimea si indexul
+
+Am tratat problema pe 3 cazuri:
+
+	1) cand varful de inaltime minima nu este unul din capete 
+	   (idx != 0 && idx != N-1 )
+
+	   - iterez prin array de la 1, la (idxMin - 1) si calculez numarul de 
+	   decrementari necesar pt ca aceasta portiune sa fie descrescatoare.
+	   Partea aceasta din vector va fi prefixul vaii
+	   - procedez la fel si pentru formarea sufixului. Am decis pentru a-mi
+	   si mie mai usor de vazut sa iterez de la N-2 la idxMin. Iterand asa
+	   calculez la fel ca si pentru prefix, numarul de decrementari necesar
+	   pentru ca sufixul sa fie crescator.
+
+	2) cand varful de inaltime minima este capatul stang
+
+		- ma asigur ca v[1] sa fie egal cu minimul si calculez sapaturile 
+			necesare pt asta
+		- pentru restul arrayului ( {2, 3, ..., N - 1} ) il fac sa fie
+			crescator calculand sapaturile necesare la fel ca la cazul
+			1 pt sufix
+	
+	3) cand varful de inaltimea minima este capatul drept
+
+		- ma asigur ca v[n - 2] sa fie egal cu minimul si calculez sapaturile 
+			necesare pt asta
+		- pentru restul arrayului ( {0, 1, ..., N - 3} ) il fac sa fie
+			descrescator calculand sapaturile necesare la fel ca la cazul
+			1 pt prefix			
+
+La final afisez numarul de sapaturi efectuat in fisier 
+    
+complexitate de O(N)
+
+
+
+4) Ridge.java
+--------------------------------------------------------------------------------
+La fel ca in cazul problemei de la doi am gasit un site care trata o problema
+extrem de asemanatoare cu problema propusa la tema. Atasez linkul mai jos. Am 
+adaptat ideile de pe site pentru a putea rezolva problema.
+
+Link: 
+https://www.geeksforgeeks.org/minimize-the-cost-to-make-all-the-adjacent-elements-distinct-in-an-array/ 
+
+Citind de pe site-ul al carui link l-am pus mai sus am realizat ca in cel mai
+rau caz, pt a face un varf sa difere de ascendeti trebuie decrementat cu 2.
+Un exemplu de astfel de caz este:
+2 3 3 -> gasim cost minim la varful nr 2 deci trebuie decrementat
+2 2 3 -> acum avem egalitate din nou. Verificam costul minim dintre cele doua
+		varfuri egale.Ne da costul minim pe varful nr 2
+2 1 3 nu mai avem elemente identice. 
+Deci se verifica ipoteza ca varful trebuie sa scada cu cel mult doua unitati.
+
+Mi-am creat o clasa "Varf" care are doi membrii:
+	- inaltime = inaltimea varfului
+	- costEscavare = costul pentru a sapa o unitate din varf
+
+N - numarul de varfuri
+B - bugetul
+
+Am folosit scanner pentru citirea din fisier si am retinut datele intr-un 
+arraylist<Varf>
+
+Creez tabela dp de domensiune N x 3
+
+dp[i][j] - va reprezenta costul decrementarii inaltimii varfului
+		i cu j unitati
+
+Initializez valorile pentru primul varf. Deoarece acesta nu are un 
+varf precedent, nu va depinde de niciun alt varf
+
+Parcurc tavela de rutare.
+
+In al doilea for imi completez restul tabelei dp.
+
+Deoarece nu se stie daca varful precedent a fost scazut, si daca da, cu cat, 
+voi avea 9 cazuri pe fiecare iteratie a primului for
+
+1) daca varf curent ramane neschimbat si precedentul a ramas si el neschimbat
+2) daca varf curent ramane neschimbat si precedentul scade cu 1
+3) daca varf curent ramane neschimbat si precedentul scade cu 2
+	se face minimul intre costurile generate la aceste 3 
+	cazuri si setam:
+	dp[i][0] = 0 * cost_escavare_varf 
+			+ min (costurile generate de schimbarile realizate anterior)
+
+4) daca varf curent scade cu 1 si precedentul a ramas si el neschimbat
+5) daca varf curent scade cu 1 si precedentul scade cu 1
+6) daca varf curent scade cu 1 si precedentul scade cu 2
+	se face minimul intre costurile generate la aceste 3 
+	cazuri si setam:
+	dp[i][1] = 1 * cost_escavare_varf 
+			+ min (costurile generate de schimbarile realizate anterior)
+
+7) daca varf curent scade cu 2 si precedentul a ramas si el neschimbat
+8) daca varf curent scade cu 2 si precedentul scade cu 1
+9) daca varf curent scade cu 2 si precedentul scade cu 2
+	se face minimul intre costurile generate la aceste 3 
+	cazuri si setam:
+	dp[i][2] = 2 * cost_escavare_varf 
+			+ min (costurile generate de schimbarile realizate anterior)
+
+Daca se intampla ca varful curent sa aiba o inaltime < 2 nu luam in 
+considerare cazurile cand acesta putea ajunge negativ.
+De exemplu daca inaltimea era 1, cand se facea cazul pentru 
+scaderea cu 2 puneam ca acel cost sa fie Long.MAX_value.
+
+La final aleg minimul elementelor de pe ultima linie care reprezinta
+numarul minim de sapaturi
+
+Afisez rezultatul
+
+Complexitate O(N^2)
+
+

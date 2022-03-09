@@ -1,0 +1,7 @@
+Running: xsim.dir/sim_sumatorCLA_behav/xsimk -simmode gui -wdb sim_sumatorCLA_behav.wdb -simrunnum 0 -socket 49549
+Design successfully loaded
+Design Loading Memory Usage: 33620 KB (Peak: 33740 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 115356 KB (Peak: 172888 KB)
+Simulation CPU Usage: 30 ms
