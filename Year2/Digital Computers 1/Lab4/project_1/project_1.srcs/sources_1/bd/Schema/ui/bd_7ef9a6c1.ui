@@ -1,0 +1,182 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.569652",
+   "Default View_TopLeft":"-1018,-400",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port cin_0 -pg 1 -lvl 0 -x -910 -y 330 -defaultsOSRD
+preplace port GUAT_G_0 -pg 1 -lvl 11 -x 2760 -y 370 -defaultsOSRD
+preplace port GUAT_P_0 -pg 1 -lvl 11 -x 2760 -y 390 -defaultsOSRD
+preplace port o4_0 -pg 1 -lvl 11 -x 2760 -y 530 -defaultsOSRD
+preplace portBus a_0 -pg 1 -lvl 0 -x -910 -y 290 -defaultsOSRD
+preplace portBus b_0 -pg 1 -lvl 0 -x -910 -y 310 -defaultsOSRD
+preplace portBus a_1 -pg 1 -lvl 11 -x 2760 -y -20 -defaultsOSRD
+preplace inst sumator_complet_1bit_0 -pg 1 -lvl 5 -x 1020 -y -80 -defaultsOSRD
+preplace inst sumator_complet_1bit_1 -pg 1 -lvl 5 -x 1020 -y 60 -defaultsOSRD
+preplace inst sumator_complet_1bit_2 -pg 1 -lvl 5 -x 1020 -y 200 -defaultsOSRD
+preplace inst sumator_complet_1bit_3 -pg 1 -lvl 5 -x 1020 -y 340 -defaultsOSRD
+preplace inst sumator_complet_1bit_4 -pg 1 -lvl 2 -x -240 -y -130 -defaultsOSRD
+preplace inst sumator_complet_1bit_5 -pg 1 -lvl 2 -x -240 -y 10 -defaultsOSRD
+preplace inst sumator_complet_1bit_6 -pg 1 -lvl 2 -x -240 -y 150 -defaultsOSRD
+preplace inst sumator_complet_1bit_7 -pg 1 -lvl 2 -x -240 -y 290 -defaultsOSRD
+preplace inst sumator_complet_1bit_8 -pg 1 -lvl 2 -x -240 -y 430 -defaultsOSRD
+preplace inst sumator_complet_1bit_9 -pg 1 -lvl 2 -x -240 -y 580 -defaultsOSRD
+preplace inst sumator_complet_1bit_10 -pg 1 -lvl 2 -x -240 -y 730 -defaultsOSRD
+preplace inst sumator_complet_1bit_11 -pg 1 -lvl 2 -x -240 -y 870 -defaultsOSRD
+preplace inst sumator_complet_1bit_12 -pg 1 -lvl 5 -x 1020 -y 480 -defaultsOSRD
+preplace inst sumator_complet_1bit_13 -pg 1 -lvl 5 -x 1020 -y 620 -defaultsOSRD
+preplace inst sumator_complet_1bit_14 -pg 1 -lvl 5 -x 1020 -y 760 -defaultsOSRD
+preplace inst sumator_complet_1bit_15 -pg 1 -lvl 5 -x 1020 -y 900 -defaultsOSRD
+preplace inst UAT_0 -pg 1 -lvl 7 -x 1710 -y 250 -defaultsOSRD
+preplace inst UAT_1 -pg 1 -lvl 4 -x 490 -y 320 -defaultsOSRD
+preplace inst UAT_2 -pg 1 -lvl 4 -x 490 -y 530 -defaultsOSRD
+preplace inst UAT_3 -pg 1 -lvl 7 -x 1710 -y 520 -defaultsOSRD
+preplace inst Convertor2_32_0 -pg 1 -lvl 1 -x -790 -y 310 -defaultsOSRD
+preplace inst GUAT_0 -pg 1 -lvl 9 -x 2380 -y 390 -defaultsOSRD
+preplace inst Convertor16_1_0 -pg 1 -lvl 8 -x 2130 -y -20 -defaultsOSRD
+preplace inst Convertor4_1_0 -pg 1 -lvl 3 -x 200 -y 10 -defaultsOSRD
+preplace inst Convertor4_1_1 -pg 1 -lvl 3 -x 200 -y 170 -defaultsOSRD
+preplace inst Convertor4_1_2 -pg 1 -lvl 3 -x 200 -y 570 -defaultsOSRD
+preplace inst Convertor4_1_3 -pg 1 -lvl 3 -x 200 -y 740 -defaultsOSRD
+preplace inst Convertor4_1_4 -pg 1 -lvl 6 -x 1400 -y 30 -defaultsOSRD
+preplace inst Convertor4_1_5 -pg 1 -lvl 6 -x 1400 -y 190 -defaultsOSRD
+preplace inst Convertor4_1_6 -pg 1 -lvl 6 -x 1400 -y 600 -defaultsOSRD
+preplace inst Convertor4_1_7 -pg 1 -lvl 6 -x 1400 -y 760 -defaultsOSRD
+preplace inst Convertor4_1_8 -pg 1 -lvl 8 -x 2130 -y 450 -defaultsOSRD
+preplace inst Convertor4_1_9 -pg 1 -lvl 8 -x 2130 -y 620 -defaultsOSRD
+preplace inst Convertor1_4_0 -pg 1 -lvl 10 -x 2620 -y 500 -defaultsOSRD
+preplace inst EliminareBit_0 -pg 1 -lvl 7 -x 1710 -y 100 -defaultsOSRD
+preplace inst EliminareBit_1 -pg 1 -lvl 4 -x 490 -y 130 -defaultsOSRD
+preplace inst EliminareBit_2 -pg 1 -lvl 4 -x 490 -y 780 -defaultsOSRD
+preplace inst EliminareBit_3 -pg 1 -lvl 7 -x 1710 -y 660 -defaultsOSRD
+preplace netloc sumator_complet_1bit_4_p 1 2 1 -130 -150n
+preplace netloc sumator_complet_1bit_5_p 1 2 1 30 -10n
+preplace netloc sumator_complet_1bit_6_p 1 2 1 -60 20n
+preplace netloc sumator_complet_1bit_7_p 1 2 1 -40 40n
+preplace netloc sumator_complet_1bit_4_g 1 2 1 -140 -130n
+preplace netloc sumator_complet_1bit_5_g 1 2 1 -20 10n
+preplace netloc sumator_complet_1bit_6_g 1 2 1 -30 150n
+preplace netloc sumator_complet_1bit_7_g 1 2 1 -20 200n
+preplace netloc Convertor4_1_1_out 1 3 1 320 170n
+preplace netloc Convertor4_1_0_out 1 3 1 330 10n
+preplace netloc sumator_complet_1bit_8_p 1 2 1 -60 410n
+preplace netloc sumator_complet_1bit_9_p 1 2 1 N 560
+preplace netloc sumator_complet_1bit_10_p 1 2 1 -90 580n
+preplace netloc sumator_complet_1bit_11_p 1 2 1 10 600n
+preplace netloc sumator_complet_1bit_8_g 1 2 1 -80 430n
+preplace netloc sumator_complet_1bit_9_g 1 2 1 -100 580n
+preplace netloc sumator_complet_1bit_10_g 1 2 1 -110 730n
+preplace netloc sumator_complet_1bit_11_g 1 2 1 40 770n
+preplace netloc Convertor4_1_2_out 1 3 1 340 550n
+preplace netloc Convertor4_1_3_out 1 3 1 310 530n
+preplace netloc sumator_complet_1bit_0_p 1 5 1 1230 -100n
+preplace netloc sumator_complet_1bit_1_p 1 5 1 1160 20n
+preplace netloc sumator_complet_1bit_2_p 1 5 1 1180 40n
+preplace netloc sumator_complet_1bit_3_p 1 5 1 1210 60n
+preplace netloc Convertor4_1_4_out 1 6 1 1510 30n
+preplace netloc sumator_complet_1bit_0_g 1 5 1 1120 -80n
+preplace netloc sumator_complet_1bit_1_g 1 5 1 1190 60n
+preplace netloc sumator_complet_1bit_2_g 1 5 1 N 200
+preplace netloc sumator_complet_1bit_3_g 1 5 1 1230 220n
+preplace netloc Convertor4_1_5_out 1 6 1 1500 190n
+preplace netloc sumator_complet_1bit_12_p 1 5 1 1170 460n
+preplace netloc sumator_complet_1bit_13_p 1 5 1 1260 590n
+preplace netloc sumator_complet_1bit_14_p 1 5 1 1260 610n
+preplace netloc sumator_complet_1bit_15_p 1 5 1 1290 630n
+preplace netloc Convertor4_1_6_out 1 6 1 1530 540n
+preplace netloc sumator_complet_1bit_12_g 1 5 1 1140 480n
+preplace netloc sumator_complet_1bit_13_g 1 5 1 1120 620n
+preplace netloc sumator_complet_1bit_14_g 1 5 1 1140 760n
+preplace netloc sumator_complet_1bit_15_g 1 5 1 1300 790n
+preplace netloc Convertor4_1_7_out 1 6 1 1510 520n
+preplace netloc Convertor2_32_0_a0 1 1 4 -630 -220 0J -140 NJ -140 830J
+preplace netloc Convertor2_32_0_a1 1 1 4 -660 -250 NJ -250 NJ -250 620J
+preplace netloc Convertor2_32_0_a2 1 1 4 -640 -240 NJ -240 NJ -240 690J
+preplace netloc Convertor2_32_0_a3 1 1 4 -620 -230 NJ -230 NJ -230 750J
+preplace netloc Convertor2_32_0_a4 1 1 1 -590 -150n
+preplace netloc Convertor2_32_0_a5 1 1 1 -550 -10n
+preplace netloc Convertor2_32_0_a6 1 1 1 -470 120n
+preplace netloc Convertor2_32_0_a7 1 1 1 -470 140n
+preplace netloc Convertor2_32_0_a8 1 1 1 -480 160n
+preplace netloc Convertor2_32_0_a9 1 1 1 -500 180n
+preplace netloc Convertor2_32_0_a10 1 1 1 -520 200n
+preplace netloc Convertor2_32_0_a11 1 1 1 -550 220n
+preplace netloc Convertor2_32_0_a12 1 1 4 -590 950 20J 440 NJ 440 730J
+preplace netloc Convertor2_32_0_a13 1 1 4 -620 990 NJ 990 330J 610 830J
+preplace netloc Convertor2_32_0_a14 1 1 4 -660 1000 NJ 1000 350J 700 710J
+preplace netloc Convertor2_32_0_a15 1 1 4 -640 980 40J 880 NJ 880 NJ
+preplace netloc Convertor2_32_0_b0 1 1 4 -570 -210 -120J -130 NJ -130 820J
+preplace netloc Convertor2_32_0_b1 1 1 4 -650 -330 NJ -330 NJ -330 840J
+preplace netloc Convertor2_32_0_b2 1 1 4 -630 960 0J 260 300J 220 800J
+preplace netloc Convertor2_32_0_b3 1 1 4 -670 970 30J 270 310J 240 730J
+preplace netloc Convertor2_32_0_b4 1 1 1 -530 -130n
+preplace netloc Convertor2_32_0_b5 1 1 1 -510 10n
+preplace netloc Convertor2_32_0_b6 1 1 1 -490 150n
+preplace netloc Convertor2_32_0_b7 1 1 1 -460 290n
+preplace netloc Convertor2_32_0_b8 1 1 1 -450 430n
+preplace netloc Convertor2_32_0_b9 1 1 1 -600 500n
+preplace netloc Convertor2_32_0_b10 1 1 1 -610 520n
+preplace netloc Convertor2_32_0_b11 1 1 1 -690 540n
+preplace netloc Convertor2_32_0_b12 1 1 4 -580 -320 NJ -320 NJ -320 810J
+preplace netloc Convertor2_32_0_b13 1 1 4 -680 -310 NJ -310 NJ -310 780J
+preplace netloc Convertor2_32_0_b14 1 1 4 -540 -300 NJ -300 NJ -300 740J
+preplace netloc Convertor2_32_0_b15 1 1 4 -560 -390 NJ -390 NJ -390 790J
+preplace netloc a_0_1 1 0 1 N 290
+preplace netloc b_0_1 1 0 1 N 310
+preplace netloc cin_0_1 1 0 9 -890 -260 N -260 30 -220 N -220 850 -220 N -220 1520 360 N 360 2230
+preplace netloc GUAT_0_GUAT_G 1 9 2 N 370 N
+preplace netloc GUAT_0_GUAT_P 1 9 2 N 390 N
+preplace netloc GUAT_0_carry_GUAT 1 9 1 2520 410n
+preplace netloc Convertor1_4_0_o4 1 10 1 N 530
+preplace netloc Convertor1_4_0_o1 1 1 10 -400 -350 N -350 350 -350 NJ -350 NJ -350 NJ -350 NJ -350 N -350 NJ -350 2740
+preplace netloc Convertor1_4_0_o2 1 1 10 -430 -340 N -340 340 -340 NJ -340 NJ -340 NJ -340 NJ -340 N -340 NJ -340 2730
+preplace netloc Convertor1_4_0_o3 1 4 7 870 -310 N -310 1530 -310 NJ -310 N -310 NJ -310 2720
+preplace netloc sumator_complet_1bit_0_sum 1 5 3 1130J -160 NJ -160 1920
+preplace netloc sumator_complet_1bit_1_sum 1 5 3 1140 -150 NJ -150 NJ
+preplace netloc sumator_complet_1bit_2_sum 1 5 3 1150 -140 NJ -140 2030J
+preplace netloc sumator_complet_1bit_3_sum 1 5 3 1170 -130 NJ -130 2000J
+preplace netloc sumator_complet_1bit_4_sum 1 2 6 -90J -150 NJ -150 760J -160 1120J -120 NJ -120 1990
+preplace netloc sumator_complet_1bit_5_sum 1 2 6 -110 -210 NJ -210 NJ -210 1280J -110 1570J -70 NJ
+preplace netloc sumator_complet_1bit_6_sum 1 2 6 -100 -200 NJ -200 NJ -200 1250J -90 NJ -90 1980J
+preplace netloc sumator_complet_1bit_7_sum 1 2 6 -80 -190 NJ -190 NJ -190 1130J -180 1580J -30 NJ
+preplace netloc sumator_complet_1bit_8_sum 1 2 6 -70 -180 NJ -180 NJ -180 1120J -170 1550J -10 NJ
+preplace netloc sumator_complet_1bit_9_sum 1 2 6 -50 -170 NJ -170 NJ -170 1140J -190 1560J 10 NJ
+preplace netloc sumator_complet_1bit_10_sum 1 2 6 -120 -120 NJ -120 720J -240 NJ -240 NJ -240 2010J
+preplace netloc sumator_complet_1bit_11_sum 1 2 6 -10 -160 NJ -160 700J -250 NJ -250 NJ -250 2020J
+preplace netloc sumator_complet_1bit_12_sum 1 5 3 1200 -80 NJ -80 1970J
+preplace netloc sumator_complet_1bit_13_sum 1 5 3 1220 -70 1540J -50 1920J
+preplace netloc sumator_complet_1bit_14_sum 1 5 3 1250 -60 NJ -60 1940J
+preplace netloc sumator_complet_1bit_15_sum 1 5 3 1240 -100 NJ -100 1960J
+preplace netloc Convertor16_1_0_a 1 8 3 NJ -20 NJ -20 NJ
+preplace netloc UAT_0_carry_UAT 1 6 2 1560 20 1840
+preplace netloc EliminareBit_0_b0 1 4 4 900 -300 NJ -300 NJ -300 1860
+preplace netloc EliminareBit_0_b1 1 4 4 920 -270 NJ -270 NJ -270 1850
+preplace netloc EliminareBit_0_b3 1 4 4 890 -290 N -290 N -290 1880
+preplace netloc UAT_1_carry_UAT 1 3 2 360 50 620
+preplace netloc EliminareBit_1_b0 1 1 4 -470 -380 NJ -380 NJ -380 650
+preplace netloc EliminareBit_1_b1 1 1 4 -460 -370 NJ -370 NJ -370 640
+preplace netloc EliminareBit_1_b3 1 1 4 -450 -360 N -360 N -360 630
+preplace netloc EliminareBit_2_b0 1 1 4 -420 -290 NJ -290 NJ -290 670
+preplace netloc EliminareBit_2_b1 1 1 4 -410 -270 NJ -270 NJ -270 660
+preplace netloc EliminareBit_2_b3 1 1 4 -440 -280 N -280 N -280 680
+preplace netloc EliminareBit_3_b0 1 4 4 910 -260 NJ -260 NJ -260 1870
+preplace netloc EliminareBit_3_b1 1 4 4 880 -280 NJ -280 NJ -280 1890
+preplace netloc EliminareBit_3_b3 1 4 4 860 -320 N -320 N -320 1900
+preplace netloc UAT_2_carry_UAT 1 3 2 360 450 620
+preplace netloc UAT_3_carry_UAT 1 6 2 1560 440 1840
+preplace netloc UAT_0_UAT_G 1 7 1 1940 230n
+preplace netloc UAT_1_UAT_G 1 4 4 720J 990 1270J 420 NJ 420 1930
+preplace netloc UAT_2_UAT_G 1 4 4 690 980 1280J 430 NJ 430 1910J
+preplace netloc UAT_3_UAT_G 1 7 1 2020 480n
+preplace netloc Convertor4_1_8_out 1 8 1 2230 390n
+preplace netloc UAT_0_UAT_P 1 7 1 1920 250n
+preplace netloc UAT_1_UAT_P 1 4 4 700J 1000 NJ 1000 NJ 1000 2020
+preplace netloc UAT_2_UAT_P 1 4 4 770J -230 NJ -230 NJ -230 1950
+preplace netloc UAT_3_UAT_P 1 7 1 1910 520n
+preplace netloc Convertor4_1_9_out 1 8 1 2240 410n
+levelinfo -pg 1 -910 -790 -240 200 490 1020 1400 1710 2130 2380 2620 2760
+pagesize -pg 1 -db -bbox -sgen -1020 -670 2890 1010
+"
+}
+

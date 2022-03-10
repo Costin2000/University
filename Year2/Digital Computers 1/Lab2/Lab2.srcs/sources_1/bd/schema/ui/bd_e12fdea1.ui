@@ -1,0 +1,43 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.675332",
+   "Default View_TopLeft":"-517,-253",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk_out_led_0 -pg 1 -lvl 0 -x -380 -y -20 -defaultsOSRD
+preplace port load_0 -pg 1 -lvl 0 -x -380 -y 40 -defaultsOSRD
+preplace port pauza_0 -pg 1 -lvl 0 -x -380 -y 20 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x -380 -y 0 -defaultsOSRD
+preplace port sens_0 -pg 1 -lvl 0 -x -380 -y 80 -defaultsOSRD
+preplace portBus data_0 -pg 1 -lvl 0 -x -380 -y 60 -defaultsOSRD
+preplace portBus BCD0_0 -pg 1 -lvl 6 -x 1160 -y 20 -defaultsOSRD
+preplace portBus BCD1_0 -pg 1 -lvl 6 -x 1160 -y 40 -defaultsOSRD
+preplace portBus BCD1_1 -pg 1 -lvl 6 -x 1160 -y 160 -defaultsOSRD
+preplace portBus BCD0_1 -pg 1 -lvl 6 -x 1160 -y 140 -defaultsOSRD
+preplace inst numarator_59_0 -pg 1 -lvl 1 -x -180 -y 30 -defaultsOSRD
+preplace inst PoartaOr_0 -pg 1 -lvl 2 -x 90 -y 70 -defaultsOSRD
+preplace inst PoartaAnd_0 -pg 1 -lvl 3 -x 260 -y 70 -defaultsOSRD
+preplace inst numarator_59_1 -pg 1 -lvl 4 -x 650 -y 250 -defaultsOSRD
+preplace inst bin2bcd_0 -pg 1 -lvl 5 -x 990 -y 150 -defaultsOSRD
+preplace inst bin2bcd_1 -pg 1 -lvl 5 -x 990 -y 30 -defaultsOSRD
+preplace netloc clk_out_led_0_1 1 0 3 -360J -110 N -110 170
+preplace netloc data_0_1 1 0 4 -340J 140 N 140 N 140 340
+preplace netloc load_0_1 1 0 4 -330J -80 -30 260 N 260 N
+preplace netloc pauza_0_1 1 0 4 -350J -100 N -100 N -100 370
+preplace netloc reset_0_1 1 0 4 -340J -90 N -90 N -90 360
+preplace netloc sens_0_1 1 0 4 -360J 300 N 300 N 300 N
+preplace netloc numarator_59_0_carry_out 1 1 1 -40 40n
+preplace netloc PoartaOr_0_C 1 2 1 180 60n
+preplace netloc PoartaAnd_0_C 1 3 1 350 70n
+preplace netloc numarator_59_1_valoare_bin 1 4 1 790 150n
+preplace netloc numarator_59_0_valoare_bin 1 1 4 -20J 0 NJ 0 NJ 0 790
+preplace netloc bin2bcd_1_BCD0 1 5 1 NJ 20
+preplace netloc bin2bcd_1_BCD1 1 5 1 NJ 40
+preplace netloc bin2bcd_0_BCD1 1 5 1 N 160
+preplace netloc bin2bcd_0_BCD0 1 5 1 N 140
+levelinfo -pg 1 -380 -180 90 260 650 990 1160
+pagesize -pg 1 -db -bbox -sgen -520 -300 1300 390
+"
+}
+0

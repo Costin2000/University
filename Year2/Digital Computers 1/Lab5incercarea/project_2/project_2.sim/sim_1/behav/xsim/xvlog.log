@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/Modul1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/Modul2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/Modul3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/Modul4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/Modul5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/Modul6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul6
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/Modul7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/reg16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/reg23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg23
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/reg25.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg25
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/reg47.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg47
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/reg56.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg56
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/reg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5incercarea/project_2/project_2.srcs/sources_1/new/topModule.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topModule

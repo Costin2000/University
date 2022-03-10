@@ -1,0 +1,47 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 05/27/2021 06:15:44 AM
+// Design Name: 
+// Module Name: M6
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module M6(
+    mant, mfinal, val2
+    );
+    input [25:0] mant;
+    output [23:0] mfinal;
+    output [8:0] val2;
+    reg [23:0] mfinal;
+    reg [8:0] val2;
+    reg [25:0] maux;
+    
+    always @(mant) begin
+        maux[25:0] = mant[25:0];
+        val2[8] = maux[24];
+        val2[7:0] = 8'b00000000;
+        if(mant[25] == 0) begin
+            while(maux[23] != 1) begin
+                maux = maux << 1;
+                val2[7:0] = val2[7:0] +1;
+            end
+        end
+        mfinal[22:0] = maux[23:1];
+        mfinal[23] = mant[24];
+    end
+    
+endmodule

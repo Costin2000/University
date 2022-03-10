@@ -1,0 +1,39 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-506,-92",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port Cola_0 -pg 1 -lvl 2 -x 250 -y 180 -defaultsOSRD
+preplace port Fanta_0 -pg 1 -lvl 2 -x 250 -y 200 -defaultsOSRD
+preplace port L1_0 -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace port L10_0 -pg 1 -lvl 0 -x -10 -y 170 -defaultsOSRD
+preplace port L5_0 -pg 1 -lvl 0 -x -10 -y 150 -defaultsOSRD
+preplace port R1_0 -pg 1 -lvl 2 -x 250 -y 160 -defaultsOSRD
+preplace port R10_0 -pg 1 -lvl 2 -x 250 -y 120 -defaultsOSRD
+preplace port R5_0 -pg 1 -lvl 2 -x 250 -y 140 -defaultsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x -10 -y 110 -defaultsOSRD
+preplace port wantCola_0 -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace port wantFanta_0 -pg 1 -lvl 0 -x -10 -y 210 -defaultsOSRD
+preplace port wantRest_0 -pg 1 -lvl 0 -x -10 -y 230 -defaultsOSRD
+preplace inst Automat_0 -pg 1 -lvl 1 -x 120 -y 160 -defaultsOSRD
+preplace netloc Automat_0_Cola 1 1 1 NJ 180
+preplace netloc Automat_0_Fanta 1 1 1 NJ 200
+preplace netloc L1_0_1 1 0 1 NJ 130
+preplace netloc L10_0_1 1 0 1 NJ 170
+preplace netloc L5_0_1 1 0 1 NJ 150
+preplace netloc Automat_0_R1 1 1 1 NJ 160
+preplace netloc Automat_0_R10 1 1 1 NJ 120
+preplace netloc Automat_0_R5 1 1 1 NJ 140
+preplace netloc clk_0_1 1 0 1 NJ 90
+preplace netloc reset_0_1 1 0 1 NJ 110
+preplace netloc wantCola_0_1 1 0 1 NJ 190
+preplace netloc wantFanta_0_1 1 0 1 NJ 210
+preplace netloc wantRest_0_1 1 0 1 NJ 230
+levelinfo -pg 1 -10 120 250
+pagesize -pg 1 -db -bbox -sgen -150 0 360 290
+"
+}
+

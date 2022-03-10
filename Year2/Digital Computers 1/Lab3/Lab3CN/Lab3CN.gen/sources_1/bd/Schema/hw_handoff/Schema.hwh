@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 12 20:01:48 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="Schema" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="Aliment1_0" SIGIS="undef" SIGNAME="Automat_0_Aliment1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Aliment1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Aliment2_0" SIGIS="undef" SIGNAME="Automat_0_Aliment2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Aliment2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Lei10_0" SIGIS="undef" SIGNAME="External_Ports_Lei10_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Lei10"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Lei5_0" SIGIS="undef" SIGNAME="External_Ports_Lei5_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Lei5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Leu1_0" SIGIS="undef" SIGNAME="External_Ports_Leu1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Leu1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="REST1_0" SIGIS="undef" SIGNAME="Automat_0_REST1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="REST1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="REST2_0" SIGIS="undef" SIGNAME="Automat_0_REST2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="REST2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="REST3_0" SIGIS="undef" SIGNAME="Automat_0_REST3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="REST3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="REST4_0" SIGIS="undef" SIGNAME="Automat_0_REST4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="REST4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="REST5_0" SIGIS="undef" SIGNAME="Automat_0_REST5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="REST5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Suc1_0" SIGIS="undef" SIGNAME="Automat_0_Suc1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Suc1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Suc2_0" SIGIS="undef" SIGNAME="Automat_0_Suc2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Suc2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="bautura1_0" SIGIS="undef" SIGNAME="External_Ports_bautura1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="bautura1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="bautura2_0" SIGIS="undef" SIGNAME="External_Ports_bautura2_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="bautura2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mancare1_0" SIGIS="undef" SIGNAME="External_Ports_mancare1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="mancare1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mancare2_0" SIGIS="undef" SIGNAME="External_Ports_mancare2_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="mancare2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vreauRest_0" SIGIS="undef" SIGNAME="External_Ports_vreauRest_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="vreauRest"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Automat_0" HWVERSION="1.0" INSTANCE="Automat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Automat" VLNV="xilinx.com:module_ref:Automat:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Schema_Automat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Leu1" SIGIS="undef" SIGNAME="External_Ports_Leu1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Leu1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Lei5" SIGIS="undef" SIGNAME="External_Ports_Lei5_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Lei5_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Lei10" SIGIS="undef" SIGNAME="External_Ports_Lei10_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Lei10_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="bautura1" SIGIS="undef" SIGNAME="External_Ports_bautura1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bautura1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="bautura2" SIGIS="undef" SIGNAME="External_Ports_bautura2_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bautura2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mancare1" SIGIS="undef" SIGNAME="External_Ports_mancare1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mancare1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mancare2" SIGIS="undef" SIGNAME="External_Ports_mancare2_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mancare2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vreauRest" SIGIS="undef" SIGNAME="External_Ports_vreauRest_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vreauRest_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Suc1" SIGIS="undef" SIGNAME="Automat_0_Suc1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Suc1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Suc2" SIGIS="undef" SIGNAME="Automat_0_Suc2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Suc2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Aliment1" SIGIS="undef" SIGNAME="Automat_0_Aliment1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Aliment1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Aliment2" SIGIS="undef" SIGNAME="Automat_0_Aliment2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Aliment2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="REST1" SIGIS="undef" SIGNAME="Automat_0_REST1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="REST1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="REST2" SIGIS="undef" SIGNAME="Automat_0_REST2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="REST2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="REST3" SIGIS="undef" SIGNAME="Automat_0_REST3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="REST3_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="REST4" SIGIS="undef" SIGNAME="Automat_0_REST4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="REST4_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="REST5" SIGIS="undef" SIGNAME="Automat_0_REST5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="REST5_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

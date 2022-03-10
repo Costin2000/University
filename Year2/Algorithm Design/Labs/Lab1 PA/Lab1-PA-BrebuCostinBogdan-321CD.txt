@@ -1,0 +1,114 @@
+Brebu Costin-Bogdan 321Cd semigrupa 1
+
+1)
+a)	functie(int x, int n)
+	{	
+		int putere = 1;
+		for(int i = 0; i < n; i++)
+			putere = putere * x;
+	}
+
+	complexitate Theta(n)
+
+b)	functie(int x, int n)
+	{
+		if(n == 0) return 1;
+		else
+		if(n == 1) return x;
+		else
+		return x * functie(x, n-1)	
+	}
+
+	T(n) = T(n-1) + Theta(1)
+	
+	T(n-1) = T(n-2) + Theta(1)
+	T(n-2) = T(n-3) + Theta(1)
+	T(n-3) = T(n-4) + Theta(1)
+	--------------------------
+	T(n-k) = T(n-k-1) + Theta(1)
+	--------------------------
+	T(n-h) = Theta(1)
+
+	Daca le adunam ne da
+	T(n) + T(n-1) + .... + T(n-k) +...+ T(n-h) = T(n-1) + .... + T(n-k-1)+... + T(n-h) + Theta(n-1)
+	T(n) = Theta(n-1)= Theta(n)
+	
+	
+c) 	functie(int x, int n)
+	{
+		if(n==0) return 1;
+		else
+		if(n%2 == 0) return functie(x,n/2) * functie(x,n/2);
+		else
+		if(n%2 == 1) return x * functie(x,(n-1)/2) * functie(x, (n-1)/2);
+	}
+
+	T(n) = 2 * T(n/2) + Theta(1)
+
+	f(n) = 1
+	a=2
+	b=2
+	compar n cu 1
+	f polinomial mai mica => caz 1 de master
+	=>T(n) apartine Theta(n)
+
+2)
+a)	fibonacci(int n)
+	{
+		if(n == 0)
+			return 0;
+		else
+		if(n == 1)
+			return 1;
+		else 
+			return fibonacci(n-1) + fibonacci(n-2);
+
+	}
+	
+
+	T(n) = T(n-1) + T(n-2) + Theta(1)
+
+	inferior: 
+	T(n) = 2 * T(n-2) + theta(1)
+	2 * T(n-2) = 4 * T(n-4) + 2*theta(1)
+	4 * T(n-4) = 8 * T(n-6) + 4*theta(1)
+	------------------------------------
+	(2^k) * T(n-2*k) = (2^(k+1)) * T(n-2*(k+1)) + (2^k) * theta(1)
+	------------------------------------
+	(2^k) * T(n-2*h) = (2^h) * theta(1) => 1=n-2*h => h = (n-1)/2
+
+	=> T(n) = c + 2*theta(1) + 4* theta(1) + ..... + (2^h) * theta(1) = theta(1) * (2^(h+1) -1) = 2^((n+1)/2)*theta(1) - theta(1)
+	=> T(n) = Theta(2^(0.5*n));
+
+	
+	superior:
+	T(n) = 2*T(n-1) + Theta(1)
+	2 * T(n-1) = 4 * T(n-2) + 2*theta(1)
+	4 * T(n-2) = 8 * T(n-3) + 4*theta(1)
+	------------------------------------
+	(2^k) * T(n-k) = (2^(k+1)) * T(n-(k+1)) + (2^k) * theta(1)
+	------------------------------------
+	(2^h) * T(n-h) = 2^h * theta(1) => 1=n-h => h = n-1
+
+	=> T(n) = c + 2*theta(1) + 4* theta(1) + ..... + (2^h) * theta(1) = theta(1) * (2^(h+1) -1) = 2^((n+1)/2)*theta(1) - theta(1)
+
+	T(n) = theta(1) + 2*theta(1) + 4*theta(1) + ... + (2^h)*theta(1) = theta(1)*(2^(h+1) - 1) = theta(1) * (2^(n) - 1) =
+    	 = theta(1) * (2^(n)) - theta(1) 
+
+	=> T(n) = Theta(2^n)
+
+b) 	fibonacci(int n)
+	{
+		int v[n+2];
+		int i;
+		v[0] = 0;
+		v[1] = 1;
+
+		for(int i = 2; i <= n; i++)
+		{
+			f[i] = f[i-1] + f[i-2];
+		}
+		return f;
+	}
+
+	Theta(n)

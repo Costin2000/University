@@ -1,0 +1,1279 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 26 13:44:00 2021
+# Process ID: 43845
+# Current directory: /home/catalin
+# Command line: vivado
+# Log file: /home/catalin/vivado.log
+# Journal file: /home/catalin/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj simulare_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simulare_behav -key {Behavioral:sim_1:Functional:simulare} -tclbatch {simulare.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source simulare.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simulare_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 7408.270 ; gain = 84.805 ; free physical = 184 ; free virtual = 3949
+open_project /home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj simulare_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/adun_scad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adun_scad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/ajustare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ajustare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/alege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/aliniere.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aliniere
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/compara.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compara
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/concatenare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru48.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru48
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru57.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru57
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sim_1/new/simulare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulare
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.registru16
+Compiling module xil_defaultlib.registru48
+Compiling module xil_defaultlib.compara
+Compiling module xil_defaultlib.concatenare
+Compiling module xil_defaultlib.registru57
+Compiling module xil_defaultlib.alege
+Compiling module xil_defaultlib.aliniere
+Compiling module xil_defaultlib.registru8
+Compiling module xil_defaultlib.adun_scad
+Compiling module xil_defaultlib.registru26
+Compiling module xil_defaultlib.norm
+Compiling module xil_defaultlib.ajustare
+Compiling module xil_defaultlib.registru24
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulare
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim/xsim.dir/simulare_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May 26 13:53:18 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7480.301 ; gain = 0.000 ; free physical = 207 ; free virtual = 3784
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj simulare_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/adun_scad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adun_scad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/ajustare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ajustare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/alege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/aliniere.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aliniere
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/compara.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compara
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/concatenare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru48.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru48
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru57.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru57
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sim_1/new/simulare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulare
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.registru16
+Compiling module xil_defaultlib.registru48
+Compiling module xil_defaultlib.compara
+Compiling module xil_defaultlib.concatenare
+Compiling module xil_defaultlib.registru57
+Compiling module xil_defaultlib.alege
+Compiling module xil_defaultlib.aliniere
+Compiling module xil_defaultlib.registru8
+Compiling module xil_defaultlib.adun_scad
+Compiling module xil_defaultlib.registru26
+Compiling module xil_defaultlib.norm
+Compiling module xil_defaultlib.ajustare
+Compiling module xil_defaultlib.registru24
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulare
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7480.301 ; gain = 0.000 ; free physical = 214 ; free virtual = 3792
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj simulare_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/adun_scad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adun_scad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/ajustare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ajustare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/alege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/aliniere.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aliniere
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/compara.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compara
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/concatenare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru48.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru48
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru57.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru57
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sim_1/new/simulare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulare
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.registru16
+Compiling module xil_defaultlib.registru48
+Compiling module xil_defaultlib.compara
+Compiling module xil_defaultlib.concatenare
+Compiling module xil_defaultlib.registru57
+Compiling module xil_defaultlib.alege
+Compiling module xil_defaultlib.aliniere
+Compiling module xil_defaultlib.registru8
+Compiling module xil_defaultlib.adun_scad
+Compiling module xil_defaultlib.registru26
+Compiling module xil_defaultlib.norm
+Compiling module xil_defaultlib.ajustare
+Compiling module xil_defaultlib.registru24
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulare
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7480.301 ; gain = 0.000 ; free physical = 218 ; free virtual = 3796
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj simulare_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/adun_scad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adun_scad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/ajustare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ajustare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/alege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/aliniere.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aliniere
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/compara.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compara
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/concatenare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru48.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru48
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru57.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru57
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sim_1/new/simulare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulare
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.registru16
+Compiling module xil_defaultlib.registru48
+Compiling module xil_defaultlib.compara
+Compiling module xil_defaultlib.concatenare
+Compiling module xil_defaultlib.registru57
+Compiling module xil_defaultlib.alege
+Compiling module xil_defaultlib.aliniere
+Compiling module xil_defaultlib.registru8
+Compiling module xil_defaultlib.adun_scad
+Compiling module xil_defaultlib.registru26
+Compiling module xil_defaultlib.norm
+Compiling module xil_defaultlib.ajustare
+Compiling module xil_defaultlib.registru24
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulare
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7480.301 ; gain = 0.000 ; free physical = 216 ; free virtual = 3794
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj simulare_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/adun_scad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adun_scad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/ajustare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ajustare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/alege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/aliniere.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aliniere
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/compara.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compara
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/concatenare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru48.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru48
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru57.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru57
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sim_1/new/simulare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulare
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.registru16
+Compiling module xil_defaultlib.registru48
+Compiling module xil_defaultlib.compara
+Compiling module xil_defaultlib.concatenare
+Compiling module xil_defaultlib.registru57
+Compiling module xil_defaultlib.alege
+Compiling module xil_defaultlib.aliniere
+Compiling module xil_defaultlib.registru8
+Compiling module xil_defaultlib.adun_scad
+Compiling module xil_defaultlib.registru26
+Compiling module xil_defaultlib.norm
+Compiling module xil_defaultlib.ajustare
+Compiling module xil_defaultlib.registru24
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulare
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7487.301 ; gain = 7.000 ; free physical = 160 ; free virtual = 3782
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj simulare_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/adun_scad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adun_scad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/ajustare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ajustare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/alege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/aliniere.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aliniere
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/compara.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compara
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/concatenare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru48.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru48
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru57.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru57
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sim_1/new/simulare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulare
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.registru16
+Compiling module xil_defaultlib.registru48
+Compiling module xil_defaultlib.compara
+Compiling module xil_defaultlib.concatenare
+Compiling module xil_defaultlib.registru57
+Compiling module xil_defaultlib.alege
+Compiling module xil_defaultlib.aliniere
+Compiling module xil_defaultlib.registru8
+Compiling module xil_defaultlib.adun_scad
+Compiling module xil_defaultlib.registru26
+Compiling module xil_defaultlib.norm
+Compiling module xil_defaultlib.ajustare
+Compiling module xil_defaultlib.registru24
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulare
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7495.305 ; gain = 8.004 ; free physical = 141 ; free virtual = 3708
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'simulare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj simulare_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/adun_scad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adun_scad
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/ajustare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ajustare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/alege.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alege
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/aliniere.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aliniere
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/compara.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compara
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/concatenare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru16
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru24
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru48.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru48
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru57.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru57
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/registru8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registru8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_level
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.srcs/sim_1/new/simulare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simulare
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.sim/sim_1/behav/xsim'
+xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto d2adbc4fdc124ba8a5da158eb962c097 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulare_behav xil_defaultlib.simulare xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.registru16
+Compiling module xil_defaultlib.registru48
+Compiling module xil_defaultlib.compara
+Compiling module xil_defaultlib.concatenare
+Compiling module xil_defaultlib.registru57
+Compiling module xil_defaultlib.alege
+Compiling module xil_defaultlib.aliniere
+Compiling module xil_defaultlib.registru8
+Compiling module xil_defaultlib.adun_scad
+Compiling module xil_defaultlib.registru26
+Compiling module xil_defaultlib.norm
+Compiling module xil_defaultlib.ajustare
+Compiling module xil_defaultlib.registru24
+Compiling module xil_defaultlib.top_level
+Compiling module xil_defaultlib.simulare
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simulare_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7503.309 ; gain = 7.000 ; free physical = 208 ; free virtual = 3775
+open_project /home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test2_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 208e4dcebee043d3b61f11a4363c49e8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 208e4dcebee043d3b61f11a4363c49e8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test2_behav -key {Behavioral:sim_1:Functional:test2} -tclbatch {test2.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+source test2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:56 ; elapsed = 00:01:09 . Memory (MB): peak = 7582.359 ; gain = 0.000 ; free physical = 224 ; free virtual = 3741
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test2_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/concatenareExponenti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenareExponenti
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/concatenareMantise.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenareMantise
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart47b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart47b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul7
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart56b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart56b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart7b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart7b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart25b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart25b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart23b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart23b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart_0_0/sim/design_1_regSmart_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_concatenareExponenti_0_0/sim/design_1_concatenareExponenti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_concatenareExponenti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_concatenareMantise_0_0/sim/design_1_concatenareMantise_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_concatenareMantise_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart47b_0_0/sim/design_1_regSmart47b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart47b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul7_0_0/sim/design_1_Modul7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart_1_0/sim/design_1_regSmart_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart56b_0_0/sim/design_1_regSmart56b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart56b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul4_0_0/sim/design_1_Modul4_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul4_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_0_0/sim/design_1_regSmart7b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart47b_1_0/sim/design_1_regSmart47b_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart47b_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul5_0_0/sim/design_1_Modul5_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul5_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_1_0/sim/design_1_regSmart7b_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart25b_0_0/sim/design_1_regSmart25b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart25b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul6_0_0/sim/design_1_Modul6_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul6_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_2_0/sim/design_1_regSmart7b_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart23b_0_0/sim/design_1_regSmart23b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart23b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul3_0_0/sim/design_1_Modul3_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul3_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul2_0_0/sim/design_1_Modul2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul1_0_0/sim/design_1_Modul1_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul1_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sim_1/new/test2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test2
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 7582.359 ; gain = 0.000 ; free physical = 145 ; free virtual = 3609
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 208e4dcebee043d3b61f11a4363c49e8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 208e4dcebee043d3b61f11a4363c49e8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Modul1
+Compiling module xil_defaultlib.design_1_Modul1_0_0
+Compiling module xil_defaultlib.Modul2
+Compiling module xil_defaultlib.design_1_Modul2_0_0
+Compiling module xil_defaultlib.Modul3
+Compiling module xil_defaultlib.design_1_Modul3_0_0
+Compiling module xil_defaultlib.Modul4
+Compiling module xil_defaultlib.design_1_Modul4_0_0
+Compiling module xil_defaultlib.Modul5
+Compiling module xil_defaultlib.design_1_Modul5_0_0
+Compiling module xil_defaultlib.Modul6
+Compiling module xil_defaultlib.design_1_Modul6_0_0
+Compiling module xil_defaultlib.Modul7
+Compiling module xil_defaultlib.design_1_Modul7_0_0
+Compiling module xil_defaultlib.concatenareExponenti
+Compiling module xil_defaultlib.design_1_concatenareExponenti_0_...
+Compiling module xil_defaultlib.concatenareMantise
+Compiling module xil_defaultlib.design_1_concatenareMantise_0_0
+Compiling module xil_defaultlib.regSmart23b
+Compiling module xil_defaultlib.design_1_regSmart23b_0_0
+Compiling module xil_defaultlib.regSmart25b
+Compiling module xil_defaultlib.design_1_regSmart25b_0_0
+Compiling module xil_defaultlib.regSmart47b
+Compiling module xil_defaultlib.design_1_regSmart47b_0_0
+Compiling module xil_defaultlib.design_1_regSmart47b_1_0
+Compiling module xil_defaultlib.regSmart56b
+Compiling module xil_defaultlib.design_1_regSmart56b_0_0
+Compiling module xil_defaultlib.regSmart7b
+Compiling module xil_defaultlib.design_1_regSmart7b_0_0
+Compiling module xil_defaultlib.design_1_regSmart7b_1_0
+Compiling module xil_defaultlib.design_1_regSmart7b_2_0
+Compiling module xil_defaultlib.regSmart
+Compiling module xil_defaultlib.design_1_regSmart_0_0
+Compiling module xil_defaultlib.design_1_regSmart_1_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test2_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 7582.359 ; gain = 0.000 ; free physical = 142 ; free virtual = 3606
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:01:30 ; elapsed = 00:01:49 . Memory (MB): peak = 7582.359 ; gain = 0.000 ; free physical = 141 ; free virtual = 3604
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test2_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/concatenareExponenti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenareExponenti
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/concatenareMantise.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenareMantise
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart47b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart47b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul7
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart56b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart56b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart7b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart7b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart25b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart25b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart23b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart23b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart_0_0/sim/design_1_regSmart_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_concatenareExponenti_0_0/sim/design_1_concatenareExponenti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_concatenareExponenti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_concatenareMantise_0_0/sim/design_1_concatenareMantise_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_concatenareMantise_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart47b_0_0/sim/design_1_regSmart47b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart47b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul7_0_0/sim/design_1_Modul7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart_1_0/sim/design_1_regSmart_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart56b_0_0/sim/design_1_regSmart56b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart56b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul4_0_0/sim/design_1_Modul4_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul4_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_0_0/sim/design_1_regSmart7b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart47b_1_0/sim/design_1_regSmart47b_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart47b_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul5_0_0/sim/design_1_Modul5_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul5_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_1_0/sim/design_1_regSmart7b_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart25b_0_0/sim/design_1_regSmart25b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart25b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul6_0_0/sim/design_1_Modul6_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul6_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_2_0/sim/design_1_regSmart7b_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart23b_0_0/sim/design_1_regSmart23b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart23b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul3_0_0/sim/design_1_Modul3_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul3_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul2_0_0/sim/design_1_Modul2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul1_0_0/sim/design_1_Modul1_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul1_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sim_1/new/test2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test2
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:52 ; elapsed = 00:01:07 . Memory (MB): peak = 7623.508 ; gain = 0.000 ; free physical = 172 ; free virtual = 3611
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 208e4dcebee043d3b61f11a4363c49e8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 208e4dcebee043d3b61f11a4363c49e8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Modul1
+Compiling module xil_defaultlib.design_1_Modul1_0_0
+Compiling module xil_defaultlib.Modul2
+Compiling module xil_defaultlib.design_1_Modul2_0_0
+Compiling module xil_defaultlib.Modul3
+Compiling module xil_defaultlib.design_1_Modul3_0_0
+Compiling module xil_defaultlib.Modul4
+Compiling module xil_defaultlib.design_1_Modul4_0_0
+Compiling module xil_defaultlib.Modul5
+Compiling module xil_defaultlib.design_1_Modul5_0_0
+Compiling module xil_defaultlib.Modul6
+Compiling module xil_defaultlib.design_1_Modul6_0_0
+Compiling module xil_defaultlib.Modul7
+Compiling module xil_defaultlib.design_1_Modul7_0_0
+Compiling module xil_defaultlib.concatenareExponenti
+Compiling module xil_defaultlib.design_1_concatenareExponenti_0_...
+Compiling module xil_defaultlib.concatenareMantise
+Compiling module xil_defaultlib.design_1_concatenareMantise_0_0
+Compiling module xil_defaultlib.regSmart23b
+Compiling module xil_defaultlib.design_1_regSmart23b_0_0
+Compiling module xil_defaultlib.regSmart25b
+Compiling module xil_defaultlib.design_1_regSmart25b_0_0
+Compiling module xil_defaultlib.regSmart47b
+Compiling module xil_defaultlib.design_1_regSmart47b_0_0
+Compiling module xil_defaultlib.design_1_regSmart47b_1_0
+Compiling module xil_defaultlib.regSmart56b
+Compiling module xil_defaultlib.design_1_regSmart56b_0_0
+Compiling module xil_defaultlib.regSmart7b
+Compiling module xil_defaultlib.design_1_regSmart7b_0_0
+Compiling module xil_defaultlib.design_1_regSmart7b_1_0
+Compiling module xil_defaultlib.design_1_regSmart7b_2_0
+Compiling module xil_defaultlib.regSmart
+Compiling module xil_defaultlib.design_1_regSmart_0_0
+Compiling module xil_defaultlib.design_1_regSmart_1_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test2_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 7623.508 ; gain = 0.000 ; free physical = 170 ; free virtual = 3609
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:01:21 ; elapsed = 00:01:44 . Memory (MB): peak = 7623.508 ; gain = 0.000 ; free physical = 169 ; free virtual = 3608
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test2_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/concatenareExponenti.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenareExponenti
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/concatenareMantise.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concatenareMantise
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart47b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart47b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul7
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart56b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart56b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul4
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart7b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart7b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart25b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart25b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul6
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/regSmart23b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regSmart23b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/new/Modul1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Modul1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart_0_0/sim/design_1_regSmart_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_concatenareExponenti_0_0/sim/design_1_concatenareExponenti_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_concatenareExponenti_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_concatenareMantise_0_0/sim/design_1_concatenareMantise_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_concatenareMantise_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart47b_0_0/sim/design_1_regSmart47b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart47b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul7_0_0/sim/design_1_Modul7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart_1_0/sim/design_1_regSmart_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart56b_0_0/sim/design_1_regSmart56b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart56b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul4_0_0/sim/design_1_Modul4_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul4_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_0_0/sim/design_1_regSmart7b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart47b_1_0/sim/design_1_regSmart47b_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart47b_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul5_0_0/sim/design_1_Modul5_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul5_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_1_0/sim/design_1_regSmart7b_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart25b_0_0/sim/design_1_regSmart25b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart25b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul6_0_0/sim/design_1_Modul6_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul6_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart7b_2_0/sim/design_1_regSmart7b_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart7b_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_regSmart23b_0_0/sim/design_1_regSmart23b_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_regSmart23b_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul3_0_0/sim/design_1_Modul3_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul3_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul2_0_0/sim/design_1_Modul2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_Modul1_0_0/sim/design_1_Modul1_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Modul1_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sim_1/new/test2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test2
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:52 ; elapsed = 00:01:07 . Memory (MB): peak = 7642.516 ; gain = 0.000 ; free physical = 173 ; free virtual = 3589
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 208e4dcebee043d3b61f11a4363c49e8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 208e4dcebee043d3b61f11a4363c49e8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test2_behav xil_defaultlib.test2 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Modul1
+Compiling module xil_defaultlib.design_1_Modul1_0_0
+Compiling module xil_defaultlib.Modul2
+Compiling module xil_defaultlib.design_1_Modul2_0_0
+Compiling module xil_defaultlib.Modul3
+Compiling module xil_defaultlib.design_1_Modul3_0_0
+Compiling module xil_defaultlib.Modul4
+Compiling module xil_defaultlib.design_1_Modul4_0_0
+Compiling module xil_defaultlib.Modul5
+Compiling module xil_defaultlib.design_1_Modul5_0_0
+Compiling module xil_defaultlib.Modul6
+Compiling module xil_defaultlib.design_1_Modul6_0_0
+Compiling module xil_defaultlib.Modul7
+Compiling module xil_defaultlib.design_1_Modul7_0_0
+Compiling module xil_defaultlib.concatenareExponenti
+Compiling module xil_defaultlib.design_1_concatenareExponenti_0_...
+Compiling module xil_defaultlib.concatenareMantise
+Compiling module xil_defaultlib.design_1_concatenareMantise_0_0
+Compiling module xil_defaultlib.regSmart23b
+Compiling module xil_defaultlib.design_1_regSmart23b_0_0
+Compiling module xil_defaultlib.regSmart25b
+Compiling module xil_defaultlib.design_1_regSmart25b_0_0
+Compiling module xil_defaultlib.regSmart47b
+Compiling module xil_defaultlib.design_1_regSmart47b_0_0
+Compiling module xil_defaultlib.design_1_regSmart47b_1_0
+Compiling module xil_defaultlib.regSmart56b
+Compiling module xil_defaultlib.design_1_regSmart56b_0_0
+Compiling module xil_defaultlib.regSmart7b
+Compiling module xil_defaultlib.design_1_regSmart7b_0_0
+Compiling module xil_defaultlib.design_1_regSmart7b_1_0
+Compiling module xil_defaultlib.design_1_regSmart7b_2_0
+Compiling module xil_defaultlib.regSmart
+Compiling module xil_defaultlib.design_1_regSmart_0_0
+Compiling module xil_defaultlib.design_1_regSmart_1_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test2_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 7642.516 ; gain = 0.000 ; free physical = 171 ; free virtual = 3587
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:01:22 ; elapsed = 00:01:44 . Memory (MB): peak = 7642.516 ; gain = 0.000 ; free physical = 166 ; free virtual = 3583
+open_project /home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 7646.523 ; gain = 4.008 ; free physical = 155 ; free virtual = 3525
+current_project project_1
+current_project Lab5Part2
+archive_project /home/catalin/Desktop/Lab5Part2.xpr.zip -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location './.Xil/Vivado-43845-catalin-vm' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'

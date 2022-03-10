@@ -1,0 +1,314 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE7BD548A1A7D2AAB",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Lab3CN.gen/sources_1/bd/Schema",
+      "name": "Schema",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Automat_0": ""
+    },
+    "ports": {
+      "Aliment1_0": {
+        "direction": "O"
+      },
+      "Aliment2_0": {
+        "direction": "O"
+      },
+      "Lei10_0": {
+        "direction": "I"
+      },
+      "Lei5_0": {
+        "direction": "I"
+      },
+      "Leu1_0": {
+        "direction": "I"
+      },
+      "REST1_0": {
+        "direction": "O"
+      },
+      "REST2_0": {
+        "direction": "O"
+      },
+      "REST3_0": {
+        "direction": "O"
+      },
+      "REST4_0": {
+        "direction": "O"
+      },
+      "REST5_0": {
+        "direction": "O"
+      },
+      "Suc1_0": {
+        "direction": "O"
+      },
+      "Suc2_0": {
+        "direction": "O"
+      },
+      "bautura1_0": {
+        "direction": "I"
+      },
+      "bautura2_0": {
+        "direction": "I"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "Schema_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "mancare1_0": {
+        "direction": "I"
+      },
+      "mancare2_0": {
+        "direction": "I"
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "vreauRest_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Automat_0": {
+        "vlnv": "xilinx.com:module_ref:Automat:1.0",
+        "xci_name": "Schema_Automat_0_0",
+        "xci_path": "ip\\Schema_Automat_0_0\\Schema_Automat_0_0.xci",
+        "inst_hier_path": "Automat_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Automat",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Schema_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Leu1": {
+            "direction": "I"
+          },
+          "Lei5": {
+            "direction": "I"
+          },
+          "Lei10": {
+            "direction": "I"
+          },
+          "bautura1": {
+            "direction": "I"
+          },
+          "bautura2": {
+            "direction": "I"
+          },
+          "mancare1": {
+            "direction": "I"
+          },
+          "mancare2": {
+            "direction": "I"
+          },
+          "vreauRest": {
+            "direction": "I"
+          },
+          "Suc1": {
+            "direction": "O"
+          },
+          "Suc2": {
+            "direction": "O"
+          },
+          "Aliment1": {
+            "direction": "O"
+          },
+          "Aliment2": {
+            "direction": "O"
+          },
+          "REST1": {
+            "direction": "O"
+          },
+          "REST2": {
+            "direction": "O"
+          },
+          "REST3": {
+            "direction": "O"
+          },
+          "REST4": {
+            "direction": "O"
+          },
+          "REST5": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Automat_0_Aliment1": {
+        "ports": [
+          "Automat_0/Aliment1",
+          "Aliment1_0"
+        ]
+      },
+      "Automat_0_Aliment2": {
+        "ports": [
+          "Automat_0/Aliment2",
+          "Aliment2_0"
+        ]
+      },
+      "Lei10_0_1": {
+        "ports": [
+          "Lei10_0",
+          "Automat_0/Lei10"
+        ]
+      },
+      "Lei5_0_1": {
+        "ports": [
+          "Lei5_0",
+          "Automat_0/Lei5"
+        ]
+      },
+      "Leu1_0_1": {
+        "ports": [
+          "Leu1_0",
+          "Automat_0/Leu1"
+        ]
+      },
+      "Automat_0_REST1": {
+        "ports": [
+          "Automat_0/REST1",
+          "REST1_0"
+        ]
+      },
+      "Automat_0_REST2": {
+        "ports": [
+          "Automat_0/REST2",
+          "REST2_0"
+        ]
+      },
+      "Automat_0_REST3": {
+        "ports": [
+          "Automat_0/REST3",
+          "REST3_0"
+        ]
+      },
+      "Automat_0_REST4": {
+        "ports": [
+          "Automat_0/REST4",
+          "REST4_0"
+        ]
+      },
+      "Automat_0_REST5": {
+        "ports": [
+          "Automat_0/REST5",
+          "REST5_0"
+        ]
+      },
+      "Automat_0_Suc1": {
+        "ports": [
+          "Automat_0/Suc1",
+          "Suc1_0"
+        ]
+      },
+      "Automat_0_Suc2": {
+        "ports": [
+          "Automat_0/Suc2",
+          "Suc2_0"
+        ]
+      },
+      "bautura1_0_1": {
+        "ports": [
+          "bautura1_0",
+          "Automat_0/bautura1"
+        ]
+      },
+      "bautura2_0_1": {
+        "ports": [
+          "bautura2_0",
+          "Automat_0/bautura2"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "Automat_0/clk"
+        ]
+      },
+      "mancare1_0_1": {
+        "ports": [
+          "mancare1_0",
+          "Automat_0/mancare1"
+        ]
+      },
+      "mancare2_0_1": {
+        "ports": [
+          "mancare2_0",
+          "Automat_0/mancare2"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "Automat_0/reset"
+        ]
+      },
+      "vreauRest_0_1": {
+        "ports": [
+          "vreauRest_0",
+          "Automat_0/vreauRest"
+        ]
+      }
+    }
+  }
+}

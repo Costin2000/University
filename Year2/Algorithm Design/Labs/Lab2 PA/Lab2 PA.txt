@@ -1,0 +1,198 @@
+Brebu Costin-Bogdan 321CDa
+
+1) 	hanoi(n, a, b, c) 1     
+		if n > 0 
+			hanoi(n - 1, a, c, b) 
+          		mută(1, a, b) 4          
+			hanoi(n - 1, c, b, a)
+	
+	A: 3 2 1
+	B:
+	C:
+
+	A: 3 2 
+	B: 1
+	C: 
+
+	A: 3 
+	B: 1
+	C: 2
+
+	A: 3
+	B: 
+	C: 2 1
+
+	A: 
+	B: 3
+	C: 2 1
+
+	A: 1
+	B: 3 
+	C: 2
+
+	A: 1
+	B: 3 2
+	C:
+
+	A:
+	B: 3 2 1
+	C:
+ 
+
+2)	int max(inf,sup)
+	{
+		if(sup==inf)
+		{
+			return vct[sup];
+		}
+		else
+		{	
+			mij= (sup + inf)/2;
+			max1 = alg(inf,mij)
+			max2 = alg(mij+1,sup)
+			if(max1 > max2)
+				return max1;
+			else 
+				return max2;
+		}
+	}
+
+
+	inf = 0
+	sup = 4
+	mij = (inf+sup)/2 = 2  si se apeleaza recursiv max1=find(inf, mij), max2=find(mij+1, sup)
+	
+	3 2 5 2 4   /se imparte vectorul in 2
+	--------------------------------------------
+	    
+	inf=0	inf=3
+	sup=2	sup=4
+	mij=1	mij=3
+
+	3 2 5  	2 4	/fiecare subvector se imparte iar in 2
+	
+	----------------------------------------------------------
+	inf=0	inf=2	inf=3	inf=4
+	sup=1	sup=2	sup=3	sup=4
+
+	3 2	5	2	4
+	----------------------------------------------------------
+
+	3	2	5	2	4 	//am obtinut probleme elementare
+
+	----------------------------------------------------------
+	
+	max(3,2) = 3 	5	2	4
+
+	---------------------------------------------------------
+	max1 = 3	max1 = 2
+	max2 = 5	max2 = 4
+	max(3,5) = 5	max(2,4) = 4
+
+	-----------------------------------------------------------
+	max1=5
+	max2=4
+	max(5,4) = 5
+
+
+
+3)	void mergeSort(int arr[], int inf, int sup)
+	{
+    		if (inf < sup) {
+        		int mij = inf + (sup - inf) / 2;
+        		mergeSort(arr, inf, mij);
+        		mergeSort(arr, mij + 1, sup);
+        		merge(arr, inf, mij, sup);
+    		}
+	}
+ 	Astea sunt etapele prin care trece vectorul:
+
+			3 2 1 4 3 5 2
+
+	     3 2 1 4			3 5 2
+
+	3 2		1 4	    3 5        2
+
+       3   2           1    4      3   5       2  // s-a apelat succesiv mergeSort, la fiecare pas
+						  // se face apel la functie pe jumatatile vectorului initial
+	// astfel se ajunge ca acesta sa fie impartit in subvectori de cate un element
+	
+	Urmeaza sa se faca pe etape
+	Etapa1) Face merge la {3} si {2} si se obtine { 2, 3 }
+		Face merge la {1} si {4} si se obtine { 1, 4 }
+		Face merge la {3} si {5} si se obtine { 3, 5 }
+		iar {2} ramane {2}		
+	
+	Etapa2) Face merge la { 2, 3 } si { 1, 4} si se obtine { 1, 2, 3, 4 }	
+		Face merge la { 3, 5 } si {2} si se obtine { 2, 3, 5 }
+
+	Etapa3) Face merge la { 1, 2, 3, 4 } si { 2, 3, 5 } si se obtine { 1, 2, 2, 3, 3, 4, 5 }
+			
+
+
+4)	int binarySearch(int vec[], int inf, int sup, int x)
+	{
+    		if (sup >= inf) {
+        		int mij = inf + (sup - inf) / 2;
+        		if (vec[mij] == x)
+            			return mij;
+        		if (vec[mij] > x)
+            			return binarySearch(vec, inf, mij - 1, x);
+        		return binarySearch(vec, mij + 1, sup, x);
+    		}
+    		return -1;
+	}			
+
+		1 3 4 5 7 8 9  x=3
+	low = 0
+	high = 6
+	=> mid = 3
+
+	vedem ca 5 e mai mare decat 3 asa ca mutam indexul 
+	high = mid-1 = 2
+	mid = 2/2 = 1
+
+	vedem ca 3 = 3
+	de unde rezulta ca am gasit elementul cautat si intoarcem mid = 1;
+
+
+5)	int count(int vec[], int inf, int sup, int x)
+	{
+		if (inf == sup)
+    		{
+        		if(vec[inf] == x) // daca acela este exact cel cautat
+            			return 1;
+        		return 0;
+    		}
+    		return count(vec, inf,(inf + sup) / 2, x) + count(vec, 1 + (inf + sup) / 2, sup, x);
+	}
+
+	x = 1
+	
+	1)
+	inf = 0;
+	sup = 9;
+	2 1 3 1 1 4 2 1 8 1 	
+	inf != sup => count(vec, 0, 4, 1) + count(vec, 5, 9,1)
+	
+	2)
+	=> count(vec, 0, 2, 1) + count(vec, 3, 4, 1) + 
+		+ count(vec, 5, 7, 1) + count(vec, 8, 9,1)
+	
+	3)
+	=> count(vec, 0, 1, 1) + count(vec, 2, 2, 1) + 
+		+ count(vec, 3, 3, 1) + count(vec, 4, 4,1) +
+		+ count(vec, 5, 6, 1) + count(vec, 7, 7, 1) + 
+		+ count(vec, 8, 8, 1) + count(vec, 9, 9,1)
+	= count(vec, 0, 1, 1) + 0 + 1 + 1 + count(vec, 5, 6, 1)
+	+ 1 + 0 + 1 =
+	= count(vec, 0, 1, 1) + count(vec, 5, 6, 1) + 4
+
+	4) count(vec, 0, 0, 1) + count(vec, 1, 1, 1) +
+	+ count(vec, 5, 5, 1) + count(vec, 6, 6, 1) + 4 =
+	= 0 + 1 + 0 + 0 + 4 = 5
+
+	rezultatul final este de 5
+	
+	
+			

@@ -1,0 +1,182 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x67442432770CF65C",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../project_1.gen/sources_1/bd/Schema",
+      "name": "Schema",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Automat_0": ""
+    },
+    "ports": {
+      "B1_0": {
+        "direction": "I"
+      },
+      "B10_0": {
+        "direction": "I"
+      },
+      "B5_0": {
+        "direction": "I"
+      },
+      "REST1_0": {
+        "direction": "O"
+      },
+      "REST5_0": {
+        "direction": "O"
+      },
+      "SUC_0": {
+        "direction": "O"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "Schema_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "Automat_0": {
+        "vlnv": "xilinx.com:module_ref:Automat:1.0",
+        "xci_name": "Schema_Automat_0_0",
+        "xci_path": "ip\\Schema_Automat_0_0\\Schema_Automat_0_0.xci",
+        "inst_hier_path": "Automat_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Automat",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Schema_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "B1": {
+            "direction": "I"
+          },
+          "B5": {
+            "direction": "I"
+          },
+          "B10": {
+            "direction": "I"
+          },
+          "SUC": {
+            "direction": "O"
+          },
+          "REST1": {
+            "direction": "O"
+          },
+          "REST5": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "B1_0_1": {
+        "ports": [
+          "B1_0",
+          "Automat_0/B1"
+        ]
+      },
+      "B10_0_1": {
+        "ports": [
+          "B10_0",
+          "Automat_0/B10"
+        ]
+      },
+      "B5_0_1": {
+        "ports": [
+          "B5_0",
+          "Automat_0/B5"
+        ]
+      },
+      "Automat_0_REST1": {
+        "ports": [
+          "Automat_0/REST1",
+          "REST1_0"
+        ]
+      },
+      "Automat_0_REST5": {
+        "ports": [
+          "Automat_0/REST5",
+          "REST5_0"
+        ]
+      },
+      "Automat_0_SUC": {
+        "ports": [
+          "Automat_0/SUC",
+          "SUC_0"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "Automat_0/clk"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "Automat_0/reset"
+        ]
+      }
+    }
+  }
+}

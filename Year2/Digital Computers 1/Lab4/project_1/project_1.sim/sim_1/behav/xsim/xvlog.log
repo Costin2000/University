@@ -1,0 +1,98 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sources_1/new/sumator_complet_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sumator_complet_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sources_1/new/UAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sources_1/new/Convertor2_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Convertor2_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sources_1/new/GUAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GUAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sources_1/new/Convertor16_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Convertor16_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sources_1/new/Convertor4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Convertor4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sources_1/new/Convertor1_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Convertor1_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sources_1/new/EliminareBit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EliminareBit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_0_0/sim/Schema_sumator_complet_1bit_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_1_0/sim/Schema_sumator_complet_1bit_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_2_0/sim/Schema_sumator_complet_1bit_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_3_0/sim/Schema_sumator_complet_1bit_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_4_0/sim/Schema_sumator_complet_1bit_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_5_0/sim/Schema_sumator_complet_1bit_5_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_5_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_6_0/sim/Schema_sumator_complet_1bit_6_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_6_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_7_0/sim/Schema_sumator_complet_1bit_7_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_7_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_8_0/sim/Schema_sumator_complet_1bit_8_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_9_0/sim/Schema_sumator_complet_1bit_9_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_9_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_10_0/sim/Schema_sumator_complet_1bit_10_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_10_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_11_0/sim/Schema_sumator_complet_1bit_11_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_11_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_12_0/sim/Schema_sumator_complet_1bit_12_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_12_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_13_0/sim/Schema_sumator_complet_1bit_13_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_13_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_14_0/sim/Schema_sumator_complet_1bit_14_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_14_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_sumator_complet_1bit_15_0/sim/Schema_sumator_complet_1bit_15_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_sumator_complet_1bit_15_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_UAT_0_0/sim/Schema_UAT_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_UAT_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_UAT_1_0/sim/Schema_UAT_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_UAT_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_UAT_2_0/sim/Schema_UAT_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_UAT_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_UAT_3_0/sim/Schema_UAT_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_UAT_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor2_32_0_0/sim/Schema_Convertor2_32_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor2_32_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_GUAT_0_0/sim/Schema_GUAT_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_GUAT_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor16_1_0_1/sim/Schema_Convertor16_1_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor16_1_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_0_0/sim/Schema_Convertor4_1_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_1_0/sim/Schema_Convertor4_1_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_2_0/sim/Schema_Convertor4_1_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_3_0/sim/Schema_Convertor4_1_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_4_0/sim/Schema_Convertor4_1_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_5_0/sim/Schema_Convertor4_1_5_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_5_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_6_0/sim/Schema_Convertor4_1_6_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_6_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_7_0/sim/Schema_Convertor4_1_7_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_7_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_8_0/sim/Schema_Convertor4_1_8_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor4_1_9_0/sim/Schema_Convertor4_1_9_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor4_1_9_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_Convertor1_4_0_0/sim/Schema_Convertor1_4_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_Convertor1_4_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_EliminareBit_0_1/sim/Schema_EliminareBit_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_EliminareBit_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_EliminareBit_1_1/sim/Schema_EliminareBit_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_EliminareBit_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_EliminareBit_2_1/sim/Schema_EliminareBit_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_EliminareBit_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/ip/Schema_EliminareBit_3_0/sim/Schema_EliminareBit_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_EliminareBit_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.ip_user_files/bd/Schema/sim/Schema.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.gen/sources_1/bd/Schema/hdl/Schema_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Schema_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.srcs/sim_1/new/Test2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test2

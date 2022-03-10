@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.srcs/sources_1/new/poartaXOR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module poartaXOR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.srcs/sources_1/new/memoryBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memoryBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_poartaXOR_0_0/sim/design_1_poartaXOR_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_poartaXOR_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_0_0/sim/design_1_memoryBuffer_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_1_0/sim/design_1_memoryBuffer_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_poartaXOR_1_0/sim/design_1_poartaXOR_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_poartaXOR_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_2_0/sim/design_1_memoryBuffer_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_3_0/sim/design_1_memoryBuffer_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_poartaXOR_2_0/sim/design_1_poartaXOR_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_poartaXOR_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/ip/design_1_memoryBuffer_4_0/sim/design_1_memoryBuffer_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_memoryBuffer_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.srcs/sources_1/imports/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Lab5Part2.xpr/Lab5Part2/Lab5Part2.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

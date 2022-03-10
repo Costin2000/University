@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.srcs/sources_1/new/orGate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module orGate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.srcs/sources_1/new/registruTampon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registruTampon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/ip/schema_orGate_0_0/sim/schema_orGate_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_orGate_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/ip/schema_registruTampon_0_0/sim/schema_registruTampon_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_registruTampon_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/ip/schema_registruTampon_1_0/sim/schema_registruTampon_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_registruTampon_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/ip/schema_orGate_1_0/sim/schema_orGate_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_orGate_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/ip/schema_registruTampon_2_0/sim/schema_registruTampon_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_registruTampon_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/ip/schema_registruTampon_3_0/sim/schema_registruTampon_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_registruTampon_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/ip/schema_orGate_2_0/sim/schema_orGate_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_orGate_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/ip/schema_registruTampon_4_0/sim/schema_registruTampon_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_registruTampon_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.ip_user_files/bd/schema/sim/schema.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.gen/sources_1/bd/schema/hdl/schema_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module schema_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab5/Pipeline/Pipeline.srcs/sim_1/new/Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test

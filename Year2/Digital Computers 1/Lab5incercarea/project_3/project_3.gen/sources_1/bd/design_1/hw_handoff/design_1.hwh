@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 27 06:50:28 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="23" NAME="mant1_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mant1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="concatMantise_0" PORT="mant1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="mant2_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mant2_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="concatMantise_0" PORT="mant2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="exp1_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_exp1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="concatExp_0" PORT="exp1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="exp2_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_exp2_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="concatExp_0" PORT="exp2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clear_0" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="reg47_0" PORT="clear"/>
+        <CONNECTION INSTANCE="reg16_0" PORT="clear"/>
+        <CONNECTION INSTANCE="reg56_0" PORT="clear"/>
+        <CONNECTION INSTANCE="reg16_1" PORT="clear"/>
+        <CONNECTION INSTANCE="reg47_1" PORT="clear"/>
+        <CONNECTION INSTANCE="reg7_0" PORT="clear"/>
+        <CONNECTION INSTANCE="reg25_0" PORT="clear"/>
+        <CONNECTION INSTANCE="reg7_1" PORT="clear"/>
+        <CONNECTION INSTANCE="reg23_0" PORT="clear"/>
+        <CONNECTION INSTANCE="reg7_2" PORT="clear"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock_0" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="reg47_0" PORT="clock"/>
+        <CONNECTION INSTANCE="reg16_0" PORT="clock"/>
+        <CONNECTION INSTANCE="reg56_0" PORT="clock"/>
+        <CONNECTION INSTANCE="reg16_1" PORT="clock"/>
+        <CONNECTION INSTANCE="reg47_1" PORT="clock"/>
+        <CONNECTION INSTANCE="reg7_0" PORT="clock"/>
+        <CONNECTION INSTANCE="reg25_0" PORT="clock"/>
+        <CONNECTION INSTANCE="reg7_1" PORT="clock"/>
+        <CONNECTION INSTANCE="reg23_0" PORT="clock"/>
+        <CONNECTION INSTANCE="reg7_2" PORT="clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="load_0" SIGIS="undef" SIGNAME="External_Ports_load_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="reg47_0" PORT="load"/>
+        <CONNECTION INSTANCE="reg16_0" PORT="load"/>
+        <CONNECTION INSTANCE="reg56_0" PORT="load"/>
+        <CONNECTION INSTANCE="reg16_1" PORT="load"/>
+        <CONNECTION INSTANCE="reg47_1" PORT="load"/>
+        <CONNECTION INSTANCE="reg7_0" PORT="load"/>
+        <CONNECTION INSTANCE="reg25_0" PORT="load"/>
+        <CONNECTION INSTANCE="reg7_1" PORT="load"/>
+        <CONNECTION INSTANCE="reg23_0" PORT="load"/>
+        <CONNECTION INSTANCE="reg7_2" PORT="load"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="op_0" SIGIS="undef" SIGNAME="External_Ports_op_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M5_0" PORT="op"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="rout_0" RIGHT="0" SIGIS="undef" SIGNAME="reg23_0_rout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="reg23_0" PORT="rout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="rout_1" RIGHT="0" SIGIS="undef" SIGNAME="reg7_2_rout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="reg7_2" PORT="rout"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/M1_0" HWVERSION="1.0" INSTANCE="M1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M1" VLNV="xilinx.com:module_ref:M1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_M1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="exp" RIGHT="0" SIGIS="undef" SIGNAME="reg16_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg16_0" PORT="rout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="rez" RIGHT="0" SIGIS="undef" SIGNAME="M1_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg16_1" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="rez2" RIGHT="0" SIGIS="undef" SIGNAME="M1_0_rez2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M7_0" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M2_0" HWVERSION="1.0" INSTANCE="M2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M2" VLNV="xilinx.com:module_ref:M2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_M2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="exp" RIGHT="0" SIGIS="undef" SIGNAME="reg16_1_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg16_1" PORT="rout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="rez" RIGHT="0" SIGIS="undef" SIGNAME="M2_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg7_0" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M3_0" HWVERSION="1.0" INSTANCE="M3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M3" VLNV="xilinx.com:module_ref:M3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_M3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="exp" RIGHT="0" SIGIS="undef" SIGNAME="reg7_1_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg7_1" PORT="rout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="val" RIGHT="0" SIGIS="undef" SIGNAME="M6_0_val2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M6_0" PORT="val2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="rez" RIGHT="0" SIGIS="undef" SIGNAME="M3_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg7_2" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M4_0" HWVERSION="1.0" INSTANCE="M4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M4" VLNV="xilinx.com:module_ref:M4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_M4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="56" NAME="mant" RIGHT="0" SIGIS="undef" SIGNAME="reg56_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg56_0" PORT="rout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="mantRez" RIGHT="0" SIGIS="undef" SIGNAME="M4_0_mantRez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg47_1" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M5_0" HWVERSION="1.0" INSTANCE="M5_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M5" VLNV="xilinx.com:module_ref:M5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_M5_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="47" NAME="mant" RIGHT="0" SIGIS="undef" SIGNAME="reg47_1_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg47_1" PORT="rout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="25" NAME="mantRez" RIGHT="0" SIGIS="undef" SIGNAME="M5_0_mantRez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg25_0" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="op" SIGIS="undef" SIGNAME="External_Ports_op_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="op_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M6_0" HWVERSION="1.0" INSTANCE="M6_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M6" VLNV="xilinx.com:module_ref:M6:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_M6_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="25" NAME="mant" RIGHT="0" SIGIS="undef" SIGNAME="reg25_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg25_0" PORT="rout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="mfinal" RIGHT="0" SIGIS="undef" SIGNAME="M6_0_mfinal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg23_0" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="val2" RIGHT="0" SIGIS="undef" SIGNAME="M6_0_val2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M3_0" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/M7_0" HWVERSION="1.0" INSTANCE="M7_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M7" VLNV="xilinx.com:module_ref:M7:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_M7_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="47" NAME="mants" RIGHT="0" SIGIS="undef" SIGNAME="reg47_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg47_0" PORT="rout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="val" RIGHT="0" SIGIS="undef" SIGNAME="M1_0_rez2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_0" PORT="rez2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="56" NAME="mantsRez" RIGHT="0" SIGIS="undef" SIGNAME="M7_0_mantsRez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg56_0" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/concatExp_0" HWVERSION="1.0" INSTANCE="concatExp_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="concatExp" VLNV="xilinx.com:module_ref:concatExp:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_concatExp_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="exp1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_exp1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="exp1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="exp2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_exp2_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="exp2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="rez" RIGHT="0" SIGIS="undef" SIGNAME="concatExp_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg16_0" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/concatMantise_0" HWVERSION="1.0" INSTANCE="concatMantise_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="concatMantise" VLNV="xilinx.com:module_ref:concatMantise:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_concatMantise_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="mant1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mant1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mant1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="mant2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mant2_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mant2_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="rez" RIGHT="0" SIGIS="undef" SIGNAME="concatMantise_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg47_0" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg16_0" HWVERSION="1.0" INSTANCE="reg16_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg16" VLNV="xilinx.com:module_ref:reg16:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg16_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="concatExp_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatExp_0" PORT="rez"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg16_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_0" PORT="exp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg16_1" HWVERSION="1.0" INSTANCE="reg16_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg16" VLNV="xilinx.com:module_ref:reg16:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg16_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="M1_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M1_0" PORT="rez"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg16_1_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M2_0" PORT="exp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg23_0" HWVERSION="1.0" INSTANCE="reg23_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg23" VLNV="xilinx.com:module_ref:reg23:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg23_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="M6_0_mfinal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M6_0" PORT="mfinal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg23_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rout_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg25_0" HWVERSION="1.0" INSTANCE="reg25_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg25" VLNV="xilinx.com:module_ref:reg25:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg25_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="25" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="M5_0_mantRez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M5_0" PORT="mantRez"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="25" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg25_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M6_0" PORT="mant"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg47_0" HWVERSION="1.0" INSTANCE="reg47_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg47" VLNV="xilinx.com:module_ref:reg47:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg47_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="47" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="concatMantise_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatMantise_0" PORT="rez"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg47_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M7_0" PORT="mants"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg47_1" HWVERSION="1.0" INSTANCE="reg47_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg47" VLNV="xilinx.com:module_ref:reg47:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg47_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="47" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="M4_0_mantRez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M4_0" PORT="mantRez"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg47_1_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M5_0" PORT="mant"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg56_0" HWVERSION="1.0" INSTANCE="reg56_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg56" VLNV="xilinx.com:module_ref:reg56:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg56_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="56" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="M7_0_mantsRez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M7_0" PORT="mantsRez"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="56" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg56_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M4_0" PORT="mant"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg7_0" HWVERSION="1.0" INSTANCE="reg7_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg7" VLNV="xilinx.com:module_ref:reg7:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg7_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="M2_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M2_0" PORT="rez"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg7_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg7_1" PORT="rin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg7_1" HWVERSION="1.0" INSTANCE="reg7_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg7" VLNV="xilinx.com:module_ref:reg7:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg7_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="reg7_0_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg7_0" PORT="rout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg7_1_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M3_0" PORT="exp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/reg7_2" HWVERSION="1.0" INSTANCE="reg7_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg7" VLNV="xilinx.com:module_ref:reg7:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_reg7_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="rin" RIGHT="0" SIGIS="undef" SIGNAME="M3_0_rez">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="M3_0" PORT="rez"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="rout" RIGHT="0" SIGIS="undef" SIGNAME="reg7_2_rout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rout_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clear" SIGIS="undef" SIGNAME="External_Ports_clear_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clear_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

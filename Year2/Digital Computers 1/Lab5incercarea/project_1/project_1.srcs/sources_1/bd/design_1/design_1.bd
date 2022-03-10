@@ -1,0 +1,446 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x615BC4C5A680729",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../project_1.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "poartaOR_0": "",
+      "registruTampon_0": "",
+      "registruTampon_1": "",
+      "poartaOR_1": "",
+      "registruTampon_2": "",
+      "registruTampon_3": "",
+      "poartaOR_2": "",
+      "registruTampon_4": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "enable_0": {
+        "direction": "I"
+      },
+      "intrare_0": {
+        "direction": "I"
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "a_0": {
+        "direction": "I"
+      },
+      "b_0": {
+        "direction": "I"
+      },
+      "iesire_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "poartaOR_0": {
+        "vlnv": "xilinx.com:module_ref:poartaOR:1.0",
+        "xci_name": "design_1_poartaOR_0_0",
+        "xci_path": "ip\\design_1_poartaOR_0_0\\design_1_poartaOR_0_0.xci",
+        "inst_hier_path": "poartaOR_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "poartaOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_0": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "design_1_registruTampon_0_0",
+        "xci_path": "ip\\design_1_registruTampon_0_0\\design_1_registruTampon_0_0.xci",
+        "inst_hier_path": "registruTampon_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_1": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "design_1_registruTampon_1_0",
+        "xci_path": "ip\\design_1_registruTampon_1_0\\design_1_registruTampon_1_0.xci",
+        "inst_hier_path": "registruTampon_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "poartaOR_1": {
+        "vlnv": "xilinx.com:module_ref:poartaOR:1.0",
+        "xci_name": "design_1_poartaOR_1_0",
+        "xci_path": "ip\\design_1_poartaOR_1_0\\design_1_poartaOR_1_0.xci",
+        "inst_hier_path": "poartaOR_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "poartaOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_2": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "design_1_registruTampon_2_0",
+        "xci_path": "ip\\design_1_registruTampon_2_0\\design_1_registruTampon_2_0.xci",
+        "inst_hier_path": "registruTampon_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_3": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "design_1_registruTampon_3_0",
+        "xci_path": "ip\\design_1_registruTampon_3_0\\design_1_registruTampon_3_0.xci",
+        "inst_hier_path": "registruTampon_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "poartaOR_2": {
+        "vlnv": "xilinx.com:module_ref:poartaOR:1.0",
+        "xci_name": "design_1_poartaOR_2_0",
+        "xci_path": "ip\\design_1_poartaOR_2_0\\design_1_poartaOR_2_0.xci",
+        "inst_hier_path": "poartaOR_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "poartaOR",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_4": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "design_1_registruTampon_4_0",
+        "xci_path": "ip\\design_1_registruTampon_4_0\\design_1_registruTampon_4_0.xci",
+        "inst_hier_path": "registruTampon_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "enable": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "poartaOR_0_c": {
+        "ports": [
+          "poartaOR_0/c",
+          "registruTampon_0/intrare"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "registruTampon_1/clk",
+          "registruTampon_0/clk",
+          "registruTampon_3/clk",
+          "registruTampon_2/clk",
+          "registruTampon_4/clk"
+        ]
+      },
+      "enable_0_1": {
+        "ports": [
+          "enable_0",
+          "registruTampon_1/enable",
+          "registruTampon_0/enable",
+          "registruTampon_3/enable",
+          "registruTampon_2/enable",
+          "registruTampon_4/enable"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "registruTampon_1/reset",
+          "registruTampon_0/reset",
+          "registruTampon_3/reset",
+          "registruTampon_2/reset",
+          "registruTampon_4/reset"
+        ]
+      },
+      "a_0_1": {
+        "ports": [
+          "a_0",
+          "poartaOR_0/a"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b_0",
+          "poartaOR_0/b"
+        ]
+      },
+      "intrare_0_1": {
+        "ports": [
+          "intrare_0",
+          "registruTampon_1/intrare"
+        ]
+      },
+      "registruTampon_1_iesire": {
+        "ports": [
+          "registruTampon_1/iesire",
+          "poartaOR_1/b"
+        ]
+      },
+      "registruTampon_0_iesire": {
+        "ports": [
+          "registruTampon_0/iesire",
+          "poartaOR_1/a",
+          "registruTampon_3/intrare"
+        ]
+      },
+      "registruTampon_3_iesire": {
+        "ports": [
+          "registruTampon_3/iesire",
+          "poartaOR_2/a"
+        ]
+      },
+      "registruTampon_2_iesire": {
+        "ports": [
+          "registruTampon_2/iesire",
+          "poartaOR_2/b"
+        ]
+      },
+      "poartaOR_2_c": {
+        "ports": [
+          "poartaOR_2/c",
+          "registruTampon_4/intrare"
+        ]
+      },
+      "registruTampon_4_iesire": {
+        "ports": [
+          "registruTampon_4/iesire",
+          "iesire_0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 12 09:41:16 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="Schema" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="B1_0" SIGIS="undef" SIGNAME="External_Ports_B1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="B1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B10_0" SIGIS="undef" SIGNAME="External_Ports_B10_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="B10"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B5_0" SIGIS="undef" SIGNAME="External_Ports_B5_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="B5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="REST1_0" SIGIS="undef" SIGNAME="Automat_0_REST1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="REST1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="REST5_0" SIGIS="undef" SIGNAME="Automat_0_REST5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="REST5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SUC_0" SIGIS="undef" SIGNAME="Automat_0_SUC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="SUC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Automat_0" HWVERSION="1.0" INSTANCE="Automat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Automat" VLNV="xilinx.com:module_ref:Automat:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Schema_Automat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="External_Ports_B1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B5" SIGIS="undef" SIGNAME="External_Ports_B5_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B5_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B10" SIGIS="undef" SIGNAME="External_Ports_B10_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B10_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SUC" SIGIS="undef" SIGNAME="Automat_0_SUC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SUC_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="REST1" SIGIS="undef" SIGNAME="Automat_0_REST1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="REST1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="REST5" SIGIS="undef" SIGNAME="Automat_0_REST5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="REST5_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

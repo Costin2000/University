@@ -1,0 +1,61 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 2ed687394c4e481b9ae54c4bc54a6b4e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Test2_behav xil_defaultlib.Test2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Convertor16_1
+Compiling module xil_defaultlib.Schema_Convertor16_1_0_1
+Compiling module xil_defaultlib.Convertor1_4
+Compiling module xil_defaultlib.Schema_Convertor1_4_0_0
+Compiling module xil_defaultlib.Convertor2_32
+Compiling module xil_defaultlib.Schema_Convertor2_32_0_0
+Compiling module xil_defaultlib.Convertor4_1
+Compiling module xil_defaultlib.Schema_Convertor4_1_0_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_1_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_2_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_3_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_4_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_5_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_6_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_7_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_8_0
+Compiling module xil_defaultlib.Schema_Convertor4_1_9_0
+Compiling module xil_defaultlib.EliminareBit
+Compiling module xil_defaultlib.Schema_EliminareBit_0_1
+Compiling module xil_defaultlib.Schema_EliminareBit_1_1
+Compiling module xil_defaultlib.Schema_EliminareBit_2_1
+Compiling module xil_defaultlib.Schema_EliminareBit_3_0
+Compiling module xil_defaultlib.GUAT
+Compiling module xil_defaultlib.Schema_GUAT_0_0
+Compiling module xil_defaultlib.UAT
+Compiling module xil_defaultlib.Schema_UAT_0_0
+Compiling module xil_defaultlib.Schema_UAT_1_0
+Compiling module xil_defaultlib.Schema_UAT_2_0
+Compiling module xil_defaultlib.Schema_UAT_3_0
+Compiling module xil_defaultlib.sumator_complet_1bit
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_0_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_1_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_10_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_11_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_12_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_13_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_14_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_15_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_2_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_3_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_4_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_5_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_6_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_7_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_8_0
+Compiling module xil_defaultlib.Schema_sumator_complet_1bit_9_0
+Compiling module xil_defaultlib.Schema
+Compiling module xil_defaultlib.Schema_wrapper
+Compiling module xil_defaultlib.Test2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test2_behav

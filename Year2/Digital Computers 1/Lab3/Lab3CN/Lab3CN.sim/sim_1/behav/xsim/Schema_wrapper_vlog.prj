@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab3CN.srcs/sources_1/new/Automat.v" \
+"../../../../Lab3CN.ip_user_files/bd/Schema/ip/Schema_Automat_0_0/sim/Schema_Automat_0_0.v" \
+"../../../../Lab3CN.ip_user_files/bd/Schema/sim/Schema.v" \
+"../../../../Lab3CN.gen/sources_1/bd/Schema/hdl/Schema_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

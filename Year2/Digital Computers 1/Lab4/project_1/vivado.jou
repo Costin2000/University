@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  3 12:23:31 2021
+# Process ID: 8372
+# Current directory: C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10120 C:\Users\brebu\OneDrive\Desktop\LaburiCN\Lab4\project_1\project_1.xpr
+# Log file: C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/vivado.log
+# Journal file: C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Test2.tcl
+archive_project C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1.xpr.zip -temp_dir C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/.Xil/Vivado-8372-DESKTOP-UQS0J8L -force -include_local_ip_cache
+archive_project C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/Lab4.xpr.zip -temp_dir C:/Users/brebu/OneDrive/Desktop/LaburiCN/Lab4/project_1/.Xil/Vivado-8372-DESKTOP-UQS0J8L -force -include_local_ip_cache
+close_sim

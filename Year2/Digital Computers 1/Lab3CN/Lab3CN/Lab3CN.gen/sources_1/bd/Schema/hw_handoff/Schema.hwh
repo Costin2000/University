@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr 15 12:11:49 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="Schema" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="Cola_0" SIGIS="undef" SIGNAME="Automat_0_Cola">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Cola"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Fanta_0" SIGIS="undef" SIGNAME="Automat_0_Fanta">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="Fanta"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="L1_0" SIGIS="undef" SIGNAME="External_Ports_L1_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="L1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="L10_0" SIGIS="undef" SIGNAME="External_Ports_L10_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="L10"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="L5_0" SIGIS="undef" SIGNAME="External_Ports_L5_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="L5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="R1_0" SIGIS="undef" SIGNAME="Automat_0_R1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="R1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="R10_0" SIGIS="undef" SIGNAME="Automat_0_R10">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="R10"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="R5_0" SIGIS="undef" SIGNAME="Automat_0_R5">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="R5"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="wantCola_0" SIGIS="undef" SIGNAME="External_Ports_wantCola_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="wantCola"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="wantFanta_0" SIGIS="undef" SIGNAME="External_Ports_wantFanta_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="wantFanta"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="wantRest_0" SIGIS="undef" SIGNAME="External_Ports_wantRest_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Automat_0" PORT="wantRest"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Automat_0" HWVERSION="1.0" INSTANCE="Automat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Automat" VLNV="xilinx.com:module_ref:Automat:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Schema_Automat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="L1" SIGIS="undef" SIGNAME="External_Ports_L1_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="L1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="L5" SIGIS="undef" SIGNAME="External_Ports_L5_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="L5_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="L10" SIGIS="undef" SIGNAME="External_Ports_L10_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="L10_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wantCola" SIGIS="undef" SIGNAME="External_Ports_wantCola_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wantCola_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wantFanta" SIGIS="undef" SIGNAME="External_Ports_wantFanta_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wantFanta_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wantRest" SIGIS="undef" SIGNAME="External_Ports_wantRest_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wantRest_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="R10" SIGIS="undef" SIGNAME="Automat_0_R10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="R10_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="R5" SIGIS="undef" SIGNAME="Automat_0_R5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="R5_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="R1" SIGIS="undef" SIGNAME="Automat_0_R1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="R1_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Cola" SIGIS="undef" SIGNAME="Automat_0_Cola">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Cola_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Fanta" SIGIS="undef" SIGNAME="Automat_0_Fanta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Fanta_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

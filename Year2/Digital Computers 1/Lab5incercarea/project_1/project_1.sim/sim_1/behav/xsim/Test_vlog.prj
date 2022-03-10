@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/poartaOR.v" \
+"../../../../project_1.srcs/sources_1/new/registruTampon.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_poartaOR_0_0/sim/design_1_poartaOR_0_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_registruTampon_0_0/sim/design_1_registruTampon_0_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_registruTampon_1_0/sim/design_1_registruTampon_1_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_poartaOR_1_0/sim/design_1_poartaOR_1_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_registruTampon_2_0/sim/design_1_registruTampon_2_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_registruTampon_3_0/sim/design_1_registruTampon_3_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_poartaOR_2_0/sim/design_1_poartaOR_2_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_registruTampon_4_0/sim/design_1_registruTampon_4_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../project_1.srcs/sim_1/new/Test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

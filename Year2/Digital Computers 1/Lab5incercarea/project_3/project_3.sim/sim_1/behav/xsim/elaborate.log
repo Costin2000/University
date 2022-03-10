@@ -1,0 +1,49 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 19c832a0d5fe4eed9bfe7cb0f6c20844 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.M1
+Compiling module xil_defaultlib.design_1_M1_0_0
+Compiling module xil_defaultlib.M2
+Compiling module xil_defaultlib.design_1_M2_0_0
+Compiling module xil_defaultlib.M3
+Compiling module xil_defaultlib.design_1_M3_0_0
+Compiling module xil_defaultlib.M4
+Compiling module xil_defaultlib.design_1_M4_0_0
+Compiling module xil_defaultlib.M5
+Compiling module xil_defaultlib.design_1_M5_0_1
+Compiling module xil_defaultlib.M6
+Compiling module xil_defaultlib.design_1_M6_0_0
+Compiling module xil_defaultlib.M7
+Compiling module xil_defaultlib.design_1_M7_0_0
+Compiling module xil_defaultlib.concatExp
+Compiling module xil_defaultlib.design_1_concatExp_0_0
+Compiling module xil_defaultlib.concatMantise
+Compiling module xil_defaultlib.design_1_concatMantise_0_0
+Compiling module xil_defaultlib.reg16
+Compiling module xil_defaultlib.design_1_reg16_0_0
+Compiling module xil_defaultlib.design_1_reg16_1_0
+Compiling module xil_defaultlib.reg23
+Compiling module xil_defaultlib.design_1_reg23_0_0
+Compiling module xil_defaultlib.reg25
+Compiling module xil_defaultlib.design_1_reg25_0_0
+Compiling module xil_defaultlib.reg47
+Compiling module xil_defaultlib.design_1_reg47_0_0
+Compiling module xil_defaultlib.design_1_reg47_1_0
+Compiling module xil_defaultlib.reg56
+Compiling module xil_defaultlib.design_1_reg56_0_0
+Compiling module xil_defaultlib.reg7
+Compiling module xil_defaultlib.design_1_reg7_0_0
+Compiling module xil_defaultlib.design_1_reg7_1_0
+Compiling module xil_defaultlib.design_1_reg7_2_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav

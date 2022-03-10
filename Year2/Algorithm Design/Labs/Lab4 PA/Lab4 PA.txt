@@ -1,0 +1,90 @@
+Brebu Costin-Bogdan 321CDa
+
+1) 
+P0 = 2
+P1 = 4
+P2 = 3
+P3 = 5
+P4 = 2
+
+A1(2, 4) A2(4, 3) A3(3, 5) A4(5, 2)
+
+Pas1:
+-------
+A11 = 0
+A22 = 0
+A33 = 0
+A44 = 0
+
+Pas2:
+-------
+A12 = P0 * P1 * P2 = 24
+A23 = P1 * P2 * P3 = 60
+A34 = P2 * P3 * P4 = 30
+
+Pas3:
+--------
+A13 = {A11 * A23, A12 * A33}
+m13 = min(m11 + m23 + P0*P1*P3, m12 + m33 + P0 * P2 * P3) =
+	= min (0 + 60 + 40,  24 + 0 + 2 * 3 * 5) = 54
+S13 = 2
+
+A24 = {	A2 * A34, A23 * A4 }
+m24 = min(m34 + P1 * P2 * P4, m23 + P1 * P3  * P4) =
+	= min(30 + 0 + 24, 60 + 40) = 54
+S24 = 1
+
+Pas4:
+--------
+A14 = {A1 * A24, A12 * A34, A13 * A4}
+m14 = min(m24 + P0 * P1 * P4, m12 + m34 + P0 * P2 * P4,
+ 	m13 + P0 * P3 * P4) = 
+	= min(54 + 2*4*2, 24 + 30 + 2 * 3 * 4, 54 + 2*5*2) = 66
+S14 = 2
+
+Numarul optim de op 66
+Parantezare (A1 * A2) * (A3 * A4)
+
+
+Ex2)
+valori = { 60, 120, 100 };
+greutati = { 10, 30, 20 };
+capacitate 50
+
+pt simplitate o sa simplific tot cu 10
+valori = { 6, 10, 12 };
+greutati = { 1, 2, 3 };
+capacitate 5
+
+
+	0	1	2	3	4	5
+1	0	6	6	6	6	6				
+2	0	6	10	16	16	16	
+3	0	6	10	16	18	22
+
+=> valoarea maxima este 220
+
+Ex3)
+{ 1, 2, 9, 3, 8, 4, 7 }
+
+cel mai lung subsir crescator care se termina cu elementul de la indexul i
+i = 0	1
+i = 1	1 2
+i = 2	1 2 9
+i = 3	1 2 3
+i = 4	1 2 3 8
+i = 5	1 2 3 4
+i = 6 	1 2 3 4 7
+
+=> lungimea maxima este de 5
+
+
+
+
+
+
+
+
+
+
+	

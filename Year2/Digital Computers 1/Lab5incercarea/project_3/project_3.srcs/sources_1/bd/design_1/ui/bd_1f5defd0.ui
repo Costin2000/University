@@ -1,0 +1,70 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.597473",
+   "Default View_TopLeft":"-171,-258",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port clear_0 -pg 1 -lvl 0 -x -30 -y -100 -defaultsOSRD
+preplace port clock_0 -pg 1 -lvl 0 -x -30 -y -60 -defaultsOSRD
+preplace port load_0 -pg 1 -lvl 0 -x -30 -y -80 -defaultsOSRD
+preplace port op_0 -pg 1 -lvl 0 -x -30 -y 0 -defaultsOSRD
+preplace portBus mant1_0 -pg 1 -lvl 0 -x -30 -y -200 -defaultsOSRD
+preplace portBus mant2_0 -pg 1 -lvl 0 -x -30 -y -180 -defaultsOSRD
+preplace portBus exp1_0 -pg 1 -lvl 0 -x -30 -y 160 -defaultsOSRD
+preplace portBus exp2_0 -pg 1 -lvl 0 -x -30 -y 180 -defaultsOSRD
+preplace portBus rout_0 -pg 1 -lvl 11 -x 2710 -y 40 -defaultsOSRD
+preplace portBus rout_1 -pg 1 -lvl 11 -x 2710 -y 320 -defaultsOSRD
+preplace inst concatMantise_0 -pg 1 -lvl 1 -x 120 -y -190 -defaultsOSRD
+preplace inst concatExp_0 -pg 1 -lvl 1 -x 120 -y 170 -defaultsOSRD
+preplace inst reg47_0 -pg 1 -lvl 2 -x 390 -y -90 -defaultsOSRD
+preplace inst reg16_0 -pg 1 -lvl 2 -x 390 -y 200 -defaultsOSRD
+preplace inst M1_0 -pg 1 -lvl 3 -x 650 -y 200 -defaultsOSRD
+preplace inst M7_0 -pg 1 -lvl 3 -x 650 -y -80 -defaultsOSRD
+preplace inst reg56_0 -pg 1 -lvl 4 -x 940 -y -50 -defaultsOSRD
+preplace inst reg16_1 -pg 1 -lvl 4 -x 940 -y 220 -defaultsOSRD
+preplace inst M4_0 -pg 1 -lvl 5 -x 1210 -y -50 -defaultsOSRD
+preplace inst M2_0 -pg 1 -lvl 5 -x 1210 -y 220 -defaultsOSRD
+preplace inst reg47_1 -pg 1 -lvl 6 -x 1490 -y -20 -defaultsOSRD
+preplace inst reg7_0 -pg 1 -lvl 6 -x 1490 -y 250 -defaultsOSRD
+preplace inst M5_0 -pg 1 -lvl 7 -x 1750 -y -10 -defaultsOSRD
+preplace inst reg25_0 -pg 1 -lvl 8 -x 2030 -y 20 -defaultsOSRD
+preplace inst reg7_1 -pg 1 -lvl 8 -x 2030 -y 280 -defaultsOSRD
+preplace inst M6_0 -pg 1 -lvl 9 -x 2290 -y 20 -defaultsOSRD
+preplace inst M3_0 -pg 1 -lvl 9 -x 2290 -y 290 -defaultsOSRD
+preplace inst reg23_0 -pg 1 -lvl 10 -x 2570 -y 40 -defaultsOSRD
+preplace inst reg7_2 -pg 1 -lvl 10 -x 2570 -y 320 -defaultsOSRD
+preplace netloc mant1_0_1 1 0 1 N -200
+preplace netloc mant2_0_1 1 0 1 N -180
+preplace netloc exp1_0_1 1 0 1 N 160
+preplace netloc exp2_0_1 1 0 1 N 180
+preplace netloc clear_0_1 1 0 10 NJ -100 260J 10 N 10 810 -150 N -150 1350 -110 N -110 1880 370 2140 220 2430
+preplace netloc clock_0_1 1 0 10 NJ -60 240J 20 N 20 800 -140 N -140 1340 340 N 340 1890 380 N 380 2450
+preplace netloc load_0_1 1 0 10 NJ -80 250J 30 N 30 820 40 N 40 1360 70 N 70 1900 110 N 110 2440
+preplace netloc concatMantise_0_rez 1 1 1 240 -190n
+preplace netloc concatExp_0_rez 1 1 1 N 170
+preplace netloc reg16_0_rout 1 2 1 N 200
+preplace netloc reg47_0_rout 1 2 1 N -90
+preplace netloc M1_0_rez2 1 2 2 500 0 790
+preplace netloc M7_0_mantsRez 1 3 1 N -80
+preplace netloc M1_0_rez 1 3 1 N 190
+preplace netloc reg56_0_rout 1 4 1 N -50
+preplace netloc reg16_1_rout 1 4 1 N 220
+preplace netloc M4_0_mantRez 1 5 1 N -50
+preplace netloc M2_0_rez 1 5 1 N 220
+preplace netloc reg47_1_rout 1 6 1 N -20
+preplace netloc op_0_1 1 0 7 -10J -90 250J -180 NJ -180 NJ -180 NJ -180 NJ -180 1600J
+preplace netloc M5_0_mantRez 1 7 1 N -10
+preplace netloc reg7_0_rout 1 6 2 NJ 250 N
+preplace netloc reg25_0_rout 1 8 1 N 20
+preplace netloc reg7_1_rout 1 8 1 N 280
+preplace netloc M6_0_val2 1 8 2 2150 90 2420
+preplace netloc M6_0_mfinal 1 9 1 N 10
+preplace netloc M3_0_rez 1 9 1 N 290
+preplace netloc reg23_0_rout 1 10 1 N 40
+preplace netloc reg7_2_rout 1 10 1 N 320
+levelinfo -pg 1 -30 120 390 650 940 1210 1490 1750 2030 2290 2570 2710
+pagesize -pg 1 -db -bbox -sgen -170 -380 2840 420
+"
+}
+0

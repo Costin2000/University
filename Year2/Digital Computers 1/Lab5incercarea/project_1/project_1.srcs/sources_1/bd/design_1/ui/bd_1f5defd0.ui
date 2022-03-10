@@ -1,0 +1,40 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.763393",
+   "Default View_TopLeft":"-418,-444",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -440 -y 150 -defaultsOSRD
+preplace port enable_0 -pg 1 -lvl 0 -x -440 -y 190 -defaultsOSRD
+preplace port intrare_0 -pg 1 -lvl 0 -x -440 -y 130 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x -440 -y 170 -defaultsOSRD
+preplace port a_0 -pg 1 -lvl 0 -x -440 -y -80 -defaultsOSRD
+preplace port b_0 -pg 1 -lvl 0 -x -440 -y -60 -defaultsOSRD
+preplace port iesire_0 -pg 1 -lvl 7 -x 1050 -y 70 -defaultsOSRD
+preplace inst poartaOR_0 -pg 1 -lvl 1 -x -330 -y -70 -defaultsOSRD
+preplace inst registruTampon_0 -pg 1 -lvl 2 -x -30 -y -40 -defaultsOSRD
+preplace inst registruTampon_1 -pg 1 -lvl 2 -x -30 -y 160 -defaultsOSRD
+preplace inst poartaOR_1 -pg 1 -lvl 3 -x 220 -y 160 -defaultsOSRD
+preplace inst registruTampon_2 -pg 1 -lvl 4 -x 430 -y 160 -defaultsOSRD
+preplace inst registruTampon_3 -pg 1 -lvl 4 -x 430 -y -30 -defaultsOSRD
+preplace inst poartaOR_2 -pg 1 -lvl 5 -x 720 -y 70 -defaultsOSRD
+preplace inst registruTampon_4 -pg 1 -lvl 6 -x 930 -y 70 -defaultsOSRD
+preplace netloc poartaOR_0_c 1 1 1 N -70
+preplace netloc clk_0_1 1 0 6 NJ 150 -250J -130 N -130 300 250 N 250 820
+preplace netloc enable_0_1 1 0 6 NJ 190 -230J 50 N 50 320 60 530 0 810
+preplace netloc reset_0_1 1 0 6 NJ 170 -240J 60 N 60 310 260 N 260 830
+preplace netloc a_0_1 1 0 1 NJ -80
+preplace netloc b_0_1 1 0 1 NJ -60
+preplace netloc intrare_0_1 1 0 2 NJ 130 N
+preplace netloc registruTampon_1_iesire 1 2 1 70 160n
+preplace netloc registruTampon_0_iesire 1 2 2 70 -60 N
+preplace netloc registruTampon_3_iesire 1 4 1 540 -30n
+preplace netloc registruTampon_2_iesire 1 4 1 530 80n
+preplace netloc poartaOR_2_c 1 5 1 800 40n
+preplace netloc registruTampon_4_iesire 1 6 1 N 70
+levelinfo -pg 1 -440 -330 -30 220 430 720 930 1050
+pagesize -pg 1 -db -bbox -sgen -550 -280 1150 270
+"
+}
+

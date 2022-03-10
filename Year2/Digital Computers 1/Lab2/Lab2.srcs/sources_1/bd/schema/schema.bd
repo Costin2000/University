@@ -1,0 +1,360 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xDB9E0905671FF420",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Lab2.gen/sources_1/bd/schema",
+      "name": "schema",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "numarator_59_0": "",
+      "PoartaOr_0": "",
+      "PoartaAnd_0": "",
+      "numarator_59_1": "",
+      "bin2bcd_0": "",
+      "bin2bcd_1": ""
+    },
+    "ports": {
+      "clk_out_led_0": {
+        "direction": "I"
+      },
+      "data_0": {
+        "direction": "I",
+        "left": "5",
+        "right": "0"
+      },
+      "load_0": {
+        "direction": "I"
+      },
+      "pauza_0": {
+        "direction": "I"
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "sens_0": {
+        "direction": "I"
+      },
+      "BCD0_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "BCD1_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "BCD1_1": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "BCD0_1": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "numarator_59_0": {
+        "vlnv": "xilinx.com:module_ref:numarator_59:1.0",
+        "xci_name": "schema_numarator_59_0_2",
+        "xci_path": "ip\\schema_numarator_59_0_2\\schema_numarator_59_0_2.xci",
+        "inst_hier_path": "numarator_59_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "numarator_59",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_out_led": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "pauza": {
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "data": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "sens": {
+            "direction": "I"
+          },
+          "valoare_bin": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "carry_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "PoartaOr_0": {
+        "vlnv": "xilinx.com:module_ref:PoartaOr:1.0",
+        "xci_name": "schema_PoartaOr_0_2",
+        "xci_path": "ip\\schema_PoartaOr_0_2\\schema_PoartaOr_0_2.xci",
+        "inst_hier_path": "PoartaOr_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PoartaOr",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "PoartaAnd_0": {
+        "vlnv": "xilinx.com:module_ref:PoartaAnd:1.0",
+        "xci_name": "schema_PoartaAnd_0_2",
+        "xci_path": "ip\\schema_PoartaAnd_0_2\\schema_PoartaAnd_0_2.xci",
+        "inst_hier_path": "PoartaAnd_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PoartaAnd",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "numarator_59_1": {
+        "vlnv": "xilinx.com:module_ref:numarator_59:1.0",
+        "xci_name": "schema_numarator_59_1_1",
+        "xci_path": "ip\\schema_numarator_59_1_1\\schema_numarator_59_1_1.xci",
+        "inst_hier_path": "numarator_59_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "numarator_59",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_out_led": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "pauza": {
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "data": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "sens": {
+            "direction": "I"
+          },
+          "valoare_bin": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "carry_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "bin2bcd_0": {
+        "vlnv": "xilinx.com:module_ref:bin2bcd:1.0",
+        "xci_name": "schema_bin2bcd_0_1",
+        "xci_path": "ip\\schema_bin2bcd_0_1\\schema_bin2bcd_0_1.xci",
+        "inst_hier_path": "bin2bcd_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bin2bcd",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "valoare_bin": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "BCD0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "BCD1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "bin2bcd_1": {
+        "vlnv": "xilinx.com:module_ref:bin2bcd:1.0",
+        "xci_name": "schema_bin2bcd_1_1",
+        "xci_path": "ip\\schema_bin2bcd_1_1\\schema_bin2bcd_1_1.xci",
+        "inst_hier_path": "bin2bcd_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bin2bcd",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "valoare_bin": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "BCD0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "BCD1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_out_led_0_1": {
+        "ports": [
+          "clk_out_led_0",
+          "numarator_59_0/clk_out_led",
+          "PoartaAnd_0/B"
+        ]
+      },
+      "data_0_1": {
+        "ports": [
+          "data_0",
+          "numarator_59_0/data",
+          "numarator_59_1/data"
+        ]
+      },
+      "load_0_1": {
+        "ports": [
+          "load_0",
+          "numarator_59_0/load",
+          "numarator_59_1/load",
+          "PoartaOr_0/B"
+        ]
+      },
+      "pauza_0_1": {
+        "ports": [
+          "pauza_0",
+          "numarator_59_0/pauza",
+          "numarator_59_1/pauza"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "numarator_59_0/reset",
+          "numarator_59_1/reset"
+        ]
+      },
+      "sens_0_1": {
+        "ports": [
+          "sens_0",
+          "numarator_59_0/sens",
+          "numarator_59_1/sens"
+        ]
+      },
+      "numarator_59_0_carry_out": {
+        "ports": [
+          "numarator_59_0/carry_out",
+          "PoartaOr_0/A"
+        ]
+      },
+      "PoartaOr_0_C": {
+        "ports": [
+          "PoartaOr_0/C",
+          "PoartaAnd_0/A"
+        ]
+      },
+      "PoartaAnd_0_C": {
+        "ports": [
+          "PoartaAnd_0/C",
+          "numarator_59_1/clk_out_led"
+        ]
+      },
+      "numarator_59_1_valoare_bin": {
+        "ports": [
+          "numarator_59_1/valoare_bin",
+          "bin2bcd_0/valoare_bin"
+        ]
+      },
+      "numarator_59_0_valoare_bin": {
+        "ports": [
+          "numarator_59_0/valoare_bin",
+          "bin2bcd_1/valoare_bin"
+        ]
+      },
+      "bin2bcd_1_BCD0": {
+        "ports": [
+          "bin2bcd_1/BCD0",
+          "BCD0_0"
+        ]
+      },
+      "bin2bcd_1_BCD1": {
+        "ports": [
+          "bin2bcd_1/BCD1",
+          "BCD1_0"
+        ]
+      },
+      "bin2bcd_0_BCD1": {
+        "ports": [
+          "bin2bcd_0/BCD1",
+          "BCD1_1"
+        ]
+      },
+      "bin2bcd_0_BCD0": {
+        "ports": [
+          "bin2bcd_0/BCD0",
+          "BCD0_1"
+        ]
+      }
+    }
+  }
+}

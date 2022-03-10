@@ -1,0 +1,3 @@
+Schema_Automat_0_0.v,verilog,xil_defaultlib,../../../bd/Schema/ip/Schema_Automat_0_0/sim/Schema_Automat_0_0.v,
+Schema.v,verilog,xil_defaultlib,../../../bd/Schema/sim/Schema.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

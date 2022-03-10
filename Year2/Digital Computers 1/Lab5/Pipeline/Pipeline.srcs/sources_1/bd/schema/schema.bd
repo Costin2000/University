@@ -1,0 +1,452 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x86D9AAA1B90889BF",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Pipeline.gen/sources_1/bd/schema",
+      "name": "schema",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "registruTampon_0": "",
+      "registruTampon_1": "",
+      "registruTampon_2": "",
+      "registruTampon_3": "",
+      "registruTampon_4": "",
+      "orGate_0": "",
+      "orGate_1": "",
+      "orGate_2": ""
+    },
+    "ports": {
+      "a_0": {
+        "direction": "I"
+      },
+      "b_0": {
+        "direction": "I"
+      },
+      "INPUT_0": {
+        "direction": "I"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "schema_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "load_0": {
+        "direction": "I"
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "iesire_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "registruTampon_0": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "schema_registruTampon_0_0",
+        "xci_path": "ip\\schema_registruTampon_0_0\\schema_registruTampon_0_0.xci",
+        "inst_hier_path": "registruTampon_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "schema_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_1": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "schema_registruTampon_1_0",
+        "xci_path": "ip\\schema_registruTampon_1_0\\schema_registruTampon_1_0.xci",
+        "inst_hier_path": "registruTampon_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "schema_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_2": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "schema_registruTampon_2_0",
+        "xci_path": "ip\\schema_registruTampon_2_0\\schema_registruTampon_2_0.xci",
+        "inst_hier_path": "registruTampon_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "schema_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_3": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "schema_registruTampon_3_0",
+        "xci_path": "ip\\schema_registruTampon_3_0\\schema_registruTampon_3_0.xci",
+        "inst_hier_path": "registruTampon_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "schema_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "registruTampon_4": {
+        "vlnv": "xilinx.com:module_ref:registruTampon:1.0",
+        "xci_name": "schema_registruTampon_4_0",
+        "xci_path": "ip\\schema_registruTampon_4_0\\schema_registruTampon_4_0.xci",
+        "inst_hier_path": "registruTampon_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "registruTampon",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "intrare": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "schema_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "load": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "orGate_0": {
+        "vlnv": "xilinx.com:module_ref:orGate:1.0",
+        "xci_name": "schema_orGate_0_0",
+        "xci_path": "ip\\schema_orGate_0_0\\schema_orGate_0_0.xci",
+        "inst_hier_path": "orGate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "orGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "orGate_1": {
+        "vlnv": "xilinx.com:module_ref:orGate:1.0",
+        "xci_name": "schema_orGate_1_0",
+        "xci_path": "ip\\schema_orGate_1_0\\schema_orGate_1_0.xci",
+        "inst_hier_path": "orGate_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "orGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      },
+      "orGate_2": {
+        "vlnv": "xilinx.com:module_ref:orGate:1.0",
+        "xci_name": "schema_orGate_2_0",
+        "xci_path": "ip\\schema_orGate_2_0\\schema_orGate_2_0.xci",
+        "inst_hier_path": "orGate_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "orGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "iesire": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "orGate_0_iesire": {
+        "ports": [
+          "orGate_0/iesire",
+          "registruTampon_0/intrare"
+        ]
+      },
+      "a_0_1": {
+        "ports": [
+          "a_0",
+          "orGate_0/a"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b_0",
+          "orGate_0/b"
+        ]
+      },
+      "INPUT_0_1": {
+        "ports": [
+          "INPUT_0",
+          "registruTampon_1/intrare"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "registruTampon_0/clk",
+          "registruTampon_1/clk",
+          "registruTampon_2/clk",
+          "registruTampon_3/clk",
+          "registruTampon_4/clk"
+        ]
+      },
+      "load_0_1": {
+        "ports": [
+          "load_0",
+          "registruTampon_0/load",
+          "registruTampon_1/load",
+          "registruTampon_2/load",
+          "registruTampon_3/load",
+          "registruTampon_4/load"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "registruTampon_0/reset",
+          "registruTampon_1/reset",
+          "registruTampon_2/reset",
+          "registruTampon_3/reset",
+          "registruTampon_4/reset"
+        ]
+      },
+      "registruTampon_1_iesire": {
+        "ports": [
+          "registruTampon_1/iesire",
+          "orGate_1/b"
+        ]
+      },
+      "registruTampon_0_iesire": {
+        "ports": [
+          "registruTampon_0/iesire",
+          "registruTampon_3/intrare",
+          "orGate_1/a"
+        ]
+      },
+      "orGate_1_iesire": {
+        "ports": [
+          "orGate_1/iesire",
+          "registruTampon_2/intrare"
+        ]
+      },
+      "registruTampon_2_iesire": {
+        "ports": [
+          "registruTampon_2/iesire",
+          "orGate_2/b"
+        ]
+      },
+      "registruTampon_3_iesire": {
+        "ports": [
+          "registruTampon_3/iesire",
+          "orGate_2/a"
+        ]
+      },
+      "orGate_2_iesire": {
+        "ports": [
+          "orGate_2/iesire",
+          "registruTampon_4/intrare"
+        ]
+      },
+      "registruTampon_4_iesire": {
+        "ports": [
+          "registruTampon_4/iesire",
+          "iesire_0"
+        ]
+      }
+    }
+  }
+}

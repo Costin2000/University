@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 26 13:44:00 2021
+# Process ID: 43845
+# Current directory: /home/catalin
+# Command line: vivado
+# Log file: /home/catalin/vivado.log
+# Journal file: /home/catalin/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/catalin/Desktop/CN1/testLab5/testlab5/testlab5.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source simulare.tcl
+open_project /home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.xpr
+update_compile_order -fileset sources_1
+close_project
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+open_project /home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.xpr
+update_compile_order -fileset sources_1
+close_project
+close_sim
+close_project
+open_project /home/catalin/Desktop/CN1/Lab5V2/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source test2.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+open_project /home/catalin/Desktop/CN1/Lab5Part2/Lab5Part2/Lab5Part2.xpr
+current_project project_1
+current_project Lab5Part2
+archive_project /home/catalin/Desktop/Lab5Part2.xpr.zip -force -include_local_ip_cache -include_config_settings

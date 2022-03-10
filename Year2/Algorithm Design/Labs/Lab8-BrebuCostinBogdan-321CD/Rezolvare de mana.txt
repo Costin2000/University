@@ -1,0 +1,132 @@
+Brebu Costin-Bogdan 321CD
+Laboratorul 8
+
+1) 
+---------------------------------------------------------
+ parcurgerea alfabetica 
+1 - intru nod A deschid(A)=1 culoare(A)=gri
+2 - intru nod B deschid(B)=2 culoare(B)=gri
+3 - intru nod G deschid(G)=3 culoare(G)=gri
+4 - intru nod C deschid(C)=4 culoare(C)=gri
+5 - inchid nod C inchis(C)=5 culoare(C)=negru
+6 - inchid nod G inchis(G)=6 culoare(G)=negru
+7 - inchid nod B inchis(B)=7 culoare(B)=negru
+8 - intru nod D deschis(D)=8 culoare(D)=gri
+9 - intru nod E deschis(E)=9 culoare(E)=gri
+10 - inchid nod E inchis(E)=10 culoare(E)=negru
+11 - inchis nod D inchis(D)=11 culoare(D)=negru
+12 - inchid nod A inchis(A)=12 culoare(A)=negru
+13 - intru nod F deschid(F)=13 culoare(F)=gri
+14 - inchid nod F inchis(F)=14 culoare(F)=negru
+
+F(13, 14), A(1, 12), D(8, 11), E(9, 10), B(2, 7), G(3, 6), C(4, 5)
+sortare topologica: F,A,D,E,B,G,C
+---------------------------------------------------------
+
+---------------------------------------------------------
+
+ parcurgerea in sens invers alfabetic
+1 - deschid nod G deschis(G)=1 culoare(G)=gri
+2 - deschid nod C deschis(C)=2 culoare(C)=gri
+3 - inchid nod C inchis(C)=3 culoare(C)=negru
+4 - inchid nod G inchis(G)=4 culoare(G)=negru
+5 - deschid nod F deschis(F)=5 culoare(F)=gri
+6 - deschid nod E deschis(E)=6 culoare(E)=gri
+7 - inchid nod E inchis(E)=7 culoare(E)=negru
+8 - inchid nod F inchis(F)=8 culoare(F)=negru
+9 - deschid nod D deschis(D)=9 culoare(D)=gri
+10 - inchid nod D inchis(D)=10 culoare(D)=negru
+11 - deschid nod B deschis(B)=11 culoare(B)=gri
+12 - inchid nod B inchis(B)=12 culoare(B)=negru
+13 - deschid nod A deschis(A)=13 culoare(A)=gri
+14 - inchid nod A deschis(A)=14 culoare(A)=negru
+
+A(13, 14), B(11, 12), D(9, 10), F(5, 8), E(6, 7), G(1, 4), C(2, 3)
+sortare topologica: A,B,D,F,E,G,C
+---------------------------------------------------------
+
+
+2)
+---------------------------------------------------------
+ pe graful direct
+
+
+1 - A d(A)=1 c(A)=gri
+2 - B d(B)=2 c(B)=gri
+3 - C d(C)=3 c(C)=gri
+4 - E d(E)=4 c(E)=gri
+5 - D d(D)=5 c(D)=gri
+6 - F d(F)=6 c(F)=gri
+7 - F f(F)=7 c(F)=negru
+8 - D f(D)=8 c(D)=negru
+9 - E f(E)=9 c(E)=negru
+10 - C f(C)=10 c(C)=negru
+11 - G d(G)=11 c(G)=gri
+12 - H d(H)=12 c(H)=gri
+13 - H f(H)=13 c(H)=negru
+14 - G f(G)=14 c(G)=negru
+15 - B f(B)=15 c(B)=negru
+16 - A f(A)=16 c(A)=negru
+17 - I d(I)=17 c(I)=gri
+18 - J d(J)=18 c(J)=gri
+19 - K d(K)=19 c(K)=gri
+20 - M d(M)=20 c(M)=gri
+21 - N d(N)=21 c(N)=gri
+22 - O d(O)=22 c(O)=gri
+23 - P d(P)=23 c(P)=gri
+24 - P f(P)=24 c(P)=negru
+25 - O f(O)=25 c(O)=negru
+26 - N f(N)=26 c(N)=negru
+27 - M f(M)=27 c(M)=negru
+28 - K f(K)=28 c(K)=negru
+29 - J f(J)=29 c(J)=negru
+30 - L d(L)=30 c(L)=gri
+31 - L f(L)=31 c(L)=negru
+32 - I f(I)=32 c(I)=negru
+
+
+A(1, 16), B(2, 15), C(3, 10), D(5, 8), E(4, 9), F(6, 7), G(11, 14), H(12, 13),
+I(17, 32), J(18, 29), K(19, 28), L(30, 31), M(20, 27), N(21, 26), O(22, 25),
+P(23, 24)
+
+sortare topologica:
+    I,L,J,K,M,N,O,P,A,B,G,H,C,E,D,F
+---------------------------------------------------------
+
+---------------------------------------------------------
+ DFS pe transpus
+
+1 - I d(I)=17 c(I)=gri
+2 - K d(K)=19 c(K)=gri
+3 - J d(J)=18 c(J)=gri
+4 - J f(J)=29 c(J)=negru
+5 - L d(L)=30 c(L)=gri
+6 - L f(L)=31 c(L)=negru
+7 - K f(K)=28 c(K)=negru
+8 - I f(I)=32 c(I)=negru => CTC: I K L J
+9 - M d(M)=20 c(M)=gri
+10 - O d(O)=22 c(O)=gri
+11 - N d(N)=21 c(N)=gri
+12 - N f(N)=26 c(N)=negru
+13 - O f(O)=25 c(O)=negru
+14 - M f(M)=27 c(M)=negru => CTC: M O N
+15 - P d(P)=23 c(P)=gri
+16 - P f(P)=24 c(P)=negru => CTC: P
+17 - A d(A)=1 c(A)=gri
+18 - A f(A)=16 c(A)=negru => CTC: A
+19 - B d(B)=2 c(B)=gri
+20 - B f(B)=15 c(B)=negru => CTC: B
+21 - G d(G)=11 c(G)=gri
+22 - G f(G)=14 c(G)=negru => CTC: G
+23 - H d(H)=12 c(H)=gri
+24 - H f(H)=13 c(H)=negru => CTC: H
+25 - C d(C)=3 c(C)=gri
+26 - D d(D)=5 c(D)=gri
+27 - E d(E)=4 c(E)=gri
+28 - E f(E)=9 c(E)=negru
+29 - D f(D)=8 c(D)=negru
+30 - C f(C)=10 c(C)=negru => CTC: C D E
+31 - F d(F)=6 c(F)=gri
+32 - F f(F)=7 c(F)=negru => CTC: F
+
+

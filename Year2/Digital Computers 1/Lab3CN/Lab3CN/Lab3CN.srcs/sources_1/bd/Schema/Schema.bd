@@ -1,0 +1,242 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6CF989D56D79A2DB",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Lab3CN.gen/sources_1/bd/Schema",
+      "name": "Schema",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Automat_0": ""
+    },
+    "ports": {
+      "Cola_0": {
+        "direction": "O"
+      },
+      "Fanta_0": {
+        "direction": "O"
+      },
+      "L1_0": {
+        "direction": "I"
+      },
+      "L10_0": {
+        "direction": "I"
+      },
+      "L5_0": {
+        "direction": "I"
+      },
+      "R1_0": {
+        "direction": "O"
+      },
+      "R10_0": {
+        "direction": "O"
+      },
+      "R5_0": {
+        "direction": "O"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "Schema_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "wantCola_0": {
+        "direction": "I"
+      },
+      "wantFanta_0": {
+        "direction": "I"
+      },
+      "wantRest_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Automat_0": {
+        "vlnv": "xilinx.com:module_ref:Automat:1.0",
+        "xci_name": "Schema_Automat_0_0",
+        "xci_path": "ip\\Schema_Automat_0_0\\Schema_Automat_0_0.xci",
+        "inst_hier_path": "Automat_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Automat",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Schema_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "L1": {
+            "direction": "I"
+          },
+          "L5": {
+            "direction": "I"
+          },
+          "L10": {
+            "direction": "I"
+          },
+          "wantCola": {
+            "direction": "I"
+          },
+          "wantFanta": {
+            "direction": "I"
+          },
+          "wantRest": {
+            "direction": "I"
+          },
+          "R10": {
+            "direction": "O"
+          },
+          "R5": {
+            "direction": "O"
+          },
+          "R1": {
+            "direction": "O"
+          },
+          "Cola": {
+            "direction": "O"
+          },
+          "Fanta": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Automat_0_Cola": {
+        "ports": [
+          "Automat_0/Cola",
+          "Cola_0"
+        ]
+      },
+      "Automat_0_Fanta": {
+        "ports": [
+          "Automat_0/Fanta",
+          "Fanta_0"
+        ]
+      },
+      "L1_0_1": {
+        "ports": [
+          "L1_0",
+          "Automat_0/L1"
+        ]
+      },
+      "L10_0_1": {
+        "ports": [
+          "L10_0",
+          "Automat_0/L10"
+        ]
+      },
+      "L5_0_1": {
+        "ports": [
+          "L5_0",
+          "Automat_0/L5"
+        ]
+      },
+      "Automat_0_R1": {
+        "ports": [
+          "Automat_0/R1",
+          "R1_0"
+        ]
+      },
+      "Automat_0_R10": {
+        "ports": [
+          "Automat_0/R10",
+          "R10_0"
+        ]
+      },
+      "Automat_0_R5": {
+        "ports": [
+          "Automat_0/R5",
+          "R5_0"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "Automat_0/clk"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "Automat_0/reset"
+        ]
+      },
+      "wantCola_0_1": {
+        "ports": [
+          "wantCola_0",
+          "Automat_0/wantCola"
+        ]
+      },
+      "wantFanta_0_1": {
+        "ports": [
+          "wantFanta_0",
+          "Automat_0/wantFanta"
+        ]
+      },
+      "wantRest_0_1": {
+        "ports": [
+          "wantRest_0",
+          "Automat_0/wantRest"
+        ]
+      }
+    }
+  }
+}

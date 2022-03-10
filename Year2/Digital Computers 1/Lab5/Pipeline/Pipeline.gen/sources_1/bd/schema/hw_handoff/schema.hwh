@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 26 13:48:52 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="schema" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="a_0" SIGIS="undef" SIGNAME="External_Ports_a_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="orGate_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="b_0" SIGIS="undef" SIGNAME="External_Ports_b_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="orGate_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="INPUT_0" SIGIS="undef" SIGNAME="External_Ports_INPUT_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruTampon_1" PORT="intrare"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruTampon_0" PORT="clk"/>
+        <CONNECTION INSTANCE="registruTampon_1" PORT="clk"/>
+        <CONNECTION INSTANCE="registruTampon_2" PORT="clk"/>
+        <CONNECTION INSTANCE="registruTampon_3" PORT="clk"/>
+        <CONNECTION INSTANCE="registruTampon_4" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="load_0" SIGIS="undef" SIGNAME="External_Ports_load_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruTampon_0" PORT="load"/>
+        <CONNECTION INSTANCE="registruTampon_1" PORT="load"/>
+        <CONNECTION INSTANCE="registruTampon_2" PORT="load"/>
+        <CONNECTION INSTANCE="registruTampon_3" PORT="load"/>
+        <CONNECTION INSTANCE="registruTampon_4" PORT="load"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruTampon_0" PORT="reset"/>
+        <CONNECTION INSTANCE="registruTampon_1" PORT="reset"/>
+        <CONNECTION INSTANCE="registruTampon_2" PORT="reset"/>
+        <CONNECTION INSTANCE="registruTampon_3" PORT="reset"/>
+        <CONNECTION INSTANCE="registruTampon_4" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="iesire_0" SIGIS="undef" SIGNAME="registruTampon_4_iesire">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="registruTampon_4" PORT="iesire"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/orGate_0" HWVERSION="1.0" INSTANCE="orGate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="orGate" VLNV="xilinx.com:module_ref:orGate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="schema_orGate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="External_Ports_a_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_b_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="orGate_0_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_0" PORT="intrare"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/orGate_1" HWVERSION="1.0" INSTANCE="orGate_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="orGate" VLNV="xilinx.com:module_ref:orGate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="schema_orGate_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="registruTampon_0_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_0" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="registruTampon_1_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_1" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="orGate_1_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_2" PORT="intrare"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/orGate_2" HWVERSION="1.0" INSTANCE="orGate_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="orGate" VLNV="xilinx.com:module_ref:orGate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="schema_orGate_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="registruTampon_3_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_3" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="registruTampon_2_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_2" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="orGate_2_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_4" PORT="intrare"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruTampon_0" HWVERSION="1.0" INSTANCE="registruTampon_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruTampon" VLNV="xilinx.com:module_ref:registruTampon:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="schema_registruTampon_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="orGate_0_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="orGate_0" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="registruTampon_0_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_3" PORT="intrare"/>
+            <CONNECTION INSTANCE="orGate_1" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruTampon_1" HWVERSION="1.0" INSTANCE="registruTampon_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruTampon" VLNV="xilinx.com:module_ref:registruTampon:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="schema_registruTampon_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="External_Ports_INPUT_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="INPUT_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="registruTampon_1_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="orGate_1" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruTampon_2" HWVERSION="1.0" INSTANCE="registruTampon_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruTampon" VLNV="xilinx.com:module_ref:registruTampon:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="schema_registruTampon_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="orGate_1_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="orGate_1" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="registruTampon_2_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="orGate_2" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruTampon_3" HWVERSION="1.0" INSTANCE="registruTampon_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruTampon" VLNV="xilinx.com:module_ref:registruTampon:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="schema_registruTampon_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="registruTampon_0_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="registruTampon_0" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="registruTampon_3_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="orGate_2" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/registruTampon_4" HWVERSION="1.0" INSTANCE="registruTampon_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="registruTampon" VLNV="xilinx.com:module_ref:registruTampon:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="schema_registruTampon_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="intrare" SIGIS="undef" SIGNAME="orGate_2_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="orGate_2" PORT="iesire"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="External_Ports_load_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="load_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="iesire" SIGIS="undef" SIGNAME="registruTampon_4_iesire">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="iesire_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

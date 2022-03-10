@@ -1,0 +1,45 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_3.srcs/sources_1/new/concatMantise.v" \
+"../../../../project_3.srcs/sources_1/new/concatExp.v" \
+"../../../../project_3.srcs/sources_1/new/reg47.v" \
+"../../../../project_3.srcs/sources_1/new/reg16.v" \
+"../../../../project_3.srcs/sources_1/new/M1.v" \
+"../../../../project_3.srcs/sources_1/new/M7.v" \
+"../../../../project_3.srcs/sources_1/new/reg56.v" \
+"../../../../project_3.srcs/sources_1/new/M4.v" \
+"../../../../project_3.srcs/sources_1/new/M2.v" \
+"../../../../project_3.srcs/sources_1/new/reg7.v" \
+"../../../../project_3.srcs/sources_1/new/M5.v" \
+"../../../../project_3.srcs/sources_1/new/reg25.v" \
+"../../../../project_3.srcs/sources_1/new/M6.v" \
+"../../../../project_3.srcs/sources_1/new/M3.v" \
+"../../../../project_3.srcs/sources_1/new/reg23.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_concatMantise_0_0/sim/design_1_concatMantise_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_concatExp_0_0/sim/design_1_concatExp_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg47_0_0/sim/design_1_reg47_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg16_0_0/sim/design_1_reg16_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_M1_0_0/sim/design_1_M1_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_M7_0_0/sim/design_1_M7_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg56_0_0/sim/design_1_reg56_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg16_1_0/sim/design_1_reg16_1_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_M4_0_0/sim/design_1_M4_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_M2_0_0/sim/design_1_M2_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg47_1_0/sim/design_1_reg47_1_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg7_0_0/sim/design_1_reg7_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_M5_0_1/sim/design_1_M5_0_1.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg25_0_0/sim/design_1_reg25_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg7_1_0/sim/design_1_reg7_1_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_M6_0_0/sim/design_1_M6_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_M3_0_0/sim/design_1_M3_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg23_0_0/sim/design_1_reg23_0_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/ip/design_1_reg7_2_0/sim/design_1_reg7_2_0.v" \
+"../../../../project_3.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../project_3.srcs/sim_1/new/test1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
